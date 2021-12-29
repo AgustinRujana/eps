@@ -24,7 +24,7 @@ const HeroSlider = ({ content }) => {
       {content.data.map((slide, index) => {
         return (
           <div
-            className={index === current ? 'slide active' : 'slide'}
+            className={index === current ? 'opacity-100 transition-all ease-in-out duration-1000' : 'opacity-0 transition-all ease-in-out duration-1000'}
             key={index}
           >
             {index === current && (

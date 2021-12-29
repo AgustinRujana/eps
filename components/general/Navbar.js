@@ -1,7 +1,7 @@
 export default function Navbar({ content }) {
   return (
     <div className='relative'>
-      <div className='absolute left-20 top-2 rounded-full bg-darkBlue p-2'>
+      <div className='absolute z-50 left-20 top-2 rounded-full bg-darkBlue p-2'>
         <img
           className='h-16'
           src='/logos/IsotipoGrupoEPS.svg'
