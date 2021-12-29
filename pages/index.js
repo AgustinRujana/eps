@@ -1,10 +1,11 @@
 import Head from 'next/head';
-import Script from 'next/script';
 import Navbar from '../components/general/Navbar';
 
 import HeroSlider from '../components/hero/HeroSlider';
 import HeroIcons from '../components/hero/HeroIcons';
 import HeroCard from '../components/hero/HeroCard';
+import HeroCard2 from '../components/hero/HeroCard2';
+import HeroMobile from '../components/hero/HeroMobile';
 
 import { content } from '../content/content';
 
@@ -21,6 +22,9 @@ export default function Home() {
         <HeroSlider content={content.hero.heroSlider}/>
         <HeroIcons content={content.hero.heroIcons}/>
         <HeroCard/>
+        <HeroSlider content={content.hero.heroSlider}/>
+        <HeroCard2/>
+        <HeroMobile/>
       </main>
     </>
   )
