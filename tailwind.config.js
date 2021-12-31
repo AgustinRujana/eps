@@ -13,7 +13,9 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"]
       },
       spacing: {
-        '1/8': '12.5%'
+        '1/8': '12.5%',
+        '1/10': '10%',
+        '1/20': '5%'
       }
     },
   }

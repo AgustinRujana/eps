@@ -6,6 +6,8 @@ import HeroIcons from '../components/hero/HeroIcons';
 import HeroCard from '../components/hero/HeroCard';
 import HeroCard2 from '../components/hero/HeroCard2';
 import HeroMobile from '../components/hero/HeroMobile';
+import HeroMap from '../components/hero/HeroMap';
+import CallToAction from '../components/hero/CallToAction';
 
 import { content } from '../content/content';
 
@@ -15,16 +17,18 @@ export default function Home() {
       <Head>
         <title>EPS</title>
       </Head>
-      <header className="max-w-7xl mx-auto">
+      <header className="mx-auto">
         <Navbar content={content.menu}/>
+        <CallToAction/>
       </header>
-      <main className='overflow-hidden max-w-7xl w-full mx-auto'>
+      <main className=' overflow-hidden max-w-7xl w-full mx-auto'>
         <HeroSlider content={content.hero.heroSlider}/>
         <HeroIcons content={content.hero.heroIcons}/>
         <HeroCard/>
         <HeroSlider content={content.hero.heroSlider}/>
+        <HeroMap content={content.hero.heroMap}/>
         <HeroCard2/>
-        <HeroMobile/>
+        <HeroMobile content={content.hero.heroMobile}/>
       </main>
     </>
   )

@@ -1,36 +1,30 @@
-export default function HeroMobile() {
+import { CheckCircleIcon } from '@heroicons/react/outline';
+
+export default function HeroMobile({ content }) {
   return (
-    <section className='py-16 font-montserrat grid grid-cols-2 items-center gap-x-4'>
-      <div className='bg-darkBlue text-white'>
+    <section className='font-montserrat grid grid-cols-2 items-center'>
+      <div className='bg-darkBlue z-50 text-white py-14 px-4 rounded-r-3xl'>
         <div className='p-4 text-xl'>
-          <p className='text-4xl font-bold uppercase mb-2'>
-            EPS Movil
-          </p>
-          <p>Estamos disponibles para tí.</p>
-          <p>Comunícate con nuestro centro de atención</p>
-          <p>al cliente y despeja todas tus dudas.</p>
-        </div>
-        <div className='flex items-center justify-center py-4 uppercase rounded-l-lg'>
-          <img className='h-16' src='/logos/IsotipoGrupoEPS.svg' />
-          <p className='rounded-lg text-white text-center text-2xl'>
-            +504 2263 1111
-          </p>
+          <p className='text-4xl font-bold uppercase mb-2'>EPS Movil</p>
+          <p>Te presentamos nuestra aplicación móvil.</p>
+          <p>Con ella podrás:</p>
+          <ul className='pt-2'>
+            {content.map((item) => (
+              <li className='flex items-center'>
+                <CheckCircleIcon className='h-8 mr-1 text-teal-400' />
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-      <div className='text-center'>
-        <div className='p-4 text-xl'>
-          <p className='text-4xl font-bold uppercase mb-2'>
-            Nuestro call center
-          </p>
-          <p>Estamos disponibles para tí.</p>
-          <p>Comunícate con nuestro centro de atención</p>
-          <p>al cliente y despeja todas tus dudas.</p>
-        </div>
-        <div className='flex items-center justify-center py-4 bg-darkBlue uppercase rounded-l-lg'>
-          <img className='h-16' src='/logos/IsotipoGrupoEPS.svg' />
-          <p className='rounded-lg text-white text-center text-2xl'>
-            +504 2263 1111
-          </p>
+      <div className='text-center relative before:block before:absolute before:-inset-x-1 before:-inset-y-48 before:bg-slate-200'>
+        <div className='text-xl absolute -top-64 left-1/4'>
+          <img className='pl-8 w-auto h-96 rotate-6' src='/images/mobile.png' />
+          <div className='flex items-center justify-center gap-x-2'>
+            <img className='h-10' src='/images/mac.svg' />
+            <img className='h-10' src='/images/googlePlay.svg' />
+          </div>
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ export default function HeroIcons({ content }) {
       <div className='grid grid-rows-5 grid-flow-col gap-4 mt-1'>
         {content.map((item) => (
           <div className='flex items-center p-2 bg-slate-100 rounded'>
-            <item.icon className='h-16 mr-1' />
+            <img className='h-16 mr-1' src={item.icon} />
             <span className='font-montserrat text-xl font-bold uppercase'>
               {item.name}
             </span>

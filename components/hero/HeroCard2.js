@@ -1,3 +1,5 @@
+import { PhoneIcon } from "@heroicons/react/outline";
+
 export default function HeroCard2() {
   return (
     <>
@@ -31,9 +33,10 @@ export default function HeroCard2() {
             <p>Comunícate con nuestro centro de atención</p>
             <p>al cliente y despeja todas tus dudas.</p>
           </div>
-          <div className='flex items-center justify-center py-4 bg-darkBlue uppercase rounded-l-lg'>
-            <img className='h-16' src='/logos/IsotipoGrupoEPS.svg' />
-            <p className='rounded-lg text-white text-center text-2xl'>+504 2263 1111</p>
+          <div className='flex items-center justify-center py-4 text-white bg-darkBlue uppercase rounded-l-lg'>
+            {/* <img className='h-16' src='/logos/IsotipoGrupoEPS.svg' /> */}
+            <PhoneIcon className="h-16 stroke-2	"/>
+            <p className='rounded-lg  text-center text-2xl'>+504 2263 1111</p>
           </div>
         </div>
       </section>
