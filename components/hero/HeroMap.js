@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import MapHonduras from '../../content/map';
+import MapHonduras from './maps/map';
 
 export default function HeroMap({ content }) {
   return (

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Navbar from '../components/general/Navbar';
 
 import HeroSlider from '../components/hero/HeroSlider';
+import HeroSlider2 from '../components/hero/HeroSlider2';
 import HeroIcons from '../components/hero/HeroIcons';
 import HeroCard from '../components/hero/HeroCard';
 import HeroCard2 from '../components/hero/HeroCard2';
@@ -25,7 +26,7 @@ export default function Home() {
         <HeroSlider content={content.hero.heroSlider}/>
         <HeroIcons content={content.hero.heroIcons}/>
         <HeroCard/>
-        <HeroSlider content={content.hero.heroSlider}/>
+        <HeroSlider2 content={content.hero.heroSlider}/>
         <HeroMap content={content.hero.heroMap}/>
         <HeroCard2/>
         <HeroMobile content={content.hero.heroMobile}/>
