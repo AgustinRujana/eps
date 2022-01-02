@@ -7,7 +7,7 @@ export default function CallToAction() {
 					<p className="text-white uppercase ">Habla con <br/> Nosotros</p>
 				</div>
 				<div className="mt-2 bg-darkBlue p-2 rounded-l-lg flex items-center">
-					<img className="h-8 mr-2" src="/images/icons/card.svg"/>
+					<img className="h-8 mr-2" src="/images/icons/cardWhite.svg"/>
 					<p className="text-white uppercase font-semibold">Contrata <br/> EPS Card</p>
 				</div>
 			</div>

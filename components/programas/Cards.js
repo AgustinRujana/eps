@@ -1,15 +1,17 @@
 export default function Cards({ item }) {
   function Card({ element, color }) {
     const classBtn =
-      'px-6 py-1 uppercase text-white font-semibold rounded-full' + ' ' + color;
+      'transition-all ease-in-out duration-500 cursor-pointer mx-1/8 my-4 py-1 uppercase text-white font-semibold rounded-full hover:drop-shadow-xl hover:shadow-lg' +
+      ' ' +
+      color;
 
     return (
-      <div className='col-span-1 text-center text-darkBlue leading-tight shadow-xl'>
-        <img src='/images/familia.jpg' />
-        <p className='py-2 font-bold tracking-tight'>{element.title}</p>
-        <p className='px-1 text-left pb-4'>{element.content}</p>
-        <a className={classBtn} href={`#${element.id}`}>
-          Ver Más
+      <div className='col-span-1 grid text-center text-darkBlue leading-tight shadow-xl rounded-xl'>
+        <img className='rounded-t-xl'src='/images/familia.jpg'/>
+        <p className='p-2 font-bold tracking-tight'>{element.title}</p>
+        <p className='px-2 text-left'>{element.content}</p>
+        <a className="cursor-default" href={`#${element.id}`}>
+          <div className={classBtn}>Ver Más</div>
         </a>
       </div>
     );
