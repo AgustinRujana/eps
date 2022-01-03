@@ -1,7 +1,7 @@
 export default function HeroCard() {
   return (
     <>
-      <section className='py-16 font-montserrat text-darkBlue uppercase grid grid-cols-2 items-center gap-x-4'>
+      <section id="card"  className='py-16 font-montserrat text-darkBlue uppercase grid grid-cols-2 items-center gap-x-4'>
         <div className='text-center'>
           <div className='p-4 text-3xl'>
             <p>Descubre</p>
@@ -20,7 +20,7 @@ export default function HeroCard() {
           <img className='rounded-lg h-full' src='/images/familia.jpg' />
         </div>
       </section>
-      <section className='py-16 font-montserrat text-darkBlue grid grid-cols-2 items-center gap-x-4'>
+      <section id="especialidades" className='py-16 font-montserrat text-darkBlue grid grid-cols-2 items-center gap-x-4'>
         <div className=''>
           <img className='rounded-lg h-full' src='/images/gente.jpg' />
         </div>

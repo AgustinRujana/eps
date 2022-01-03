@@ -1,6 +1,6 @@
 export default function HeroIcons({ content }) {
   return (
-    <section className='px-1/8 py-16 text-darkBlue'>
+    <section id="servicios" className='px-1/8 py-16 text-darkBlue'>
       <span className='uppercase text-4xl'>
         Todo en un mismo lugar
       </span>

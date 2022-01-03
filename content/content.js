@@ -5,39 +5,39 @@ export const content = {
     topBar: [
       {
         name: 'Servicio para Empresas',
-        href: '/',
+        href: '/servicios',
         icon: '/images/icons/servicios.svg',
       },
       {
         name: 'Programas de Salud',
-        href: '/',
+        href: '/programas',
         icon: '/images/icons/programas.svg',
       },
       {
         name: 'EPS Card',
-        href: '/',
+        href: '/eps-card',
         icon: '/images/icons/card.svg',
       },
     ],
     downBar: [
       {
         name: 'Nuestros Servicios',
-        href: '/',
+        href: '#servicios',
         icon: '/images/icons/.svg',
       },
       {
         name: 'Nuestras Clinicas',
-        href: '/',
+        href: '#clinicas',
         icon: '/images/icons/.svg',
       },
       {
         name: 'Especialidades',
-        href: '/',
+        href: '#especialidades',
         icon: '/images/icons/.svg',
       },
       {
         name: 'Aseguradoras',
-        href: '/',
+        href: '#aseguradoras',
         icon: '/images/icons/.svg',
       },
     ],
@@ -51,7 +51,7 @@ export const content = {
     heroSlider: {
       data: [
         {
-          image: '/images/slider/slider.jpg',
+          image: '/images/slider/slider.png',
         },
         {
           image: '/images/slider/slider1.jpg',
@@ -70,9 +70,6 @@ export const content = {
         },
         {
           image: '/images/slider/slider6.jpeg',
-        },
-        {
-          image: '/images/slider/slider.jpg',
         },
       ],
     },
@@ -149,7 +146,7 @@ export const content = {
       {
         name: '',
         href: '/',
-        icon: '/images/logoCloud/continental.png',
+        icon: '/images/logoCloud/davivienda.png',
       },
       {
         name: '',
@@ -328,15 +325,12 @@ export const content = {
   },
   maps: [
     {
-      logo: '/images/icons/EPSSmile.svg', //Los Angeles
-      map: '',
+      logo: '/logos/epsSmile.svg', //Los Angeles
+      map: '/images/maps/hospitalLosAngeles.svg',
+      color: 'text-sky-500',
       content: [
         [
-          'Sta. Rosa de Copán',
-          'Barrio Mercedes, 7ma Avenida',
-          'Entra la 1ra y 2da calle, frente',
-          'a la carretera internacional y',
-          'Triple a autopartes.',
+          'Sta. Rosa de Copán barrio Mercedes, 7ma Avenida entre la 1ra y 2da calle, frente a la carretera internacional y triple a autopartes.',
         ],
       ],
       data: [
@@ -367,25 +361,18 @@ export const content = {
       ],
     },
     {
-      logo: '/images/icons/EPSSmile.svg', //EPS Plus
-      map: '',
+      logo: '/logos/epsPlus.svg', //EPS Plus
+      map: '/images/maps/epsPlus.svg',
+      color: 'text-orange-700',
       content: [
-        ['Tegucigalpa', '3er Nivel de Estacionamiento', 'En Cascadas Mall'],
+        ['Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall'],
+        ['San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines'],
         [
-          'San Pedro Sula',
-          '1ra Calle 15 Av',
-          'Blvd. Morazan Contigue',
-          'A cebollines',
+          'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenida entre 1ra y 2da Calle, frente a carretera Internacional y triple a autopartes.',
         ],
-        [
-          'Sta. Rosa de Copán',
-          'Barrio Mercedes 7ma Avenida',
-          'Entre la 1ra y 2da calle frente',
-          'A carretera internacional y',
-          'triple a autopartes.',
-        ],
-        ['Choluteca', 'Barrio Libertad Antiguo', 'Local de agua azul.'],
-        ['Olancho', 'Juticalpa, Mall Premier', 'Zona Colonial.'],
+
+        ['Choluteca, Barrio Libertad Antiguo, Local de agua azul.'],
+        ['Olancho, Juticalpa Mall Premier, Zona Colonial.'],
       ],
       data: [
         {
@@ -416,8 +403,9 @@ export const content = {
       ],
     },
     {
-      logo: '/images/icons/EPSSmile.svg', //Materno Divina Conceptacion
-      map: '',
+      logo: '/logos/EPSSmile.svg', //Materno Divina Conceptacion
+      map: '/images/maps/hospitalMaterno.svg',
+      color: 'text-sky-500',
       data: [
         {
           image: '/images/slider/slider.jpg',
@@ -436,8 +424,7 @@ export const content = {
         [
           'Juticalpa Olancho',
           'Mall Premier, Colonia Rivas',
-          'Catamarcas km169, área colonial,',
-          'segundo nivel.',
+          'Catamarcas km169, área colonial, segundo nivel.',
         ],
       ],
       list: [
@@ -452,21 +439,14 @@ export const content = {
       ],
     },
     {
-      logo: '/images/icons/EPSSmile.svg', //EPS Smile
-      map: '',
+      logo: '/logos/EPSSmile.svg', //EPS Smile
+      map: '/images/maps/epsSmile.svg',
+      color: 'text-sky-500',
       content: [
-        ['Tegucigalpa', '3er Nivel de Estacionamiento', 'En Cascadas Mall'],
+        ['Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall'],
+        ['San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines'],
         [
-          'San Pedro Sula',
-          '1ra Calle 15Av',
-          'Blvd. Morazan Contiguo',
-          'A Cebollines',
-        ],
-        [
-          'Sta. Rosa de Copán',
-          'Barrio Mercedes, 7ma Avenida',
-          'Entre 1ra y 2da Calle, frente',
-          'A carretera Internacional y triple a autopartes.',
+          'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenida entre 1ra y 2da Calle, frente a carretera Internacional y triple a autopartes.',
         ],
       ],
       data: [
@@ -494,8 +474,9 @@ export const content = {
       ],
     },
     {
-      logo: '/images/icons/EPSSmile.svg', //EPS Farma
-      map: '',
+      logo: '/logos/epsFarma.svg', //EPS Farma
+      map: '/images/maps/epsFarma.svg',
+      color: 'text-fuchsia-700',
       data: [
         {
           image: '/images/slider/slider.jpg',
@@ -520,15 +501,13 @@ export const content = {
         'Entregas a Domicilio',
       ],
       content: [
-        ['Tegucigalpa', '3er Nivel de Estacionamiento', 'En Cascadas Mall'],
-        ['San Pedro Sula', '1ra Calle 15Av', 'Blvd. Morazan Contiguo', 'A Cebollines.'],
+        ['Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall'],
+        ['San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines.'],
         [
-          'Sta. Rosa de Copán',
-          'Barrio Mercedes, 7ma Avenida',
-          'Entre 1ra y 2da Calle, frente',
-          'A carretera Internacional y triple a autopartes.',
-        ],        ['Choluteca', 'Barrio Libertad', 'Local de Agua Azul.'],
-      ]
+          'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenidam entre 1ra y 2da Calle frente a carretera Internacional y triple a autopartes.',
+        ],
+        ['Choluteca, Barrio Libertad, Local de Agua Azul.'],
+      ],
     },
   ],
 };

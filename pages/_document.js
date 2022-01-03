@@ -9,7 +9,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='es'>
+      <Html lang='es' className='scroll-smooth'>
         <Head>
           <meta name='description' content='EPS' />
           <meta

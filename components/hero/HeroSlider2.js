@@ -18,7 +18,7 @@ const HeroSlider2 = ({ content }) => {
   }
 
   return (
-    <section className='relative flex justify-center items-center w-full'>
+    <section id='clinicas' className='relative flex justify-center items-center w-full'>
       <ChevronLeftIcon className='h-6 items-center absolute top-1/2 left-0' onClick={prevSlide} />
       <ChevronRightIcon className='h-6 absolute top-1/2 right-0' onClick={nextSlide} />
       <div className='absolute left-0 bottom-0 bg-white py-4 px-12 rounded-tr-lg text-darkBlue text-center'>
