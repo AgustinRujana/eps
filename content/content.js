@@ -1,5 +1,3 @@
-import { ArchiveIcon } from '@heroicons/react/outline';
-
 export const content = {
   menu: {
     topBar: [

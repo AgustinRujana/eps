@@ -1,4 +1,10 @@
+import { useState } from "react";
+
+import FormularioOficina from "./FormularioOficina";
+
 export default function Navbar({ content }) {
+  const [isFormOficinaActive, setFormOficinaActive] = useState(false)
+
   return (
     <div className='relative'>
       <div className='absolute z-50 left-1/20 xl:left-1/8 top-2 rounded-full bg-darkBlue p-2'>
@@ -30,12 +36,13 @@ export default function Navbar({ content }) {
           </a>
         ))}
       </div>
-      <div className='absolute right-6 xl:right-1/8 top-6 bg-white text-darkBlue rounded flex items-center p-1'>
+      <div className='absolute right-6 xl:right-1/8 top-6 bg-white text-darkBlue rounded flex items-center p-1' onClick={() => setFormOficinaActive(true)}>
         <img className='h-8' src={content.mainBtn.icon} />
         <span className='font-montserrat text-sm font-bold uppercase leading-none'>
           {content.mainBtn.name}
         </span>
       </div>
+      <FormularioOficina isFormOficinaActive={isFormOficinaActive} setFormOficinaActive={setFormOficinaActive}/>
     </div>
   );
 }
