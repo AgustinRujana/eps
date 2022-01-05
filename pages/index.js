@@ -8,7 +8,7 @@ import HeroCard from '../components/hero/HeroCard';
 import HeroCard2 from '../components/hero/HeroCard2';
 import HeroMobile from '../components/hero/HeroMobile';
 import HeroLogoCloud from '../components/hero/HeroLogoCloud';
-import CallToAction from '../components/hero/CallToAction';
+import CallToAction from '../components/general/CallToAction';
 
 import { content } from '../content/content';
 import { useState } from 'react';

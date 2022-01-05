@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { content } from '../../content/content';
-import FormularioCard from '../general/FormularioCard';
+import FormularioCard from './FormularioCard';
 
 const logos = content.hero.heroMap;
 
