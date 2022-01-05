@@ -27,6 +27,8 @@ export default function Home() {
       <header className='mx-auto'>
         <Navbar
           content={content.menu}
+          isFormActive={isFormActive}
+          setFormActive={setFormActive}
           isFormOficinaActive={isFormOficinaActive}
           setFormOficinaActive={setFormOficinaActive}
         />

@@ -1,46 +1,42 @@
+import { MenuIcon } from '@heroicons/react/outline';
+import { useState } from 'react';
+
 import FormularioOficina from './FormularioOficina';
+import MobileMenu from './MobileMenu';
 
 export default function Navbar({
   content,
+  isFormActive,
+  setFormActive,
   isFormOficinaActive,
   setFormOficinaActive,
 }) {
+  const [mobileShow, setMobileShow] = useState(false);
+
   return (
     <div className='relative'>
-      <div className='md:absolute z-50 left-1/20 xl:left-1/8 top-2 md:rounded-full bg-darkBlue p-2'>
+      <MobileMenu
+        content={content}
+        setFormOficinaActive={setFormOficinaActive}
+        mobileShow={mobileShow}
+        setMobileShow={setMobileShow}
+      />
+      <div className='hidden md:block md:absolute z-50 left-1/20 xl:left-1/8 top-2 md:rounded-full bg-darkBlue p-2'>
         <a href='/'>
-          <img
-            className='h-16 hidden md:block'
-            src='/logos/IsotipoGrupoEPS.svg'
-          />
-          <img className='h-16 md:hidden mb-2' src='/logos/grupoEPS.svg' />
+          <img className='h-16' src='/logos/IsotipoGrupoEPS.svg' />{' '}
         </a>
+      </div>
+      <div
+        className='hidden absolute right-6 xl:right-1/8 top-6 bg-white text-darkBlue rounded md:flex items-center p-1'
+        onClick={() => setFormOficinaActive(true)}
+      >
+        <img className='md:h-8 h-7' src={content.mainBtn.icon} />
+        <p className='font-montserrat md:text-sm text-xs font-bold uppercase leading-none'>
+          {content.mainBtn.name}
+        </p>
       </div>
       <div className='md:p-2 p-1'></div>
-      <div>
-        <div
-          className='flex md:hidden mt-2 bg-darkBlue p-2 rounded-l-lg items-center'
-          onClick={() => setFormActive(true)}
-        >
-          <img className='h-8 mr-2' src='/images/icons/cardWhite.svg' />
-          <p className='text-white uppercase font-semibold'>
-            Contrata <br /> EPS Card
-          </p>
-        </div>
-        <a
-          href='https://wa.me/+50422631111'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <div className='flex md:hidden bg-darkBlue p-2 rounded-l-lg items-center'>
-            <img className='h-8 mr-2' src='/images/icons/whatsapp.svg' />
-            <p className='text-white uppercase '>
-              Habla con <br /> Nosotros
-            </p>
-          </div>
-        </a>
-      </div>
-      <div className='bg-mainGray md:flex items-center justify-center'>
+      <div className='hidden bg-mainGray md:flex items-center justify-center'>
         {content.topBar.map((item) => (
           <a href={item.href}>
             <div className='flex items-center text-darkBlue md:px-2 px-1 py-1'>
@@ -52,26 +48,17 @@ export default function Navbar({
           </a>
         ))}
       </div>
-      <div className='bg-darkBlue md:flex items-center justify-center'>
-        <div className='p-1 sm:hidden'></div>
+      <div className='hidden bg-darkBlue md:flex items-center justify-center'>
+        <div className='p-1'></div>
         {content.downBar.map((item) => (
           <a href={item.href}>
-            <div className='hidden sm:flex  items-center text-white px-2 py-1'>
+            <div className='flex items-center text-white px-2 py-1'>
               <span className='text-sm font-montserrat font-normal uppercase'>
                 {item.name}
               </span>
             </div>
           </a>
         ))}
-      </div>
-      <div
-        className='absolute right-6 xl:right-1/8 top-6 bg-white text-darkBlue rounded flex items-center p-1'
-        onClick={() => setFormOficinaActive(true)}
-      >
-        <img className='h-8' src={content.mainBtn.icon} />
-        <p className='font-montserrat text-sm font-bold uppercase leading-none'>
-          {content.mainBtn.name}
-        </p>
       </div>
       <FormularioOficina
         isFormOficinaActive={isFormOficinaActive}
