@@ -1,3 +1,5 @@
+import { facebook, instagram, linkedin, twitter, youtube } from "../../public/images/social/icons";
+
 const links = [
   { name: 'Servicios', href: '/#servicios' },
   { name: 'Clinicas', href: '/#clinicas' },
@@ -12,40 +14,59 @@ const pages = [
 ];
 
 const social = [
-  { icon: '/images/social/facebook.svg', href: '/' },
-  { icon: '/images/social/instagram.svg', href: '/' },
-  { icon: '/images/social/linkedin.svg', href: '/' },
-  { icon: '/images/social/twitter.svg', href: '/' },
-  { icon: '/images/social/youtube.svg', href: '/' },
+  {
+    icon: facebook,
+    href: '/',
+  },
+  {
+    icon: instagram,
+    href: '/',
+  },
+  {
+    icon: linkedin,
+    href: '/',
+  },
+  {
+    icon: twitter,
+    href: '/',
+  },
+  {
+    icon: youtube,
+    href: '/',
+  }
 ];
 
 export default function Footer() {
   return (
-    <div className='bg-darkBlue h-36 mt-4'>
+    <div className='bg-darkBlue h-48 mt-4'>
       <div className='grid grid-cols-1 sm:grid-cols-3 mx-auto text-xs max-w-fit'>
         <div className='col-span-1 p-4'>
           {links.map((link) => (
             <a href={link.href}>
-              <div className='text-white hover:text-teal-400 hover:text-sm transition-all ease-in-out duration-300'>{link.name}</div>
+              <div className='text-white hover:text-teal-400 hover:text-sm transition-all ease-in-out duration-300'>
+                {link.name}
+              </div>
             </a>
           ))}
         </div>
         <div className='col-span-1 p-4'>
           {pages.map((link) => (
             <a href={link.href}>
-              <div className='text-white hover:text-teal-400 hover:text-sm transition-all ease-in-out duration-300'>{link.name}</div>
+              <div className='text-white hover:text-teal-400 hover:text-sm transition-all ease-in-out duration-300'>
+                {link.name}
+              </div>
             </a>
           ))}
         </div>
         <div className='col-span-1 p-4 px-8'>
           <div className='flex justify-center items-center pb-4'>
-            <img className='h-12' src='/logos/grupoEPS.svg' />
+            <img className='h-14' src='/logos/grupoEPS.svg' />
           </div>
           <div className='flex justify-center items-center'>
             {social.map((link) => (
               <a href={link.href}>
-                <div className=' p-1'>
-                  <img className='h-4 fill-red-300' src={link.icon} />
+                <div className='p-0.5'>
+									<link.icon className='h-6 text-white hover:text-teal-400 hover:rotate-[360deg] transform transition-all ease-in-out duration-1000'/>
                 </div>
               </a>
             ))}

@@ -40,7 +40,7 @@ export const content = {
       },
     ],
     mainBtn: {
-      name: 'Solicitar una Cita',
+      name: 'Clínica Virtual',
       href: '/',
       icon: '/images/icons/solicitar.svg',
     },

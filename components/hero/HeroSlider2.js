@@ -40,9 +40,11 @@ const HeroSlider2 = ({ content }) => {
           Espacios modernos, equipados con la <br /> más alta tecnología, a solo
           un paso de ti.
         </p>
-        <button className='uppercase mt-2 py-2 px-12 bg-darkBlue text-white font-semibold text-sm leading-tight rounded-lg'>
-          Ver todas <br /> Nuestras Clinicas
-        </button>
+        <a href='/clinicas'>
+          <button className='uppercase mt-2 py-2 px-12 bg-darkBlue text-white font-semibold text-sm leading-tight rounded-lg'>
+            Ver todas <br /> Nuestras Clinicas
+          </button>
+        </a>
       </div>
       <div className='absolute bg-darkBlue opacity-70 h-full w-full'></div>
       {content.data.map((slide, index) => {

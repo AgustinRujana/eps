@@ -1,7 +1,10 @@
 export default function HeroCard(props) {
   return (
     <>
-      <section className='mx-auto max-w-7xl py-16 font-montserrat text-darkBlue uppercase grid grid-cols-2 items-center gap-x-4'>
+      <section className='mx-auto max-w-7xl py-16 font-montserrat text-darkBlue uppercase grid md:grid-cols-2 items-center gap-x-4'>
+      <div className='md:hidden'>
+          <img className='h-full' src='/images/familia.jpg' />
+        </div>
         <div className='text-center'>
           <div className='p-4 text-3xl'>
             <p>Descubre</p>
@@ -9,14 +12,19 @@ export default function HeroCard(props) {
             <p>Promociones Médicas</p>
             <p>Especiales para ti</p>
           </div>
-          <div className='flex items-center justify-center font-semibold rounded-lg' onClick={() => props.setFormActive(true)}>
-            <p className='px-14 py-1 rounded-lg leading-tight bg-darkBlue text-white text-center'>
+          <div className='flex items-center justify-center font-semibold rounded-lg '>
+            <p
+              className='md:px-14  w-1/2 md:py-1 p-2 md:rounded-lg rounded-r-md leading-tight bg-darkBlue text-white text-center'
+              onClick={() => props.setFormActive(true)}
+            >
               Quiero <br /> mi EPS Card
             </p>
-            <p className='px-8 underline'>Más información</p>
+            <a href='/eps-card'>
+              <p className='px-8 underline'>Más información</p>
+            </a>
           </div>
         </div>
-        <div className=''>
+        <div className='hidden md:block'>
           <img className='rounded-lg h-full' src='/images/familia.jpg' />
         </div>
       </section>
@@ -32,11 +40,16 @@ export default function HeroCard(props) {
             <p>Puedes agendar consultas con todos los especialistas</p>
             <p>que necesites, en el horario más conveniente para tí.</p>
           </div>
-          <div className='flex items-center justify-center uppercase font-semibold rounded-lg'  onClick={() => props.setFormOficinaActive(true)}>
-            <p className='px-12 py-3 rounded-lg bg-darkBlue text-white text-center'>
+          <div className='flex items-center justify-center uppercase font-semibold rounded-lg'>
+            <p
+              className='px-12 py-3 rounded-lg bg-darkBlue text-white text-center'
+              onClick={() => props.setFormOficinaActive(true)}
+            >
               Agenda una cita
             </p>
-            <p className='px-8 underline'>Ver especialidades</p>
+            <a href='/especialidades'>
+              <p className='px-8 underline'>Ver especialidades</p>
+            </a>
           </div>
         </div>
       </section>

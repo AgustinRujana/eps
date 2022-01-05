@@ -74,7 +74,7 @@ export default function FormularioOficina({
             onSubmit={handleSubmit}
           >
             <p className='font-bold text-white text-xl uppercase py-2 text-center'>
-              ¡Bienvenido a nuestra <br/> oficina virtual!
+              ¡Bienvenido a nuestra <br/> Clínica virtual!
             </p>
             <div className='relative'>
               <SupportIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />

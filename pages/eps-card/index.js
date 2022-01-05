@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Navbar from '../../components/general/Navbar';
-import CallToAction from '../../components/hero/CallToAction';
-import Maps from '../../components/mapas/Maps';
+import CallToAction from '../../components/general/CallToAction';
 
 
 import { content } from '../../content/content';
