@@ -14,14 +14,14 @@ export default function CallToAction({isFormActive, setFormActive}) {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <div className=' bg-darkBlue p-2 rounded-l-lg flex items-center'>
+          <div className='hidden md:flex bg-darkBlue p-2 rounded-l-lg items-center'>
             <img className='h-8 mr-2' src='/images/icons/whatsapp.svg' />
             <p className='text-white uppercase '>
               Habla con <br /> Nosotros
             </p>
           </div>
         </a>
-          <div className='mt-2 bg-darkBlue p-2 rounded-l-lg flex items-center'
+          <div className='hidden md:flex mt-2 bg-darkBlue p-2 rounded-l-lg items-center'
 					onClick={() => setFormActive(true)}>
             <img className='h-8 mr-2' src='/images/icons/cardWhite.svg' />
             <p className='text-white uppercase font-semibold'>
@@ -42,8 +42,8 @@ export default function CallToAction({isFormActive, setFormActive}) {
         }
         onClick={() => setActive(true)}
       >
-        <div className=' py-4 px-8 '>
-          <p className=' uppercase font-semibold text-center'>Aseguradoras</p>
+        <div className='md:py-4 py-2 px-8 '>
+          <p className='uppercase font-semibold text-center'>Aseguradoras</p>
         </div>
         <div className='p-4 flex-col items-center justify-center'>
           {logos.map((item) => (

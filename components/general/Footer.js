@@ -38,8 +38,8 @@ const social = [
 
 export default function Footer() {
   return (
-    <div className='bg-darkBlue h-48 mt-4'>
-      <div className='grid grid-cols-1 sm:grid-cols-3 mx-auto text-xs max-w-fit'>
+    <div className='bg-darkBlue mt-4'>
+      <div className='grid grid-cols-2 sm:grid-cols-3 mx-auto text-xs max-w-fit'>
         <div className='col-span-1 p-4'>
           {links.map((link) => (
             <a href={link.href}>
@@ -58,11 +58,11 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <div className='col-span-1 p-4 px-8'>
+        <div className='sm:col-span-1 col-span-2 p-4 px-8'>
           <div className='flex justify-center items-center pb-4'>
             <img className='h-14' src='/logos/grupoEPS.svg' />
           </div>
-          <div className='flex justify-center items-center'>
+          <div className='flex justify-center items-center md:mb-12 mb-8'>
             {social.map((link) => (
               <a href={link.href}>
                 <div className='p-0.5'>

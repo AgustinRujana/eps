@@ -34,14 +34,14 @@ const HeroSlider2 = ({ content }) => {
           <ChevronRightIcon className='h-8' onClick={nextSlide} />
         </div>
       </div>
-      <div className='absolute z-20 left-0 bottom-0 bg-white py-4 px-12 rounded-tr-lg text-darkBlue text-center'>
-        <p className='uppercase font-bold text-2xl'>Nuestras Clínicas</p>
+      <div className='absolute sm:text-base text-sm z-20 md:left-0 lg:bottom-0 md:bottom-1/2 md:translate-x-0 lg:translate-y-0 left-1/2 bottom-1/2 transform translate-y-1/2 -translate-x-1/2 bg-white py-4 px-12 md:rounded-r-lg lg:rounded-tr-lg lg:rounded-r-none w-full md:w-96 text-darkBlue text-center'>
+        <p className='uppercase font-bold sm:text-2xl text-xl'>Nuestras Clínicas</p>
         <p>
           Espacios modernos, equipados con la <br /> más alta tecnología, a solo
           un paso de ti.
         </p>
         <a href='/clinicas'>
-          <button className='uppercase mt-2 py-2 px-12 bg-darkBlue text-white font-semibold text-sm leading-tight rounded-lg'>
+          <button className='uppercase mt-2 py-2 px-12 bg-darkBlue text-white font-semibold sm:text-sm text-xs leading-tight rounded-lg'>
             Ver todas <br /> Nuestras Clinicas
           </button>
         </a>

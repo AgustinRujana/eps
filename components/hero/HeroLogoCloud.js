@@ -1,7 +1,7 @@
 export default function HeroLogoCloud({ content }) {
   return (
     <section className='mx-auto max-w-7xl py-16'>
-      <p className='text-center uppercase text-darkBlue text-4xl p-2 bottom-1/4 right-0 rounded-xl'>
+      <p className='text-center uppercase text-darkBlue md:text-4xl text-2xl p-2'>
         Aseguradoras
       </p>
       <div className='grid md:grid-cols-3 lg:grid-cols-4 p-2'>
