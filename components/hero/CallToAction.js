@@ -4,10 +4,8 @@ import FormularioCard from '../general/FormularioCard';
 
 const logos = content.hero.heroMap;
 
-export default function CallToAction() {
+export default function CallToAction({isFormActive, setFormActive}) {
   const [isActive, setActive] = useState(false);
-	const [isFormActive, setFormActive] = useState(false)
-
   return (
     <div className='relative'>
       <div className='fixed right-0 top-[80vh] z-30 leading-tight text-center'>

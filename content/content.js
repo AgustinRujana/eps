@@ -52,23 +52,23 @@ export const content = {
           image: '/images/slider/slider.png',
         },
         {
-          image: '/images/slider/slider1.jpg',
+          image: '/images/slider/slider1.png',
         },
         {
-          image: '/images/slider/slider2.jpg',
+          image: '/images/slider/slider2.png',
         },
         {
-          image: '/images/slider/slider3.JPG',
+          image: '/images/slider/slider3.png',
         },
         {
-          image: '/images/slider/slider4.JPG',
+          image: '/images/slider/slider4.png',
         },
         {
-          image: '/images/slider/slider5.PNG',
+          image: '/images/slider/slider5.png',
         },
         {
-          image: '/images/slider/slider6.jpeg',
-        },
+          image: '/images/slider/slider6.png',
+        }
       ],
     },
     heroIcons: [

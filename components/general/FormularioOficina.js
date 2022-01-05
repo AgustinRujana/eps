@@ -8,10 +8,14 @@ import {
   SupportIcon,
 } from '@heroicons/react/outline';
 
-export default function FormularioOficina({ isFormOficinaActive, setFormOficinaActive }) {
+export default function FormularioOficina({
+  isFormOficinaActive,
+  setFormOficinaActive,
+}) {
   const [fullName, setfullName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
+  const [topic, setTopic] = useState('');
 
   const [uploading, setUploading] = useState(false);
   const [upload, setUpload] = useState(false);
@@ -25,6 +29,7 @@ export default function FormularioOficina({ isFormOficinaActive, setFormOficinaA
       fullName,
       phone,
       email,
+      topic
     };
 
     await axios
@@ -48,15 +53,15 @@ export default function FormularioOficina({ isFormOficinaActive, setFormOficinaA
       <div
         className={
           isFormOficinaActive
-            ? 'text-white bg-darkBlue rounded-xl opacity-100 transition-all ease-in-out duration-1000 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
-            : 'text-white bg-darkBlue rounded-xl opacity-0 transition-all ease-in-out duration-1000 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
+            ? 'text-darkBlue bg-darkBlue rounded-xl opacity-100 transition-all ease-in-out duration-1000 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
+            : 'text-darkBlue bg-darkBlue rounded-xl opacity-0 transition-all ease-in-out duration-1000 fixed -top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
         }
         onClick={() => setFormOficinaActive(true)}
       >
         {upload ? (
-          <div className='bg-darkBlue p-4 text-center rounded-xl'>
+          <div className='bg-darkBlue p-4 text-center rounded-xl text-white'>
             <img className='h-36 mx-auto' src='/images/icons/atencion.svg' />
-            <p className='font-bold text-xl uppercase py-2'>
+            <p className='font-bold text-xl uppercase py-2 '>
               ¡Gracias por tu solicitud!
             </p>
             <p>
@@ -68,30 +73,37 @@ export default function FormularioOficina({ isFormOficinaActive, setFormOficinaA
             className='p-4 grid gap-2 items-center justify-center'
             onSubmit={handleSubmit}
           >
+            <p className='font-bold text-white text-xl uppercase py-2 text-center'>
+              ¡Bienvenido a nuestra <br/> oficina virtual!
+            </p>
             <div className='relative'>
-              <SupportIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2 text-darkBlue' />
+              <SupportIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
               <select
                 id='topic'
                 name='topic'
                 type='text'
-                className='rounded-full pl-10 py-1'
-                value={fullName}
+                className='rounded-full pl-10 w-72 py-1'
+                value={topic}
                 onChange={(e) => setfullName(e.target.value)}
                 required
               >
-                <option value='1'>Solicitar cita médica</option>
-                <option value='2'>Obtener EPS Card</option>
-                <option value='3'>Contratar programa de salud</option>
-                <option value='4'>Hablar con un representante</option>
+                <option value='citaMedica'>Solicitar cita médica</option>
+                <option value='epsCard'>Obtener EPS Card</option>
+                <option value='programaSalud'>
+                  Contratar programa de salud
+                </option>
+                <option value='representante'>
+                  Hablar con un representante
+                </option>
               </select>
             </div>
             <div className='relative'>
-              <UserCircleIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2 text-darkBlue' />
+              <UserCircleIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
               <input
                 id='fullName'
                 name='fullName'
                 type='text'
-                className='rounded-full pl-10 py-1'
+                className='rounded-full pl-10 w-72 py-1'
                 placeholder='Nombre y Apellido'
                 value={fullName}
                 onChange={(e) => setfullName(e.target.value)}
@@ -99,12 +111,12 @@ export default function FormularioOficina({ isFormOficinaActive, setFormOficinaA
               />
             </div>
             <div className='relative'>
-              <PhoneIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2 text-darkBlue' />
+              <PhoneIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
               <input
                 id='phone'
                 name='phone'
                 type='text'
-                className='rounded-full pl-10 py-1'
+                className='rounded-full pl-10 w-72 py-1'
                 placeholder='Teléfono'
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
@@ -112,12 +124,12 @@ export default function FormularioOficina({ isFormOficinaActive, setFormOficinaA
               />
             </div>
             <div className='relative'>
-              <MailIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2 text-darkBlue' />
+              <MailIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
               <input
                 id='email'
                 name='email'
                 type='text'
-                className='rounded-full pl-10 py-1'
+                className='rounded-full pl-10 w-72 py-1'
                 placeholder='Correo Electrónico'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -160,7 +172,7 @@ export default function FormularioOficina({ isFormOficinaActive, setFormOficinaA
                   type='submit'
                   className='rounded-full text-center text-sm block bg-slate-100 text-darkBlue font-medium py-3 w-3/4 mx-auto focus:outline-none '
                 >
-                  Quiero mi EPS Card
+                  Enviar
                 </button>
               )}
             </div>

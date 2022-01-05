@@ -2,8 +2,8 @@ import { CheckCircleIcon } from '@heroicons/react/outline';
 
 export default function HeroMobile({ content }) {
   return (
-    <section className='font-montserrat grid grid-cols-2 items-center'>
-      <div className='bg-darkBlue z-40 text-white py-14 px-4 rounded-r-3xl'>
+    <section className=' max-w-7xl mx-auto font-montserrat grid grid-cols-2 items-center'>
+      <div className='bg-darkBlue  z-40 text-white py-14 px-4 rounded-r-3xl'>
         <div className='p-4 text-xl'>
           <p className='text-4xl font-bold uppercase mb-2'>EPS Movil</p>
           <p>Te presentamos nuestra aplicación móvil.</p>

@@ -43,16 +43,20 @@ export default function FormularioCard({ isFormActive, setFormActive }) {
       <div
         className={
           isFormActive
-            ? 'text-white bg-darkBlue rounded-xl opacity-100 transition-all ease-in-out duration-1000 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
-            : 'text-white bg-darkBlue rounded-xl opacity-0 transition-all ease-in-out duration-1000 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
+            ? 'text-darkBlue bg-darkBlue rounded-xl opacity-100 transition-all ease-in-out duration-1000 fixed bottom-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2 z-50'
+            : 'text-darkBlue bg-darkBlue rounded-xl opacity-0 transition-all ease-in-out duration-1000 fixed -bottom-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
         }
         onClick={() => setFormActive(true)}
       >
         {upload ? (
-          <div className='bg-darkBlue p-4 text-center rounded-xl'>
-              <img className='h-36 mx-auto' src='/images/icons/atencion.svg'/>  
-              <p className='font-bold text-xl uppercase py-2'>¡Gracias por tu solicitud!</p>         
-              <p>Un asesor <br/> te llamará pronto.</p>         
+          <div className='bg-darkBlue p-4 text-center rounded-xl text-white'>
+            <img className='h-36 mx-auto' src='/images/icons/atencion.svg' />
+            <p className='font-bold text-xl uppercase py-2'>
+              ¡Gracias por tu solicitud!
+            </p>
+            <p>
+              Un asesor <br /> te llamará pronto.
+            </p>
           </div>
         ) : (
           <form
@@ -60,7 +64,7 @@ export default function FormularioCard({ isFormActive, setFormActive }) {
             onSubmit={handleSubmit}
           >
             <div className='relative'>
-              <UserCircleIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2 text-darkBlue' />
+              <UserCircleIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
               <input
                 id='fullName'
                 name='fullName'
@@ -73,7 +77,7 @@ export default function FormularioCard({ isFormActive, setFormActive }) {
               />
             </div>
             <div className='relative'>
-              <PhoneIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2 text-darkBlue' />
+              <PhoneIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
               <input
                 id='phone'
                 name='phone'
@@ -86,7 +90,7 @@ export default function FormularioCard({ isFormActive, setFormActive }) {
               />
             </div>
             <div className='relative'>
-              <MailIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2 text-darkBlue' />
+              <MailIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
               <input
                 id='email'
                 name='email'
@@ -132,7 +136,7 @@ export default function FormularioCard({ isFormActive, setFormActive }) {
               ) : (
                 <button
                   type='submit'
-                  className='rounded-full text-center text-sm block bg-slate-100 text-darkBlue font-medium py-3 w-3/4 mx-auto focus:outline-none '
+                  className='rounded-full text-center text-sm block bg-slate-100 font-medium py-3 w-3/4 mx-auto focus:outline-none '
                 >
                   Quiero mi EPS Card
                 </button>

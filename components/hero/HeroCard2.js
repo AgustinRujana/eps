@@ -1,18 +1,18 @@
 import { PhoneIcon } from "@heroicons/react/outline";
 
-export default function HeroCard2() {
+export default function HeroCard2(props) {
   return (
     <>
-      <section className='py-16 font-montserrat text-darkBlue grid grid-cols-2 items-center gap-x-4'>
+      <section className='mx-auto max-w-7xl py-16 font-montserrat text-darkBlue grid grid-cols-2 items-center gap-x-4'>
         <div className='text-center'>
           <div className='p-4 text-xl'>
             <p className='text-4xl uppercase font-bold'>Siempre a tu lado</p>
             <p>Consultas virtuales con nuestros especialistas</p>
             <p>desde donde te encuentres.</p>
           </div>
-          <div className='flex items-center justify-center font-semibold uppercase rounded-lg'>
+          <div className='flex items-center justify-center font-semibold uppercase rounded-lg'  onClick={() => props.setFormOficinaActive(true)}>
             <p className='px-12 py-3 rounded-lg bg-darkBlue text-white text-center'>
-              Agenda una cita
+              Agenda una cita virtual
             </p>
           </div>
         </div>
@@ -20,7 +20,7 @@ export default function HeroCard2() {
           <img className='rounded-lg h-full' src='/images/medicos 2.jpg' />
         </div>
       </section>
-      <section className='py-16 font-montserrat text-darkBlue grid grid-cols-2 items-center gap-x-4'>
+      <section className='mx-auto max-w-7xl py-16 font-montserrat text-darkBlue grid grid-cols-2 items-center gap-x-4'>
         <div className=''>
           <img className='rounded-lg h-full' src='/images/gente.jpg' />
         </div>

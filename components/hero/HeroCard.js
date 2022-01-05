@@ -1,7 +1,7 @@
-export default function HeroCard() {
+export default function HeroCard(props) {
   return (
     <>
-      <section id="card"  className='py-16 font-montserrat text-darkBlue uppercase grid grid-cols-2 items-center gap-x-4'>
+      <section className='mx-auto max-w-7xl py-16 font-montserrat text-darkBlue uppercase grid grid-cols-2 items-center gap-x-4'>
         <div className='text-center'>
           <div className='p-4 text-3xl'>
             <p>Descubre</p>
@@ -9,7 +9,7 @@ export default function HeroCard() {
             <p>Promociones Médicas</p>
             <p>Especiales para ti</p>
           </div>
-          <div className='flex items-center justify-center font-semibold rounded-lg'>
+          <div className='flex items-center justify-center font-semibold rounded-lg' onClick={() => props.setFormActive(true)}>
             <p className='px-14 py-1 rounded-lg leading-tight bg-darkBlue text-white text-center'>
               Quiero <br /> mi EPS Card
             </p>
@@ -20,7 +20,7 @@ export default function HeroCard() {
           <img className='rounded-lg h-full' src='/images/familia.jpg' />
         </div>
       </section>
-      <section id="especialidades" className='py-16 font-montserrat text-darkBlue grid grid-cols-2 items-center gap-x-4'>
+      <section className='mx-auto max-w-7xl py-16 font-montserrat text-darkBlue grid grid-cols-2 items-center gap-x-4'>
         <div className=''>
           <img className='rounded-lg h-full' src='/images/gente.jpg' />
         </div>
@@ -32,7 +32,7 @@ export default function HeroCard() {
             <p>Puedes agendar consultas con todos los especialistas</p>
             <p>que necesites, en el horario más conveniente para tí.</p>
           </div>
-          <div className='flex items-center justify-center uppercase font-semibold rounded-lg'>
+          <div className='flex items-center justify-center uppercase font-semibold rounded-lg'  onClick={() => props.setFormOficinaActive(true)}>
             <p className='px-12 py-3 rounded-lg bg-darkBlue text-white text-center'>
               Agenda una cita
             </p>

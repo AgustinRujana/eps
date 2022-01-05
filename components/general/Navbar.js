@@ -1,10 +1,6 @@
-import { useState } from "react";
-
 import FormularioOficina from "./FormularioOficina";
 
-export default function Navbar({ content }) {
-  const [isFormOficinaActive, setFormOficinaActive] = useState(false)
-
+export default function Navbar({ content, isFormOficinaActive, setFormOficinaActive }) {
   return (
     <div className='relative'>
       <div className='absolute z-50 left-1/20 xl:left-1/8 top-2 rounded-full bg-darkBlue p-2'>
