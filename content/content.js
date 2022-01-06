@@ -1,6 +1,6 @@
 export const content = {
   menu: {
-    topBar: [ 
+    topBar: [
       {
         name: 'Servicio para Empresas',
         href: '/servicios',
@@ -79,7 +79,7 @@ export const content = {
         },
         {
           image: '/images/slider/slider6.png',
-        }
+        },
       ],
     },
     heroIcons: [
@@ -196,19 +196,22 @@ export const content = {
           title: 'Curso de preparación para la maternidad y la paternidad',
           content:
             'Actividades educativas grupales e individuales, relacionada con los principales aspectos de tu gestación y postparto inmediato.',
-            image: '/images/programas/2.png',        },
+          image: '/images/programas/2.png',
+        },
         {
           id: 3,
           title: 'Programa Canguro',
           content:
             'Lactancia, calor y amor son la base del Programa Canguro para que los bebés prematuros o con bajo peso avancen en su sano crecimiento.',
-            image: '/images/programas/3.png',        },
+          image: '/images/programas/3.png',
+        },
         {
           id: 4,
           title: 'Progama Lactancia Materna',
           content:
             'Cada mujer y cada bebé se adaptan de formas diferentes, por eso en Colsanitas te ayudamos a encontrar la mejor manera de asegurar la lactancia materna de tu bebé y sobre todo, tu tranquilidad.',
-            image: '/images/programas/4.png',        },
+          image: '/images/programas/4.png',
+        },
       ],
     },
     infancia: {
@@ -221,13 +224,15 @@ export const content = {
             'Programa Infantil de Enfermedades Respiratorias - Asma Bronquial',
           content:
             'Diseñamos un programa especial para que la vida de tus hijos con asma o Síndrome Bronco Obstructivo recurrente pueda seguir su rumbo sin contratiempos.',
-            image: '/images/programas/5.png',        },
+          image: '/images/programas/5.png',
+        },
         {
           id: 6,
           title: 'Programa de Trastornos de la Conducta Alimentaria',
           content:
             'Tienes a tu disposición a un grupo de profesionales que te acompañan en el proceso de control de un trastorno que trae consecuencias progresivas en tu salud física y psicológica.',
-            image: '/images/programas/6.png',        },
+          image: '/images/programas/6.png',
+        },
       ],
     },
     adultos: {
@@ -239,31 +244,36 @@ export const content = {
           title: 'Programa diabetes',
           content:
             'Buscamos mejorar tu calidad de vida con un buen conocimiento y control de la enfermedad, lo que permite la prevención de complicaciones derivadas de la diabetes.',
-            image: '/images/programas/7.png',        },
+          image: '/images/programas/7.png',
+        },
         {
           id: 8,
           title: 'Programa de Hipertensión Arterial',
           content:
             'Te ayudamos a mantener y mejorar el control de la enfermedad a través de un trabajo conjunto entre el equipo de salud, tú y tu familia.',
-            image: '/images/programas/8.png',        },
+          image: '/images/programas/8.png',
+        },
         {
           id: 9,
           title: 'EPOC-Programa de Enfermedad Pulmonar Obstructiva Crónica',
           content:
             'Te aseguramos una atención con actividades educativas, atención en salud y reentrenamiento físico.',
-            image: '/images/programas/9.png',        },
+          image: '/images/programas/9.png',
+        },
         {
           id: 10,
           title: 'Programa Insuficiencia Cardíaca',
           content:
             'Te apoyamos con un tratamiento integral para cuidar tu corazón desde el entorno médico, familiar y social.',
-            image: '/images/programas/10.png',        },
+          image: '/images/programas/10.png',
+        },
         {
           id: 11,
           title: 'Programa de Anticoagulación',
           content:
             'Te ayudamos en el tratamiento y control de los niveles de anticoagulación, reduciendo asi la posibilidad de complicaciones.',
-            image: '/images/programas/11.png',        },
+          image: '/images/programas/11.png',
+        },
       ],
     },
     acompanamiento: {
@@ -276,19 +286,22 @@ export const content = {
             'Ruta confianza: Servicio preferencial al paciente oncológico.',
           content:
             'Te acompañamos y brindamos seguimiento a las necesidades relacionadas con el proceso de tu salud.',
-            image: '/images/programas/12.png',        },
+          image: '/images/programas/12.png',
+        },
         {
           id: 13,
           title: 'Programa Contigo - Cuidados Paliativos',
           content:
             'Buscamos la integrabilidad de tu cuidado con la compasión y el acompañamiento a tus familiares y cuidadores, ademas de la búsqueda en la eficiencia de los servicios que necesitas.',
-            image: '/images/programas/13.png',        },
+          image: '/images/programas/13.png',
+        },
         {
           id: 14,
           title: 'Programa buen trato para la violencia Intrafamiliar',
           content:
             'Tomamos las medidas pertinentes y la asesoría en salud mental si estás o has vivido situaciones de violenvia intrafamiliar, abuso infantil o abuso sexual.',
-            image: '/images/programas/14.png',        },
+          image: '/images/programas/14.png',
+        },
       ],
     },
     otros: {
@@ -300,19 +313,22 @@ export const content = {
           title: 'Programa ALMA',
           content:
             'Un programa que cuida tu salud mental con la prevención y la atención oportuna, propiciando el autocuidado y el equilibrio físico y emocional.',
-            image: '/images/programas/15.png',        },
+          image: '/images/programas/15.png',
+        },
         {
           id: 16,
           title: 'Programa TE CONOZCO',
           content:
             'En Colsanitas queremos conocerte y saber cómo está tu estado de salud, así podremos descubri y abordar de forma temprana el riesgo de padecer alguna patología.',
-            image: '/images/programas/16.png',        },
+          image: '/images/programas/16.png',
+        },
         {
           id: 17,
           title: 'Consejería en planificación familiar',
           content:
             'A través de esta consejería prodrás resolver todas tus dudas y obtener la mejor orientación médica para conocer el método de planificación adecuado.',
-            image: '/images/programas/17.png',        },
+          image: '/images/programas/17.png',
+        },
       ],
     },
   },
@@ -496,7 +512,7 @@ export const content = {
         },
         {
           image: '/images/mapSliders/farma/3.jpg',
-        }
+        },
       ],
       list: [
         'Promociones Especiales',
@@ -514,6 +530,139 @@ export const content = {
           'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenidam entre 1ra y 2da Calle frente a carretera Internacional y triple a autopartes.',
         ],
         ['Choluteca, Barrio Libertad, Local de Agua Azul.'],
+      ],
+    },
+  ],
+  epsCard: {
+    numPanel: [
+      {
+        id: 1,
+        title: 'Clínicas con médicos especialistas para toda la familia.',
+        text: 'Medicina interna y familiar, pediatría, ginecología, obstetricia, urología, cardiología, psicología, dermatología, nutrición, odontología, traumatología, otorrinolaringología, post-covid y más.',
+      },
+      {
+        id: 2,
+        title: 'Laboratorios e imágenes.',
+        text: 'Descuento en exámenes de laboratorio e imágenes de rayos X, ultrasonido y electrocardiograma.',
+      },
+      {
+        id: 3,
+        title: 'Medicamentos y farmacia.',
+        text: 'Descuento en todas tus medicinas y productos de farmacia.',
+      },
+      {
+        id: 4,
+        title: 'Clínica en tu hogar',
+        text: 'Visita a domicilio de médico general o especialista, exámenes de laboratorio, aplicación de vacunas y medicamentos. Descuento en enfermería y cuidados paliativos.',
+      },
+      {
+        id: 5,
+        title: 'Emergencias 24/7 ',
+        text: 'Atención de emergencias en casa y traslado en ambulancia.',
+      },
+    ],
+    convenience: [
+      'Te atendemos las 24 horas, todos los días.',
+      'Lo obtienes rápidamente y sin trámites ni colas.',
+      'Es el complemento perfecto para tu seguro porque ahorras en lo que no te cubre.',
+      'Obtienes descuento en todos los servicios de EPS.',
+      'Puedes contratar EPS CARD para tí y para tu familia.',
+      'Solo necesitas tener una tarjeta de crédito o débito para contratar el servicio y hacer uso de sus beneficios.',
+    ],
+    pricing: [
+      { title: 'EPS CARD Silver', clinica: false },
+      { title: 'EPS CARD Gold', clinica: false },
+    ],
+  },
+  especialidades: [
+    {
+      title: 'MEDICINA INTERNA',
+      text: [
+        'Diagnosticamos y tratamos enfermedades que afectan cualquier órgano interno del cuerpo en adultos.',
+        'También te apoyamos con el control de tratamientos a largo plazo.',
+      ],
+    },
+    {
+      title: 'CIRUGÍA GENERAL ',
+      text: [
+        'Realizamos evaluaciones de hernias, masas, heridas, dolores abdominales, evaluaciones preoperatorias y postoperatorias.',
+        'Si necesitas o has tenido un procedimiento quirúrgico, te ayudamos a prevenir y tratar cualquier complicación.',
+      ],
+    },
+    {
+      title: 'GINECOLOGÍA Y OBSTETRICIA',
+      text: [
+        'Contamos con especialistas en la salud del sistema reproductivo femenino y cada etapa de la gestación de una nueva vida.',
+      ],
+    },
+    {
+      title: 'PEDIATRÍA',
+      text: [
+        'Atendemos a los más pequeños de la casa en todas sus etapas de crecimiento, desde recién nacidos hasta la adolescencia.',
+      ],
+    },
+    {
+      title: 'ORTOPEDIA Y TRAUMATOLOGÍA',
+      text: [
+        'Te acompañamos en tu proceso de rehabilitación física para mejorar o restaurar la movilidad de tu cuerpo en caso de lesiones, accidentes, enfermedades o discapacidad.',
+      ],
+    },
+    {
+      title: 'NEUROLOGÍA',
+      text: [
+        'Nos ocupamos de la prevención, diagnóstico, tratamiento y rehabilitación de todas las enfermedades que involucran al sistema nervioso central, sistema nervioso periférico y el sistema nervioso autónomo.',
+      ],
+    },
+    {
+      title: 'PSICOLOGÍA',
+      text: [
+        'Escuchamos, orientamos y acompañamos a nuestros usuarios en la búsqueda del equilibrio consigo mismos y con su entorno para mejorar su calidad de vida.',
+      ],
+    },
+    {
+      title: 'NUTRICIÓN',
+      text: [
+        'Diseñamos dietas balanceadas según tu estado de salud, condición física o padecimientos.',
+      ],
+    },
+    {
+      title: 'DERMATOLOGÍA',
+      text: [
+        'Diagnosticamos y tratamos enfermedades y padecimientos comunes de la piel, uñas y cabello. Así como procedimientos y tratamientos estéticos de la piel.',
+      ],
+    },
+    {
+      title: 'ODONTOLOGÍA Y ORTODONCIA',
+      text: ['Te ayudamos a cuidar de tu salud bucal.'],
+    },
+    {
+      title: 'OTORRINOLARINGOLOGÍA',
+      text: [
+        'Diagnosticamos y tratamos enfermedades del oído, la boca, la nariz y la garganta.',
+      ],
+    },
+    {
+      title: 'CUIDADOS PALIATIVOS',
+      text: [
+        'Procuramos tu bienestar y el de tu familia en los momentos más dificiles, te acompañamos en el cuidado y atención de las personas con enfermedades crónicas avanzadas, progresivas e incurables.',
+      ],
+    },
+    {
+      title: 'NEUMOLOGÍA',
+      text: [
+        'Tratamos problemas respiratorios y pulmonares como: tos crónica, dificultad para respirar, neumonía, asma, fibrosis quística, apnea, enfermedad crónica de los pulmones en bebés prematuros, respiración ruidosa.',
+      ],
+    },
+    {
+      title: 'GASTROENTEROLOGÍA',
+      text: [
+        'Diagnosticamos, prevenimos y tratamos padecimientos del aparato digestivo e hígado.',
+      ],
+    },
+    {
+      title: 'UROLOGÍA',
+      text: [
+        'Cuidamos la salud de tus riñones, vías urinarias y la salud del sistema reproductivo masculino.',
       ],
     },
   ],
