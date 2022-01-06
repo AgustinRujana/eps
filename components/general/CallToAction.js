@@ -8,7 +8,7 @@ export default function CallToAction({isFormActive, setFormActive}) {
   const [isActive, setActive] = useState(false);
   return (
     <div className='relative'>
-      <div className='md:fixed hidden right-0 top-[80vh] z-30 leading-tight text-center'>
+      <div className='md:fixed md:block hidden right-0 top-[80vh] z-30 leading-tight text-center'>
         <a
           href='https://wa.me/+50422631111'
           target='_blank'

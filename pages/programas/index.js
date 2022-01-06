@@ -6,6 +6,7 @@ import CallToAction from '../../components/general/CallToAction';
 
 import { content } from '../../content/content';
 import { useState } from 'react';
+import Footer from '../../components/general/Footer';
 
 export default function Home() {
   const [isFormOficinaActive, setFormOficinaActive] = useState(false);
@@ -31,6 +32,9 @@ export default function Home() {
       <main className=' overflow-hidden max-w-7xl w-full mx-auto'>
         <Programas content={content.programas} />
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </>
   );
 }

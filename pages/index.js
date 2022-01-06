@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>EPS</title>
+        <title>EPS | Home</title>
       </Head>
       <header className='mx-auto'>
         <Navbar

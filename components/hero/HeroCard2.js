@@ -5,7 +5,7 @@ export default function HeroCard2(props) {
     <>
       <section className='mx-auto max-w-7xl md:py-16 py-8 font-montserrat text-darkBlue grid md:grid-cols-2 items-center gap-x-4'>
         <div className='md:hidden'>
-          <img className='h-full' src='/images/medicos 2.jpg' />
+          <img className='h-full' src='/images/hero/SIEMPRE A TU LADO.jpg' />
         </div>
         <div className='text-center'>
           <div className='p-4 md:text-xl text-base'>
@@ -27,12 +27,12 @@ export default function HeroCard2(props) {
           </div>
         </div>
         <div className='hidden md:block'>
-          <img className='rounded-lg h-full' src='/images/medicos 2.jpg' />
+          <img className='rounded-lg h-full' src='/images/hero/SIEMPRE A TU LADO.jpg' />
         </div>
       </section>
       <section className='mx-auto max-w-7xl md:py-16 py-8 font-montserrat text-darkBlue grid md:grid-cols-2 items-center gap-x-4'>
         <div className=''>
-          <img className='md:rounded-lg h-full' src='/images/gente.jpg' />
+          <img className='md:rounded-lg h-full' src='/images/hero/NUESTRO CALL CENTER.jpg' />
         </div>
         <div className='text-center'>
           <div className='p-4 md:text-xl text-base'>

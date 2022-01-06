@@ -7,7 +7,7 @@ export default function Cards({ item }) {
 
     return (
       <div className='col-span-1 grid text-center text-darkBlue leading-tight shadow-xl rounded-xl'>
-        <img className='rounded-t-xl'src='/images/familia.jpg'/>
+        <img className='rounded-t-xl' src={element.image}/>
         <p className='p-2 font-bold tracking-tight'>{element.title}</p>
         <p className='px-2 text-left'>{element.content}</p>
         <a className="cursor-default" href={`#${element.id}`}>

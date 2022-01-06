@@ -1,9 +1,12 @@
 import Head from 'next/head';
 import Navbar from '../../components/general/Navbar';
+import Footer from '../../components/general/Footer';
 import CallToAction from '../../components/general/CallToAction';
 
 import { useState } from 'react';
 import { content } from '../../content/content';
+import BannerMain from '../../components/card/BannerMain';
+import ContentMain from '../../components/card/ContentMain';
 
 export default function Home() {
   const [isFormOficinaActive, setFormOficinaActive] = useState(false);
@@ -11,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>EPS</title>
+        <title>EPS | Card</title>
       </Head>
       <header className='mx-auto'>
         <Navbar
@@ -26,7 +29,10 @@ export default function Home() {
           setFormActive={setFormActive}
         />
       </header>
-      <main className=' overflow-hidden max-w-7xl w-full mx-auto'></main>
+      <main className=' overflow-hidden max-w-7xl w-full mx-auto'>
+        <BannerMain />
+        <ContentMain />
+      </main>
       <footer className='mx-auto'>
         <Footer />
       </footer>

@@ -16,23 +16,19 @@ const pages = [
 const social = [
   {
     icon: facebook,
-    href: '/',
+    href: 'https://www.facebook.com/GrupoEPS.HN',
   },
   {
     icon: instagram,
-    href: '/',
+    href: 'https://www.instagram.com/grupo.eps/',
   },
   {
     icon: linkedin,
-    href: '/',
-  },
-  {
-    icon: twitter,
-    href: '/',
+    href: 'https://www.linkedin.com/company/grupo-eps/about/',
   },
   {
     icon: youtube,
-    href: '/',
+    href: 'https://www.youtube.com/channel/UCIYOMY7vvqPH-viIQBVDfPw/featured',
   }
 ];
 
@@ -64,7 +60,7 @@ export default function Footer() {
           </div>
           <div className='flex justify-center items-center md:mb-12 mb-8'>
             {social.map((link) => (
-              <a href={link.href}>
+              <a href={link.href} target='_blank'>
                 <div className='p-0.5'>
 									<link.icon className='h-6 text-white hover:text-teal-400 hover:rotate-[360deg] transform transition-all ease-in-out duration-1000'/>
                 </div>
