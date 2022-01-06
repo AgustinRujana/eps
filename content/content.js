@@ -1,6 +1,6 @@
 export const content = {
   menu: {
-    topBar: [
+    topBar: [ 
       {
         name: 'Servicio para Empresas',
         href: '/servicios',
@@ -20,22 +20,22 @@ export const content = {
     downBar: [
       {
         name: 'Nuestros Servicios',
-        href: '#servicios',
+        href: '/#servicios',
         icon: '/images/icons/.svg',
       },
       {
         name: 'Nuestras Clinicas',
-        href: '#clinicas',
+        href: '/#clinicas',
         icon: '/images/icons/.svg',
       },
       {
         name: 'Especialidades',
-        href: '#especialidades',
+        href: '/#especialidades',
         icon: '/images/icons/.svg',
       },
       {
         name: 'Aseguradoras',
-        href: '#aseguradoras',
+        href: '/#aseguradoras',
         icon: '/images/icons/.svg',
       },
     ],
@@ -47,6 +47,17 @@ export const content = {
   },
   hero: {
     heroSlider: {
+      clinicas: [
+        {
+          image: '/images/sliderClinicas/1.png',
+        },
+        {
+          image: '/images/sliderClinicas/2.PNG',
+        },
+        {
+          image: '/images/sliderClinicas/3.jpg',
+        },
+      ],
       data: [
         {
           image: '/images/slider/slider.png',
@@ -323,7 +334,7 @@ export const content = {
   },
   maps: [
     {
-      logo: '/logos/epsSmile.svg', //Los Angeles
+      logo: '/logos/epsLosAngeles.svg', //Los Angeles
       map: '/images/maps/hospitalLosAngeles.svg',
       color: 'text-sky-500',
       content: [
@@ -333,16 +344,31 @@ export const content = {
       ],
       data: [
         {
-          image: '/images/slider/slider.jpg',
+          image: '/images/mapSliders/angeles/1.jpg',
         },
         {
-          image: '/images/slider/slider1.jpg',
+          image: '/images/mapSliders/angeles/2.jpg',
         },
         {
-          image: '/images/slider/slider2.jpg',
+          image: '/images/mapSliders/angeles/3.jpg',
         },
         {
-          image: '/images/slider/slider3.JPG',
+          image: '/images/mapSliders/angeles/4.jpg',
+        },
+        {
+          image: '/images/mapSliders/angeles/5.jpg',
+        },
+        {
+          image: '/images/mapSliders/angeles/6.jpg',
+        },
+        {
+          image: '/images/mapSliders/angeles/7.jpg',
+        },
+        {
+          image: '/images/mapSliders/angeles/8.jpg',
+        },
+        {
+          image: '/images/mapSliders/angeles/9.jpg',
         },
       ],
       list: [
@@ -374,16 +400,10 @@ export const content = {
       ],
       data: [
         {
-          image: '/images/slider/slider.jpg',
+          image: '/images/mapSliders/plus/1.png',
         },
         {
-          image: '/images/slider/slider1.jpg',
-        },
-        {
-          image: '/images/slider/slider2.jpg',
-        },
-        {
-          image: '/images/slider/slider3.JPG',
+          image: '/images/mapSliders/plus/2.png',
         },
       ],
       list: [
@@ -401,27 +421,35 @@ export const content = {
       ],
     },
     {
-      logo: '/logos/EPSSmile.svg', //Materno Divina Conceptacion
+      logo: '/logos/epsMaterno.svg', //Materno Divina Conceptacion
       map: '/images/maps/hospitalMaterno.svg',
       color: 'text-sky-500',
       data: [
         {
-          image: '/images/slider/slider.jpg',
+          image: '/images/mapSliders/materno/1.png',
         },
         {
-          image: '/images/slider/slider1.jpg',
+          image: '/images/mapSliders/materno/2.jpg',
         },
         {
-          image: '/images/slider/slider2.jpg',
+          image: '/images/mapSliders/materno/3.jpg',
         },
         {
-          image: '/images/slider/slider3.JPG',
+          image: '/images/mapSliders/materno/4.jpg',
+        },
+        {
+          image: '/images/mapSliders/materno/5.jpg',
+        },
+        {
+          image: '/images/mapSliders/materno/6.jpg',
+        },
+        {
+          image: '/images/mapSliders/materno/7.jpg',
         },
       ],
       content: [
         [
-          'Juticalpa Olancho',
-          'Mall Premier, Colonia Rivas',
+          'Juticalpa Olancho Mall Premier, Colonia Rivas',
           'Catamarcas km169, área colonial, segundo nivel.',
         ],
       ],
@@ -449,16 +477,16 @@ export const content = {
       ],
       data: [
         {
-          image: '/images/slider/slider.jpg',
+          image: '/images/mapSliders/smile/1.jpg',
         },
         {
-          image: '/images/slider/slider1.jpg',
+          image: '/images/mapSliders/smile/2.jpg',
         },
         {
-          image: '/images/slider/slider2.jpg',
+          image: '/images/mapSliders/smile/3.jpg',
         },
         {
-          image: '/images/slider/slider3.JPG',
+          image: '/images/mapSliders/smile/4.jpg',
         },
       ],
       list: [
@@ -477,26 +505,23 @@ export const content = {
       color: 'text-fuchsia-700',
       data: [
         {
-          image: '/images/slider/slider.jpg',
+          image: '/images/mapSliders/farma/1.jpg',
         },
         {
-          image: '/images/slider/slider1.jpg',
+          image: '/images/mapSliders/farma/2.jpg',
         },
         {
-          image: '/images/slider/slider2.jpg',
-        },
-        {
-          image: '/images/slider/slider3.JPG',
-        },
+          image: '/images/mapSliders/farma/3.jpg',
+        }
       ],
       list: [
-        'Toda la línea de medicamentos de Honduras',
         'Promociones Especiales',
         'Horarios Factibles',
         'Atención Personalizada',
         'Puntos Estratégicos',
         'Personal Calificado',
         'Entregas a Domicilio',
+        // 'Toda la línea de medicamentos de Honduras',
       ],
       content: [
         ['Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall'],

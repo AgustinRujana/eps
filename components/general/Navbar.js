@@ -18,6 +18,7 @@ export default function Navbar({
       <MobileMenu
         content={content}
         setFormOficinaActive={setFormOficinaActive}
+        setFormActive={setFormActive}
         mobileShow={mobileShow}
         setMobileShow={setMobileShow}
       />

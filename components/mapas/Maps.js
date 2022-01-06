@@ -1,19 +1,25 @@
 import { CheckCircleIcon } from '@heroicons/react/outline';
 import { list } from 'postcss';
 
-import HeroSlider from '../hero/HeroSlider';
+import MapsSlider from './MapsSlider';
 
 export default function Maps({ content }) {
   return (
-    <section className='grid sm:grid-cols-2 py-4'>
-      <div className='col-span-1'>
-        <HeroSlider content={content} display={'hidden'} />
+    <section className='grid xl:grid-cols-3 grid-cols-1 xl:py-8'>
+      {/* Logo */}
+      <div className='bg-darkBlue col-span-1 p-4 xl:hidden'>
+        <img className='h-16 mx-auto' src={content.logo} />
+      </div>
+      {/* Slider */}
+      <div className='xl:col-span-2 col-span-1'>
+        <MapsSlider content={content} display={'hidden'} />
       </div>
       <div className='col-span-1'>
-        <div className='w-1/2 bg-darkBlue rounded-r-full'>
-          <img className='h-16' src={content.logo} />
+        <div className='bg-darkBlue rounded-r-xl p-4 hidden xl:block'>
+          <img className='h-16 mx-auto' src={content.logo} />
         </div>
-        <ul className='grid sm:grid-cols-2 p-2'>
+        {/* Listas */}
+        <ul className='grid grid-cols-2 p-2 gap-x-2 max-w-fit xl:m-0 mx-auto'>
           {content.list.map((item) => (
             <li className='flex items-center'>
               <CheckCircleIcon className={`${content.color} h-4 mr-1`} />
@@ -21,13 +27,14 @@ export default function Maps({ content }) {
             </li>
           ))}
         </ul>
-        <div className='flex-col w-full items-center justify-between px-2'>
-          <img className='' src={content.map} />
-          <div>
+        {/* Mapa e info */}
+        <div className='grid grid-cols-1 items-center justify-between px-2'>
+          <img className='col-span-1' src={content.map} />
+          <div className='mb-4 col-span-1'>
             {content.content.map((list) => (
               <div className='text-xs text-darkBlue'>
                 {list.map((item) => (
-                    <p>{item}</p>
+                  <p className=''>{item}</p>
                 ))}
               </div>
             ))}
