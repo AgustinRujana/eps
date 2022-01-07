@@ -480,7 +480,7 @@ export const content = {
       ],
     },
     {
-      logo: '/logos/EPSSmile.svg', //EPS Smile
+      logo: '/logos/epsSmile.svg', //EPS Smile
       map: '/images/maps/epsSmile.svg',
       color: 'text-sky-500',
       content: [
