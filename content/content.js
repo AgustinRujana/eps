@@ -415,10 +415,10 @@ export const content = {
       ],
       data: [
         {
-          image: '/images/mapSliders/plus/1.png',
+          image: '/images/mapSliders/plus/1.PNG',
         },
         {
-          image: '/images/mapSliders/plus/2.png',
+          image: '/images/mapSliders/plus/2.PNG',
         },
       ],
       list: [
@@ -444,22 +444,22 @@ export const content = {
           image: '/images/mapSliders/materno/1.png',
         },
         {
-          image: '/images/mapSliders/materno/2.jpg',
+          image: '/images/mapSliders/materno/2.JPG',
         },
         {
-          image: '/images/mapSliders/materno/3.jpg',
+          image: '/images/mapSliders/materno/3.JPG',
         },
         {
-          image: '/images/mapSliders/materno/4.jpg',
+          image: '/images/mapSliders/materno/4.JPG',
         },
         {
-          image: '/images/mapSliders/materno/5.jpg',
+          image: '/images/mapSliders/materno/5.JPG',
         },
         {
-          image: '/images/mapSliders/materno/6.jpg',
+          image: '/images/mapSliders/materno/6.JPG',
         },
         {
-          image: '/images/mapSliders/materno/7.jpg',
+          image: '/images/mapSliders/materno/7.JPG',
         },
       ],
       content: [
