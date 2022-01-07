@@ -334,7 +334,7 @@ export const content = {
           id: 16,
           title: 'Programa TE CONOZCO',
           content:
-            'En Colsanitas queremos conocerte y saber cómo está tu estado de salud, así podremos descubri y abordar de forma temprana el riesgo de padecer alguna patología.',
+            'En EPS queremos conocerte y saber cómo está tu estado de salud, así podremos descubri y abordar de forma temprana el riesgo de padecer alguna patología.',
           image: '/images/programas/16.png',
         },
         {
