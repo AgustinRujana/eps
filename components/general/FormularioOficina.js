@@ -6,6 +6,9 @@ import {
   MailIcon,
   PhoneIcon,
   SupportIcon,
+  DeviceMobileIcon,
+  HeartIcon,
+  BadgeCheckIcon,
 } from '@heroicons/react/outline';
 
 export default function FormularioOficina({
@@ -16,6 +19,10 @@ export default function FormularioOficina({
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [topic, setTopic] = useState('');
+  const [contact, setContact] = useState('');
+  const [call, setCall] = useState('');
+  const [aseguradora, setAseguradora] = useState('');
+  const [poliza, setPoliza] = useState('');
 
   const [uploading, setUploading] = useState(false);
   const [upload, setUpload] = useState(false);
@@ -29,7 +36,7 @@ export default function FormularioOficina({
       fullName,
       phone,
       email,
-      topic
+      topic,
     };
 
     await axios
@@ -53,7 +60,7 @@ export default function FormularioOficina({
       <div
         className={
           isFormOficinaActive
-            ? 'text-darkBlue bg-darkBlue rounded-xl opacity-100 transition-all ease-in-out duration-1000 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
+            ? 'text-darkBlue bg-lime-600 rounded-xl opacity-100 transition-all ease-in-out duration-1000 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
             : 'text-darkBlue bg-darkBlue rounded-xl opacity-0 transition-all ease-in-out duration-1000 fixed -top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
         }
         onClick={() => setFormOficinaActive(true)}
@@ -74,7 +81,7 @@ export default function FormularioOficina({
             onSubmit={handleSubmit}
           >
             <p className='font-bold text-white text-xl uppercase py-2 text-center'>
-              ¡Bienvenido a nuestra <br/> Clínica virtual!
+              ¡Bienvenido a nuestra <br /> Clínica virtual!
             </p>
             <div className='relative'>
               <SupportIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
@@ -84,7 +91,7 @@ export default function FormularioOficina({
                 type='text'
                 className='rounded-full pl-10 w-72 py-1'
                 value={topic}
-                onChange={(e) => setfullName(e.target.value)}
+                onChange={(e) => setTopic(e.target.value)}
                 required
               >
                 <option value='citaMedica'>Solicitar cita médica</option>
@@ -95,6 +102,37 @@ export default function FormularioOficina({
                 <option value='representante'>
                   Hablar con un representante
                 </option>
+              </select>
+            </div>
+            <div className='relative'>
+              <UserCircleIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+              <select
+                id='contact'
+                name='contact'
+                type='text'
+                className='rounded-full pl-10 w-72 py-1'
+                value={contact}
+                onChange={(e) => setContact(e.target.value)}
+                required
+              >
+                <option value='me'>Es para mí</option>
+                <option value='other'>Es para un familiar/amigo</option>
+                <option value='company'>Es para una empresa</option>
+              </select>
+            </div>
+            <div className='relative'>
+              <DeviceMobileIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+              <select
+                id='call'
+                name='call'
+                type='text'
+                className='rounded-full pl-10 w-72 py-1'
+                value={call}
+                onChange={(e) => setCall(e.target.value)}
+                required
+              >
+                <option value='callTo'>Quiero que me llamen</option>
+                <option value='whatsapp'>Quiero que me envíen WhatsApp</option>
               </select>
             </div>
             <div className='relative'>
@@ -136,6 +174,32 @@ export default function FormularioOficina({
                 required
               />
             </div>
+            <div className='relative'>
+              <HeartIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+              <input
+                id='aseguradora'
+                name='aseguradora'
+                type='text'
+                className='rounded-full pl-10 w-72 py-1'
+                placeholder='Aseguradora'
+                value={aseguradora}
+                onChange={(e) => setAseguradora(e.target.value)}
+                required
+              />
+            </div>
+            <div className='relative'>
+              <BadgeCheckIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+              <input
+                id='poliza'
+                name='poliza'
+                type='text'
+                className='rounded-full pl-10 w-72 py-1'
+                placeholder='N° de poliza'
+                value={poliza}
+                onChange={(e) => setPoliza(e.target.value)}
+                required
+              />
+            </div>
             <div className='my-2'>
               {uploading ? (
                 <svg
@@ -170,7 +234,7 @@ export default function FormularioOficina({
               ) : (
                 <button
                   type='submit'
-                  className='rounded-full text-center text-sm block bg-slate-100 text-darkBlue font-medium py-3 w-3/4 mx-auto focus:outline-none '
+                  className='rounded-full text-center block bg-slate-100 text-darkBlue font-bold px-8 py-2 w-fit mx-auto focus:outline-none '
                 >
                   Enviar
                 </button>

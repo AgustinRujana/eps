@@ -14,14 +14,14 @@ export default function CallToAction({isFormActive, setFormActive}) {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <div className='hidden md:flex shadow-lg bg-lime-500 p-2 rounded-l-lg items-center'>
+          <div className='hidden md:flex shadow-lg bg-lime-600 p-2 rounded-l-lg items-center'>
             <img className='h-8 mr-2' src='/images/icons/whatsapp.svg' />
             <p className='text-white uppercase '>
               Habla con <br /> Nosotros
             </p>
           </div>
         </a>
-          <div className='hidden md:flex mt-2 bg-lime-500 p-2 rounded-l-lg items-center'
+          <div className='hidden md:flex mt-2 bg-lime-600 p-2 rounded-l-lg items-center'
 					onClick={() => setFormActive(true)}>
             <img className='h-8 mr-2' src='/images/icons/cardWhite.svg' />
             <p className='text-white uppercase font-semibold'>
@@ -37,16 +37,17 @@ export default function CallToAction({isFormActive, setFormActive}) {
       <div
         className={
           isActive
-            ? 'bg-white text-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50'
-            : 'cursor-pointer text-white bg-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 fixed -bottom-[30rem] left-1/2 transform -translate-x-1/2 z-50'
+            ? 'bg-white text-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 shadow-2xl fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50'
+            : 'cursor-pointer hover:bg-lime-600 text-white bg-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 fixed -bottom-[22rem] left-1/2 transform -translate-x-1/2 z-50'
         }
         onClick={() => setActive(true)}
       >
         <div className='md:py-4 py-2 px-8 '>
           <p className='uppercase font-semibold text-center'>Aseguradoras</p>
         </div>
-        <div className='p-4 flex-col items-center justify-center'>
+        <div className='p-4 grid grid-cols-2 items-center justify-center'>
           {logos.map((item) => (
+
             <img className='h-16 mx-auto' src={item.icon} />
           ))}
         </div>

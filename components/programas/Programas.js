@@ -1,3 +1,4 @@
+import ScrollSlideUp from '../general/ScrollSlideUp';
 import Section from './Section';
 
 export default function Programas({ content }) {
@@ -12,11 +13,19 @@ export default function Programas({ content }) {
           src='/images/pattern2.svg'
         />
       </div>
-			<Section item={content.maternidad}/>
-			<Section item={content.infancia}/>
-			<Section item={content.adultos}/>
-			<Section item={content.acompanamiento}/>
-			<Section item={content.otros}/>
+      <Section item={content.maternidad} />
+      <ScrollSlideUp>
+        <Section item={content.infancia} />
+      </ScrollSlideUp>
+      <ScrollSlideUp>
+        <Section item={content.adultos} />
+      </ScrollSlideUp>
+      <ScrollSlideUp>
+        <Section item={content.acompanamiento} />
+      </ScrollSlideUp>
+      <ScrollSlideUp>
+        <Section item={content.otros} />
+      </ScrollSlideUp>
     </section>
   );
 }

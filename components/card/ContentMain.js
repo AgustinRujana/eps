@@ -1,3 +1,4 @@
+import ScrollSlideUp from '../general/ScrollSlideUp';
 import AccessConveniencePanel from './AccessConveniencePanel';
 import CardsPanel from './CardsPanel';
 import NumbersPanel from './NumbersPanel';
@@ -11,9 +12,15 @@ export default function ContentMain(props) {
           src='/images/patron1.svg'
         />
       </div>
-      <NumbersPanel content={props.content.numPanel}/>
-      <AccessConveniencePanel content={props.content.convenience} />
-      <CardsPanel content={props.content.pricing}/>
+      <ScrollSlideUp>
+        <NumbersPanel content={props.content.numPanel} />
+      </ScrollSlideUp>
+      <ScrollSlideUp>
+        <AccessConveniencePanel content={props.content.convenience} />
+      </ScrollSlideUp>
+      <ScrollSlideUp>
+        <CardsPanel content={props.content.pricing} />
+      </ScrollSlideUp>
     </>
   );
 }

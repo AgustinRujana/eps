@@ -6,6 +6,7 @@ import Footer from '../../components/general/Footer';
 
 import { useState } from 'react';
 import { content } from '../../content/content';
+import ScrollSlideUp from '../../components/general/ScrollSlideUp';
 
 export default function Home() {
   const [isFormOficinaActive, setFormOficinaActive] = useState(false);
@@ -29,7 +30,9 @@ export default function Home() {
         />      </header>
       <main className='overflow-hidden max-w-7xl w-full mx-auto'>
         {content.maps.map((item) => (
-          <Maps content={item} />
+          <ScrollSlideUp>
+            <Maps content={item} />
+          </ScrollSlideUp>
         ))}
       </main>
       <footer className='mx-auto'>

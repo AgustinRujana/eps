@@ -18,10 +18,10 @@ export default function HeroCard2(props) {
             </p>
           </div>
           <div
-            className='flex items-center justify-center font-semibold uppercase rounded-lg'
+            className='flex  items-center justify-center font-semibold uppercase rounded-lg'
             onClick={() => props.setFormOficinaActive(true)}
           >
-            <p className='px-12 py-3 rounded-lg text-sm md:text-base bg-darkBlue text-white text-center'>
+            <p className='px-12 py-3 shadow-xl cursor-pointer hover:bg-green-600 transition-all ease-in-out duration-500 rounded-lg text-sm md:text-base bg-darkBlue text-white text-center'>
               Agenda una cita virtual
             </p>
           </div>
@@ -44,9 +44,9 @@ export default function HeroCard2(props) {
               atención al cliente y despeja todas tus dudas.
             </p>
           </div>
-          <div className='flex items-center justify-center py-4 text-white bg-darkBlue uppercase md:rounded-l-lg'>
-            <PhoneIcon className='md:h-16 h-12 stroke-2	' />
-            <p className='rounded-lg text-center md:text-2xl text-lg'>+504 2263 1111</p>
+          <div className='flex items-center justify-center py-4 text-white bg-green-600 uppercase md:rounded-l-lg'>
+            <PhoneIcon className='md:h-14 h-12' />
+            <p className='rounded-lg font-bold text-center md:text-xl text-lg'>+504 2263 1111</p>
           </div>
         </div>
       </section>

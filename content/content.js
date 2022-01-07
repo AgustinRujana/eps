@@ -145,38 +145,53 @@ export const content = {
       {
         name: '',
         href: '/',
-        icon: '/images/logoCloud/assa.png',
+        icon: '/images/logoCloud/aseguradoras_1.png',
       },
       {
         name: '',
         href: '/',
-        icon: '/images/logoCloud/atlantida.png',
+        icon: '/images/logoCloud/aseguradoras_2.png',
       },
       {
         name: '',
         href: '/',
-        icon: '/images/logoCloud/davivienda.png',
+        icon: '/images/logoCloud/aseguradoras_3.png',
       },
       {
         name: '',
         href: '/',
-        icon: '/images/logoCloud/crefisa.png',
+        icon: '/images/logoCloud/aseguradoras_4.png',
       },
       {
         name: '',
         href: '/',
-        icon: '/images/logoCloud/equidad.png',
+        icon: '/images/logoCloud/aseguradoras_5.png',
       },
       {
         name: '',
         href: '/',
-        icon: '/images/logoCloud/mafre.png',
+        icon: '/images/logoCloud/aseguradoras_6.png',
       },
       {
         name: '',
         href: '/',
-        icon: '/images/logoCloud/procesos.png',
+        icon: '/images/logoCloud/aseguradoras_7.png',
       },
+      {
+        name: '',
+        href: '/',
+        icon: '/images/logoCloud/aseguradoras_8.png',
+      },
+      {
+        name: '',
+        href: '/',
+        icon: '/images/logoCloud/aseguradoras_9.png',
+      },
+      {
+        name: '',
+        href: '/',
+        icon: '/images/logoCloud/aseguradoras_10.png',
+      }
     ],
   },
   programas: {
@@ -299,7 +314,7 @@ export const content = {
           id: 14,
           title: 'Programa buen trato para la violencia Intrafamiliar',
           content:
-            'Tomamos las medidas pertinentes y la asesoría en salud mental si estás o has vivido situaciones de violenvia intrafamiliar, abuso infantil o abuso sexual.',
+            'Tomamos las medidas pertinentes y la asesoría en salud mental si estás o has vivido situaciones de violencia intrafamiliar, abuso infantil o abuso sexual.',
           image: '/images/programas/14.png',
         },
       ],

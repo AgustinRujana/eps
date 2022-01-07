@@ -53,7 +53,7 @@ export default function MobileMenu(props) {
       {/* Desplegable */}
       <div
         className={
-          mobileShow ? 'absolute top-0 divide-y transform transition-all ease-out duration-1000' : 'absolute -top-96 transform transition-all ease-out duration-1000'
+          mobileShow ? 'absolute w-full top-0 divide-y transform transition-all ease-out duration-1000' : 'absolute w-full -top-96 transform transition-all ease-out duration-1000'
         }
       >
         {/* grupoEPS Boton y close */}

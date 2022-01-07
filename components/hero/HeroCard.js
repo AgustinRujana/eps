@@ -14,14 +14,14 @@ export default function HeroCard(props) {
           </div>
           <div className='grid w-full sm:grid-cols-2 grid-cols-1 items-center justify-center font-semibold rounded-lg md:px-2'>
             <div
-              className='bg-darkBlue p-2 md:rounded-lg col-span-1'
+              className='bg-darkBlue p-2 md:rounded-lg shadow-xl cursor-pointer hover:bg-green-600 transition-all ease-in-out duration-500 col-span-1'
               onClick={() => props.setFormActive(true)}
             >
               <p className='leading-tight text-white'>
                 Quiero <br /> mi EPS Card
               </p>
             </div>
-            <div className='col-span-1 p-2'>
+            <div className='col-span-1 p-2 hover:text-teal-400 transition-all ease-in-out duration-500'>
               <a href='/eps-card'>
                 <p className='px-8 underline'>Más información</p>
               </a>
@@ -43,12 +43,12 @@ export default function HeroCard(props) {
           </div>
           <div className='uppercase grid w-full sm:grid-cols-2 grid-cols-1 items-center justify-center font-semibold rounded-lg md:px-2'>
             <div
-              className='bg-darkBlue p-4 md:rounded-lg col-span-1'
+              className='bg-darkBlue shadow-xl cursor-pointer hover:bg-green-600 transition-all ease-in-out duration-500 p-4 md:rounded-lg col-span-1'
               onClick={() => props.setFormOficiaActive(true)}
             >
-              <p className='leading-tight text-white'>Agenda una cita</p>
+              <p className='leading-tight text-white '>Agenda una cita</p>
             </div>
-            <div className='col-span-1 p-2'>
+            <div className='col-span-1 p-2 hover:text-teal-400 transition-all ease-in-out duration-500'>
               <a href='/especialidades'>
                 <p className='px-8 underline'>Ver especialidades</p>
               </a>

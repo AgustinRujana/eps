@@ -41,7 +41,7 @@ const HeroSlider2 = ({ content }) => {
           un paso de ti.
         </p>
         <a href='/clinicas'>
-          <button className='uppercase mt-2 py-2 px-12 bg-darkBlue text-white font-semibold sm:text-sm text-xs leading-tight rounded-lg'>
+          <button className='uppercase shadow-xl cursor-pointer hover:bg-green-600 transition-all ease-in-out duration-500 mt-2 py-2 px-12 bg-darkBlue text-white font-semibold sm:text-sm text-xs leading-tight rounded-lg'>
             Ver todas <br /> Nuestras Clinicas
           </button>
         </a>
