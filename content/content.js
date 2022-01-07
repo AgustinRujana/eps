@@ -576,7 +576,7 @@ export const content = {
     ],
     pricing: [
       { title: 'EPS CARD Silver', clinica: false },
-      { title: 'EPS CARD Gold', clinica: false },
+      { title: 'EPS CARD Gold', clinica: true },
     ],
   },
   especialidades: [

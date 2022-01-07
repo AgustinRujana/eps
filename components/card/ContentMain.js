@@ -12,8 +12,8 @@ export default function ContentMain(props) {
         />
       </div>
       <NumbersPanel content={props.content.numPanel}/>
-      <AccessConveniencePanel />
-      <CardsPanel />
+      <AccessConveniencePanel content={props.content.convenience} />
+      <CardsPanel content={props.content.pricing}/>
     </>
   );
 }
