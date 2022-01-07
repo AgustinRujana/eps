@@ -25,7 +25,7 @@ const MapsSlider = (props) => {
   }
 
   return (
-    <section className='relative justify-center items-center sm:h-full h-[50vh] w-full'>
+    <section className='relative justify-center items-center md:h-full h-[50vh] w-full'>
       <div className='z-20 absolute flex bottom-4 hover:text-white text-darkBlue left-1/2 transform -translate-x-1/2'>
         <div className='px-2 py-1 bg-slate-100 rounded-l-full text-darkBlue hover:text-slate-100 hover:bg-darkBlue transition-all ease-in-out duration-500'>
           <ChevronLeftIcon className='h-8' onClick={prevSlide} />

@@ -77,14 +77,14 @@ export default function CardsPanel(props) {
                   adicional.
                 </p>
               </div>
-              <div className='w-fit mx-auto px-6 py-2 bg-green-600 rounded-xl'>
+              <div className='w-fit mx-auto px-6 py-2 bg-green-600 hover:bg-darkBlue transition-all duration-500 ease-in-out cursor-pointer rounded-xl mt-2'>
                 <p className='font-semibold text-white uppercase'>Contratar</p>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className='w-fit mx-auto px-4 py-2 bg-darkBlue my-6 text-white text-center md:rounded-lg'>
+      <div className='w-fit mx-auto px-4 py-2 bg-darkBlue hover:bg-green-600 transition-all ease-in-out duration-500 cursor-pointer my-6 text-white text-center md:rounded-lg'>
         <p className='uppercase font-semibold'>
           Quiero que me contacte un asesor EPS Card
         </p>

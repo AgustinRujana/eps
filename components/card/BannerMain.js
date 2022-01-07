@@ -19,9 +19,11 @@ export default function BannerMain() {
             Ahorra hasta un <span className=' text-teal-400'>60%</span>
             <br /> en gastos médicos.
           </p>
+          <a href="#contratar">
           <button className='p-2 mt-4 mb-8 bg-teal-400 text-darkBlue font-semibold uppercase rounded-lg'>
             Contratar
           </button>
+          </a>
         </div>
       </div>
     </section>

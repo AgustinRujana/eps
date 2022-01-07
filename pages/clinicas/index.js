@@ -28,7 +28,7 @@ export default function Home() {
           isFormActive={isFormActive}
           setFormActive={setFormActive}
         />      </header>
-      <main className='overflow-hidden max-w-7xl w-full mx-auto'>
+      <main className='overflow-hidden max-w-7xl w-full mx-auto min-h-[110vh]'>
         {content.maps.map((item) => (
           <ScrollSlideUp>
             <Maps content={item} />

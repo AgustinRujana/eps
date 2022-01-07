@@ -12,7 +12,7 @@ export default function Maps({ content }) {
       </div>
       {/* Slider */}
       <div className='xl:col-span-2 col-span-1'>
-        <MapsSlider content={content} display={'hidden'} />
+        <MapsSlider content={content}/>
       </div>
       <div className='col-span-1'>
         <div className='bg-darkBlue rounded-r-xl p-4 hidden xl:block'>

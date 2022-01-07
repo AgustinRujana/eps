@@ -5,7 +5,7 @@ import NumbersPanel from './NumbersPanel';
 
 export default function ContentMain(props) {
   return (
-    <>
+    <section className='relative'>
       <div>
         <img
           className='fixed -z-10 h-1/2 -left-10 -bottom-[10vh] opacity-50'
@@ -21,6 +21,7 @@ export default function ContentMain(props) {
       <ScrollSlideUp>
         <CardsPanel content={props.content.pricing} />
       </ScrollSlideUp>
-    </>
+      <div className='absolute top-[240vh]' id='contratar'></div>
+    </section>
   );
 }
