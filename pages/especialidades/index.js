@@ -5,8 +5,7 @@ import CallToAction from '../../components/general/CallToAction';
 
 import { useState } from 'react';
 import { content } from '../../content/content';
-import BannerMain from '../../components/card/BannerMain';
-import ContentMain from '../../components/card/ContentMain';
+import EspecialidadesMain from '../../components/especialidades/EspecialidadesMain';
 
 export default function Home() {
   const [isFormOficinaActive, setFormOficinaActive] = useState(false);
@@ -30,8 +29,7 @@ export default function Home() {
         />
       </header>
       <main className=' overflow-hidden max-w-7xl w-full mx-auto'>
-        <BannerMain />
-        <ContentMain content={content.epsCard}/>
+        <EspecialidadesMain content={content.especialidades}/>
       </main>
       <footer className='mx-auto'>
         <Footer />

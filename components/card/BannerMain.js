@@ -4,7 +4,7 @@ export default function BannerMain() {
       style={{
         backgroundImage: `url('/images/hero/EPS CARD.png')`,
       }}
-      className=' w-full flex items-end justify-end h-[90vh] bg-fixed bg-center bg-cover'
+      className='overflow-hidden w-full flex items-end justify-end h-[90vh] bg-fixed bg-center bg-cover'
     >
       <div className='relative md:-bottom- md:-right-1/20 text-center flex items-center justify-center md:h-1/4 h-full w-full md:w-1/2'>
         <img
@@ -19,7 +19,7 @@ export default function BannerMain() {
             Ahorra hasta un <span className=' text-teal-400'>60%</span>
             <br /> en gastos médicos.
           </p>
-          <button className='p-2 my-4 bg-teal-400 text-darkBlue font-semibold uppercase rounded-lg'>
+          <button className='p-2 mt-4 mb-8 bg-teal-400 text-darkBlue font-semibold uppercase rounded-lg'>
             Contratar
           </button>
         </div>

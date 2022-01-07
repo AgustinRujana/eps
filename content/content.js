@@ -537,26 +537,31 @@ export const content = {
     numPanel: [
       {
         id: 1,
+        color: 'text-darkBlue',
         title: 'Clínicas con médicos especialistas para toda la familia.',
         text: 'Medicina interna y familiar, pediatría, ginecología, obstetricia, urología, cardiología, psicología, dermatología, nutrición, odontología, traumatología, otorrinolaringología, post-covid y más.',
       },
       {
         id: 2,
+        color: 'text-teal-400',
         title: 'Laboratorios e imágenes.',
         text: 'Descuento en exámenes de laboratorio e imágenes de rayos X, ultrasonido y electrocardiograma.',
       },
       {
         id: 3,
+        color: 'text-darkBlue',
         title: 'Medicamentos y farmacia.',
         text: 'Descuento en todas tus medicinas y productos de farmacia.',
       },
       {
         id: 4,
+        color: 'text-teal-400',
         title: 'Clínica en tu hogar',
         text: 'Visita a domicilio de médico general o especialista, exámenes de laboratorio, aplicación de vacunas y medicamentos. Descuento en enfermería y cuidados paliativos.',
       },
       {
         id: 5,
+        color: 'text-darkBlue',
         title: 'Emergencias 24/7 ',
         text: 'Atención de emergencias en casa y traslado en ambulancia.',
       },
@@ -581,6 +586,7 @@ export const content = {
         'Diagnosticamos y tratamos enfermedades que afectan cualquier órgano interno del cuerpo en adultos.',
         'También te apoyamos con el control de tratamientos a largo plazo.',
       ],
+      image: '/images/icons/especialidades/interna.svg',
     },
     {
       title: 'CIRUGÍA GENERAL ',
@@ -588,82 +594,96 @@ export const content = {
         'Realizamos evaluaciones de hernias, masas, heridas, dolores abdominales, evaluaciones preoperatorias y postoperatorias.',
         'Si necesitas o has tenido un procedimiento quirúrgico, te ayudamos a prevenir y tratar cualquier complicación.',
       ],
+      image: '/images/icons/especialidades/cirugiaGeneral.svg',
     },
     {
       title: 'GINECOLOGÍA Y OBSTETRICIA',
       text: [
         'Contamos con especialistas en la salud del sistema reproductivo femenino y cada etapa de la gestación de una nueva vida.',
       ],
+      image: '/images/icons/especialidades/gine.svg',
     },
     {
       title: 'PEDIATRÍA',
       text: [
         'Atendemos a los más pequeños de la casa en todas sus etapas de crecimiento, desde recién nacidos hasta la adolescencia.',
       ],
+      image: '/images/icons/especialidades/pediatria.svg',
     },
     {
       title: 'ORTOPEDIA Y TRAUMATOLOGÍA',
       text: [
         'Te acompañamos en tu proceso de rehabilitación física para mejorar o restaurar la movilidad de tu cuerpo en caso de lesiones, accidentes, enfermedades o discapacidad.',
       ],
+      image: '/images/icons/especialidades/orto.svg',
     },
     {
       title: 'NEUROLOGÍA',
       text: [
         'Nos ocupamos de la prevención, diagnóstico, tratamiento y rehabilitación de todas las enfermedades que involucran al sistema nervioso central, sistema nervioso periférico y el sistema nervioso autónomo.',
       ],
+      image: '/images/icons/especialidades/neuro.svg',
     },
     {
       title: 'PSICOLOGÍA',
       text: [
         'Escuchamos, orientamos y acompañamos a nuestros usuarios en la búsqueda del equilibrio consigo mismos y con su entorno para mejorar su calidad de vida.',
       ],
+      image: '/images/icons/especialidades/psico.svg',
     },
     {
       title: 'NUTRICIÓN',
       text: [
         'Diseñamos dietas balanceadas según tu estado de salud, condición física o padecimientos.',
       ],
+      image: '/images/icons/especialidades/nutri.svg',
     },
     {
       title: 'DERMATOLOGÍA',
       text: [
         'Diagnosticamos y tratamos enfermedades y padecimientos comunes de la piel, uñas y cabello. Así como procedimientos y tratamientos estéticos de la piel.',
       ],
+      image: '/images/icons/especialidades/dermatologia.svg',
     },
     {
       title: 'ODONTOLOGÍA Y ORTODONCIA',
       text: ['Te ayudamos a cuidar de tu salud bucal.'],
+      image: '/images/icons/especialidades/odon.svg',
     },
     {
       title: 'OTORRINOLARINGOLOGÍA',
       text: [
         'Diagnosticamos y tratamos enfermedades del oído, la boca, la nariz y la garganta.',
       ],
+      image: '/images/icons/especialidades/oto.svg',
     },
     {
       title: 'CUIDADOS PALIATIVOS',
       text: [
         'Procuramos tu bienestar y el de tu familia en los momentos más dificiles, te acompañamos en el cuidado y atención de las personas con enfermedades crónicas avanzadas, progresivas e incurables.',
       ],
+      image: '/images/icons/especialidades/paliativos.svg',
     },
     {
       title: 'NEUMOLOGÍA',
       text: [
         'Tratamos problemas respiratorios y pulmonares como: tos crónica, dificultad para respirar, neumonía, asma, fibrosis quística, apnea, enfermedad crónica de los pulmones en bebés prematuros, respiración ruidosa.',
       ],
+      image: '/images/icons/especialidades/neumo.svg',
     },
     {
       title: 'GASTROENTEROLOGÍA',
       text: [
         'Diagnosticamos, prevenimos y tratamos padecimientos del aparato digestivo e hígado.',
       ],
+      image: '/images/icons/especialidades/gastro.svg',
     },
     {
       title: 'UROLOGÍA',
       text: [
         'Cuidamos la salud de tus riñones, vías urinarias y la salud del sistema reproductivo masculino.',
       ],
+      image: '/images/icons/especialidades/urologia.svg',
     },
   ],
 };
