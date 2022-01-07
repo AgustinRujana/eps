@@ -29,7 +29,7 @@ export default function Home() {
           setFormActive={setFormActive}
         />
       </header>
-      <main className=' overflow-hidden max-w-7xl w-full mx-auto'>
+      <main className='overflow-hidden max-w-7xl w-full mx-auto min-h-[200vh]'>
         <Programas content={content.programas} />
       </main>
       <footer>
