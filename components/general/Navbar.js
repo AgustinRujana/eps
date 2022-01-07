@@ -28,7 +28,7 @@ export default function Navbar({
         </a>
       </div>
       <div
-        className='hidden cursor-pointer absolute right-6 xl:right-1/8 top-6 bg-white text-darkBlue rounded md:flex items-center p-1'
+        className='hidden cursor-pointer absolute right-6 xl:right-1/8 top-6 bg-white hover:bg-slate-200 transition-all ease-in-out duration-500 text-darkBlue rounded md:flex items-center p-1'
         onClick={() => setFormOficinaActive(true)}
       >
         <img className='md:h-8 h-7' src={content.mainBtn.icon} />
