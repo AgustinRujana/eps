@@ -14,14 +14,14 @@ export default function CallToAction({isFormActive, setFormActive}) {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <div className='hidden md:flex shadow-lg bg-lime-600 p-2 rounded-l-lg items-center'>
+          <div className='hidden md:flex shadow-lg hover:bg-lime-400 transition-all ease-in-out duration-500 bg-lime-600 p-2 rounded-l-lg items-center'>
             <img className='h-8 mr-2' src='/images/icons/whatsapp.svg' />
             <p className='text-white uppercase '>
               Habla con <br /> Nosotros
             </p>
           </div>
         </a>
-          <div className='hidden md:flex mt-2 bg-lime-600 p-2 rounded-l-lg items-center'
+          <div className='hidden cursor-pointer md:flex mt-2 hover:bg-lime-400 bg-lime-600 transition-all ease-in-out duration-500 p-2 rounded-l-lg items-center'
 					onClick={() => setFormActive(true)}>
             <img className='h-8 mr-2' src='/images/icons/cardWhite.svg' />
             <p className='text-white uppercase font-semibold'>
