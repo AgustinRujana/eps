@@ -39,13 +39,10 @@ const HeroSlider = (props) => {
           props.display
         } ${'absolute z-40 top-1/2 transform -translate-y-1/2 md:left-1/4 left-1/2 -translate-x-1/2 md:-translate-x-0 text-white'}`}
       >
-        <p className='uppercase font-bold text-3xl'>Estamos cerca de ti</p>
-        <p className=''>
-          Espacios modernos equipados con la <br/> más alta tecnología.
-        </p>
+        <p className='uppercase font-bold text-4xl text-darkBlue'>Estamos cerca de ti</p>
         <a href='/clinicas'>
           <div className='mt-4'>
-            <button className='uppercase px-4 p-2 bg-teal-400 text-darkBlue font-bold rounded-lg'>
+            <button className='uppercase px-4 p-2 bg-darkBlue text-white font-semibold rounded-lg'>
               Conoce Nuestras Clinicas
             </button>
           </div>

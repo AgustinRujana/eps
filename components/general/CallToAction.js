@@ -4,7 +4,7 @@ import FormularioCard from './FormularioCard';
 
 const logos = content.hero.heroMap;
 
-export default function CallToAction({isFormActive, setFormActive}) {
+export default function CallToAction({ isFormActive, setFormActive }) {
   const [isActive, setActive] = useState(false);
   return (
     <div className='relative'>
@@ -21,15 +21,20 @@ export default function CallToAction({isFormActive, setFormActive}) {
             </p>
           </div>
         </a>
-          <div className='hidden cursor-pointer md:flex mt-2 hover:bg-lime-400 bg-lime-600 transition-all ease-in-out duration-500 p-2 rounded-l-lg items-center'
-					onClick={() => setFormActive(true)}>
-            <img className='h-8 mr-2' src='/images/icons/cardWhite.svg' />
-            <p className='text-white uppercase font-semibold'>
-              Contrata <br /> EPS Card
-            </p>
-          </div>
+        <div
+          className='hidden cursor-pointer md:flex mt-2 hover:bg-lime-400 bg-lime-600 transition-all ease-in-out duration-500 p-2 rounded-l-lg items-center'
+          onClick={() => setFormActive(true)}
+        >
+          <img className='h-8 mr-2' src='/images/icons/cardWhite.svg' />
+          <p className='text-white uppercase font-semibold'>
+            Contrata <br /> EPS Card
+          </p>
+        </div>
       </div>
-			<FormularioCard isFormActive={isFormActive} setFormActive={setFormActive}/>
+      <FormularioCard
+        isFormActive={isFormActive}
+        setFormActive={setFormActive}
+      />
       <div
         className={isActive ? 'fixed z-40 top-0 h-screen w-screen' : 'hidden'}
         onClick={() => setActive(false)}
@@ -38,7 +43,7 @@ export default function CallToAction({isFormActive, setFormActive}) {
         className={
           isActive
             ? 'bg-white text-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 shadow-2xl fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50'
-            : 'cursor-pointer hover:bg-lime-600 text-white bg-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 fixed -bottom-[22rem] left-1/2 transform -translate-x-1/2 z-50'
+            : 'cursor-pointer hover:bg-sky-500 text-white bg-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 fixed -bottom-[22rem] left-1/2 transform -translate-x-1/2 z-50'
         }
         onClick={() => setActive(true)}
       >
@@ -47,7 +52,6 @@ export default function CallToAction({isFormActive, setFormActive}) {
         </div>
         <div className='p-4 grid grid-cols-2 items-center justify-center'>
           {logos.map((item) => (
-
             <img className='h-16 mx-auto' src={item.icon} />
           ))}
         </div>

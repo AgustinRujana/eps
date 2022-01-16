@@ -43,8 +43,8 @@ export default function FormularioCard({ isFormActive, setFormActive }) {
       <div
         className={
           isFormActive
-            ? 'text-darkBlue bg-darkBlue rounded-xl opacity-100 transition-all ease-in-out duration-1000 fixed bottom-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2 z-50'
-            : 'text-darkBlue bg-darkBlue rounded-xl opacity-0 transition-all ease-in-out duration-1000 fixed -bottom-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
+            ? 'text-darkBlue bg-darkBlue rounded-xl opacity-100 transition-all ease-in-out duration-1000 fixed top-1/2 right-1/2 transform translate-x-1/2 -translate-y-1/2 z-50'
+            : 'text-darkBlue bg-darkBlue rounded-xl opacity-0 transition-all ease-in-out duration-1000 fixed top-1/2 -right-1/2 transform -translate-x-0 -translate-y-1/2 z-50'
         }
         onClick={() => setFormActive(true)}
       >

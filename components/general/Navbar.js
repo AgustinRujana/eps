@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 import FormularioOficina from './FormularioOficina';
 import MobileMenu from './MobileMenu';
+import { classNames } from '../../helpers/classNames';
 
 export default function Navbar({
-  content,
   isFormActive,
   setFormActive,
   isFormOficinaActive,
@@ -15,56 +15,81 @@ export default function Navbar({
 
   return (
     <div className='relative'>
-      <MobileMenu
-        content={content}
-        setFormOficinaActive={setFormOficinaActive}
-        setFormActive={setFormActive}
-        mobileShow={mobileShow}
-        setMobileShow={setMobileShow}
-      />
-      <div className='hidden md:block md:absolute z-50 left-1/20 xl:left-1/8 top-2 md:rounded-full bg-darkBlue p-2'>
-        <a href='/'>
-          <img className='h-16' src='/logos/IsotipoGrupoEPS.svg' />{' '}
-        </a>
-      </div>
-      <div
-        className='hidden cursor-pointer absolute right-6 xl:right-1/8 top-6 bg-white hover:bg-slate-200 transition-all ease-in-out duration-500 text-darkBlue rounded md:flex items-center p-1'
-        onClick={() => setFormOficinaActive(true)}
-      >
-        <img className='md:h-8 h-7' src={content.mainBtn.icon} />
-        <p className='font-montserrat md:text-sm text-xs font-bold uppercase leading-none'>
-          {content.mainBtn.name}
-        </p>
-      </div>
-      <div className='md:p-2 p-1'></div>
-      <div className='hidden bg-mainGray md:flex items-center justify-center'>
-        {content.topBar.map((item) => (
-          <a href={item.href}>
-            <div className='flex items-center text-darkBlue md:px-2 px-1 py-1'>
-              <img className='h-6 mr-1' src={item.icon} />
-              <span className='font-montserrat font-bold uppercase'>
-                {item.name}
-              </span>
-            </div>
-          </a>
-        ))}
-      </div>
-      <div className='hidden bg-darkBlue md:flex items-center justify-center'>
-        <div className='p-1'></div>
-        {content.downBar.map((item) => (
-          <a href={item.href}>
-            <div className='flex items-center text-white px-2 py-1'>
-              <span className='text-sm font-montserrat font-normal uppercase'>
-                {item.name}
-              </span>
-            </div>
-          </a>
-        ))}
-      </div>
       <FormularioOficina
         isFormOficinaActive={isFormOficinaActive}
         setFormOficinaActive={setFormOficinaActive}
       />
+      {/* Top bar */}
+      <div className='flex w-full justify-between pl-4'>
+        <div className='flex justify-between items-center py-2'>
+          {/* <BurgerMenu/> */}
+          <MenuIcon className='h-10' />
+          <div>
+            <a href='/'>
+              <img className='h-12' src='/logos/logo.jpg' />
+            </a>
+          </div>
+        </div>
+        <div className='flex justify-between items-center mt-4'>
+          <div
+            onClick={() => setFormOficinaActive(true)}
+            className='cursor-pointer flex justify-between items-center px-6 shadow-inner rounded-t-xl bg-fuchsia-800 h-full'
+          >
+            <p className='font-bold text-white'>Clínica Virtual</p>
+          </div>
+          <div
+                      onClick={() => setFormActive(true)}
+           className='cursor-pointer flex justify-between items-center px-6 shadow-inner rounded-t-xl  bg-teal-400 h-full'>
+            <p className='font-bold text-white'>Solicitar Cita</p>
+          </div>
+          <div className='cursor-pointer flex justify-between items-center px-6 h-full rounded-tl-xl bg-sky-500'>
+            <p className='font-bold text-white'>Iniciar Sesión</p>
+          </div>
+        </div>
+      </div>
+      {/* Middle bar */}
+      <div
+        className={classNames(
+          isFormActive
+            ? 'bg-teal-400'
+            : isFormOficinaActive
+            ? 'bg-fuchsia-800'
+            : 'bg-sky-500',
+          'flex w-full justify-center shadow-2xl items-cente transition-all ease-linear duration-500'
+        )}
+      >
+        <div className='font-semibold text-white px-4 py-2'>
+          <a href='/nosotros'>Nosotros</a>
+        </div>
+        <div className='font-semibold text-white px-4 py-2'>
+          <a href='/programas'>Programas de salud</a>
+        </div>
+        <div className='font-semibold text-white px-4 py-2'>
+          <a href='/servicios'>Servicios para Empresas</a>
+        </div>
+        <div className='font-semibold text-white px-4 py-2'>
+          <a href='/eps-card'>EPS Card</a>
+        </div>
+      </div>
+      {/* Bottom bar */}
+      <div className='flex w-full justify-center shadow-2xl items-center bg-darkBlue'>
+        <div className='flex items-center font-semibold text-white px-4 py-2'>
+          <img className='h-6 mr-2' src='/images/icons/cardWhite.svg' />
+          <a href='/#servicios'>Nuestros Servicios</a>
+        </div>
+        <div className='flex items-center font-semibold text-white px-4 py-2'>
+          <img className='h-6 mr-2' src='/images/icons/cardWhite.svg' />
+          <a href='/#clinicas'>Nuestras Clínicas</a>
+        </div>
+        <div className='flex items-center font-semibold text-white px-4 py-2'>
+          <img className='h-6 mr-2' src='/images/icons/cardWhite.svg' />
+          <a href='/especialidadades'>Especialidades</a>
+        </div>
+        <div className='flex items-center font-semibold text-white px-4 py-2'>
+          <img className='h-6 mr-2' src='/images/icons/cardWhite.svg' />
+          <a href='/aseguradoras'>Aseguradoras</a>
+        </div>
+      </div>
     </div>
   );
 }
