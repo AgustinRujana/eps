@@ -1,6 +1,8 @@
+import { XIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
 import { content } from '../../content/content';
 import FormularioCard from './FormularioCard';
+import { classNames } from '../../helpers/classNames';
 
 const logos = content.hero.heroMap;
 
@@ -45,8 +47,13 @@ export default function CallToAction({ isFormActive, setFormActive }) {
             ? 'bg-white text-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 shadow-2xl fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50'
             : 'cursor-pointer hover:bg-sky-500 text-white bg-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 fixed -bottom-[22rem] left-1/2 transform -translate-x-1/2 z-50'
         }
-        onClick={() => setActive(true)}
+        onClick={() => isActive ? setActive(false) : setActive(true)}
       >
+        <div
+          className={isActive ? 'z-[60] opacity-100 absolute top-4 right-4' : 'opacity-0 hidden'}
+        >
+          <XIcon className='h-6 text-slate-400 hover:text-slate-600' />
+        </div>
         <div className='md:py-4 py-2 px-8 '>
           <p className='uppercase font-semibold text-center'>Aseguradoras</p>
         </div>
