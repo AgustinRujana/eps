@@ -26,7 +26,7 @@ export default function Navbar({
           <MenuIcon className='h-10' />
           <div>
             <a href='/'>
-              <img className='h-12' src='/logos/logo.jpg' />
+              <img className='h-12' src='/logos/logoGrupoEPSHorizontal.svg' />
             </a>
           </div>
         </div>
@@ -38,8 +38,9 @@ export default function Navbar({
             <p className='font-bold text-white'>Clínica Virtual</p>
           </div>
           <div
-                      onClick={() => setFormActive(true)}
-           className='cursor-pointer flex justify-between items-center px-6 shadow-inner rounded-t-xl  bg-teal-400 h-full'>
+            onClick={() => setFormActive(true)}
+            className='cursor-pointer flex justify-between items-center px-6 shadow-inner rounded-t-xl  bg-teal-400 h-full'
+          >
             <p className='font-bold text-white'>Solicitar Cita</p>
           </div>
           <div className='cursor-pointer flex justify-between items-center px-6 h-full rounded-tl-xl bg-sky-500'>
@@ -74,19 +75,22 @@ export default function Navbar({
       {/* Bottom bar */}
       <div className='flex w-full justify-center shadow-2xl items-center bg-darkBlue'>
         <div className='flex items-center font-semibold text-white px-4 py-2'>
-          <img className='h-6 mr-2' src='/images/icons/cardWhite.svg' />
+          <img className='h-6 mr-2' src='/images/icons/serviciosWhite.svg' />
           <a href='/#servicios'>Nuestros Servicios</a>
         </div>
         <div className='flex items-center font-semibold text-white px-4 py-2'>
-          <img className='h-6 mr-2' src='/images/icons/cardWhite.svg' />
+          <img className='h-6 mr-2' src='/images/icons/clinicasWhite.svg' />
           <a href='/#clinicas'>Nuestras Clínicas</a>
         </div>
         <div className='flex items-center font-semibold text-white px-4 py-2'>
-          <img className='h-6 mr-2' src='/images/icons/cardWhite.svg' />
-          <a href='/especialidadades'>Especialidades</a>
+          <img
+            className='h-6 mr-2'
+            src='/images/icons/especialidadesWhite.svg'
+          />
+          <a href='/especialidades'>Especialidades</a>
         </div>
         <div className='flex items-center font-semibold text-white px-4 py-2'>
-          <img className='h-6 mr-2' src='/images/icons/cardWhite.svg' />
+          <img className='h-6 mr-2' src='/images/icons/aseguradorasWhite.svg' />
           <a href='/aseguradoras'>Aseguradoras</a>
         </div>
       </div>
