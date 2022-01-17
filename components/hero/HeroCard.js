@@ -5,34 +5,36 @@ export default function HeroCard(props) {
     <>
       <section id='card'>
         <ScrollSlideUp>
-          <div className='mx-auto max-w-7xl md:py-16 font-montserrat text-darkBlue uppercase grid md:grid-cols-2 items-center gap-x-4'>
-            <div className='md:hidden'>
+          <div className='mx-auto max-w-7xl md:py-16 font-montserrat text-darkBlue grid md:grid-cols-2 items-center gap-x-4'>
+            <div className='md:hidden shadow-2xl'>
               <img className='h-full' src='/images/hero/EPS CARD.png' />
             </div>
-            <div className='text-center'>
+            <div className='font-bold'>
               <div className='p-4 md:text-3xl text-2xl'>
-                <p>Descubre</p>
-                <p className='md:text-4xl text-3xl font-bold'>EPS Card</p>
-                <p>Promociones Médicas</p>
-                <p>Especiales para ti</p>
+                <p>
+                  Descubre {' '}
+                  <span className='uppercase md:text-4xl text-3xl font-extrabold tracking-tighter'>
+                    EPS Card
+                  </span>
+                </p>
+                <p>Promociones médicas</p>
+                <p>especiales para ti</p>
               </div>
               <div className='grid w-full sm:grid-cols-2 grid-cols-1 items-center justify-center font-semibold rounded-lg md:px-2'>
                 <div
-                  className='bg-darkBlue p-2 md:rounded-lg shadow-xl cursor-pointer hover:bg-green-600 transition-all ease-in-out duration-500 col-span-1'
+                  className='bg-green-600 p-2 shadow hover:shadow-2xl h-full flex items-center justify-center  cursor-pointer hover:bg-green-500 transition-all ease-in-out duration-500 col-span-1'
                   onClick={() => props.setFormActive(true)}
                 >
-                  <p className='leading-tight text-white'>
-                    Quiero <br /> mi EPS Card
-                  </p>
+                  <p className='leading-tight text-white tracking-tighter'>Contratar EPS CARD</p>
                 </div>
-                <div className='col-span-1 p-2 hover:text-teal-400 transition-all ease-in-out duration-500'>
+                <div className='col-span-1 h-full shadow hover:shadow-2xl flex items-center justify-center bg-fuchsia-800 text-white p-2 hover:bg-green-500 transition-all ease-in-out duration-500'>
                   <a href='/eps-card'>
                     <p className='px-8 underline'>Más información</p>
                   </a>
                 </div>
               </div>
             </div>
-            <div className='hidden md:block'>
+            <div className='hidden md:block shadow-2xl'>
               <img
                 className='rounded-lg h-full'
                 src='/images/hero/EPS CARD.png'

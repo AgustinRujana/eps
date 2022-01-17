@@ -11,12 +11,20 @@ import HeroLogoCloud from '../components/hero/HeroLogoCloud';
 import CallToAction from '../components/general/CallToAction';
 
 import { content } from '../content/content';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Footer from '../components/general/Footer';
+import usePosition from '../hooks/usePosition';
 
 export default function Home() {
   const [isFormOficinaActive, setFormOficinaActive] = useState(false);
   const [isFormActive, setFormActive] = useState(false);
+
+  const [position, setPosition] = useState(0)
+  const scrollPosition = usePosition();
+
+  useEffect(() => {
+    setPosition(Math.round(scrollPosition));
+  }, [scrollPosition]);
 
   return (
     <>
@@ -36,7 +44,14 @@ export default function Home() {
           setFormActive={setFormActive}
         />
       </header>
-      <main className='overflow-hidden w-full sm:min-h-[4724px] min-h-[600vh]   relative'>
+      <main className='overflow-hidden w-full relative'>
+        {console.log(position)}
+        <div>
+          <img
+            className={`absolute -z-10 w-1/2 -left-10 top-[${position}vh] transition-all duration-500 opacity-30`}
+            src='/images/patron1.svg'
+          />
+        </div>
         <HeroSlider content={content.hero.heroSlider} />
         <HeroIcons content={content.hero.heroIcons} />
         <HeroCard
@@ -47,7 +62,7 @@ export default function Home() {
         />
         <HeroSlider2 content={content.hero.heroSlider} />
         <HeroLogoCloud content={content.hero.heroMap} />
-        <HeroMobile content={content.hero.heroMobile} />
+        {/* <HeroMobile content={content.hero.heroMobile} /> */}
         <HeroCard2
           isFormActive={isFormActive}
           setFormActive={setFormActive}

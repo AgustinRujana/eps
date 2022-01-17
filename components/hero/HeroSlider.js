@@ -42,7 +42,7 @@ const HeroSlider = (props) => {
         <p className='uppercase font-bold text-4xl text-darkBlue'>Estamos cerca de ti</p>
         <a href='/clinicas'>
           <div className='mt-4'>
-            <button className='uppercase px-4 p-2 bg-darkBlue text-white font-semibold rounded-lg'>
+            <button className='uppercase px-4 p-2 transition-all ease-in-out duration-500 hover:bg-teal-400 bg-darkBlue text-white font-semibold rounded-lg'>
               Conoce Nuestras Clinicas
             </button>
           </div>

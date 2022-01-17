@@ -16,7 +16,7 @@ export default function CallToAction({ isFormActive, setFormActive }) {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <div className='hidden md:flex shadow-lg hover:bg-lime-400 transition-all ease-in-out duration-500 bg-lime-600 p-2 rounded-l-lg items-center'>
+          <div className='hidden md:flex shadow hover:shadow-2xl hover:bg-teal-400 transition-all ease-in-out duration-500 bg-sky-500 p-2 rounded-l-lg items-center'>
             <img className='h-8 mr-2' src='/images/icons/whatsapp.svg' />
             <p className='text-white uppercase '>
               Habla con <br /> Nosotros
@@ -24,7 +24,7 @@ export default function CallToAction({ isFormActive, setFormActive }) {
           </div>
         </a>
         <div
-          className='hidden cursor-pointer md:flex mt-2 hover:bg-lime-400 bg-lime-600 transition-all ease-in-out duration-500 p-2 rounded-l-lg items-center'
+          className='hidden cursor-pointer md:flex mt-2 shadow hover:shadow-2xl hover:bg-teal-400 bg-fuchsia-800 transition-all ease-in-out duration-500 p-2 rounded-l-lg items-center'
           onClick={() => setFormActive(true)}
         >
           <img className='h-8 mr-2' src='/images/icons/cardWhite.svg' />
@@ -52,7 +52,7 @@ export default function CallToAction({ isFormActive, setFormActive }) {
         <div
           className={isActive ? 'z-[60] opacity-100 absolute top-4 right-4' : 'opacity-0 hidden'}
         >
-          <XIcon className='h-6 text-slate-400 hover:text-slate-600' />
+          <XIcon className='h-6 text-slate-400 hover:text-slate-600'/>
         </div>
         <div className='md:py-4 py-2 px-8 '>
           <p className='uppercase font-semibold text-center'>Aseguradoras</p>
