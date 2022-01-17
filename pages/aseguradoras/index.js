@@ -37,8 +37,8 @@ export default function Home() {
           />
         </div>
         <div className='grid p-6 pt-24 grid-cols-2 items-center divide-x-2 justify-center w-fit mx-auto'>
-          <img className='h-24' src='/logos/logoGrupoEPS.svg' />
-          <img className='h-24' src='/logos/logoGrupoEPS.svg' />
+          <img className='h-28' src='/logos/logoGrupoEPS.svg' />
+          <img className='p-4' src='/logos/sloganEPS.svg' />
         </div>
         <div className=' uppercase font-extrabold text-center text-4xl tracking-tighter'>
           <p className=' text-sky-500'>Trabajamos con las</p>

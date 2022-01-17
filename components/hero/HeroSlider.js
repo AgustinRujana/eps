@@ -48,7 +48,7 @@ const HeroSlider = (props) => {
           </div>
         </a>
       </div>
-      <div className='absolute bg-darkBlue opacity-70 h-full w-full'></div>
+      <div className='absolute bg-white opacity-90 h-full w-full'></div>
       {props.content.data.map((slide, index) => {
         return (
           <div

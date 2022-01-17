@@ -29,7 +29,7 @@ export default function HeroCard(props) {
                 </div>
                 <div className='col-span-1 h-full shadow hover:shadow-2xl flex items-center justify-center bg-fuchsia-800 text-white p-2 hover:bg-green-500 transition-all ease-in-out duration-500'>
                   <a href='/eps-card'>
-                    <p className='px-8 underline'>Más información</p>
+                    <p className='px-8 underline font-normal'>Más información</p>
                   </a>
                 </div>
               </div>
@@ -48,30 +48,30 @@ export default function HeroCard(props) {
           <div className='mx-auto max-w-7xl md:py-16 py-8 font-montserrat text-darkBlue grid md:grid-cols-2 items-center gap-x-4'>
             <div className=''>
               <img
-                className='md:rounded-lg h-full'
+                className='md:rounded-lg h-full shadow-2xl'
                 src='/images/hero/ESPECIALIDADES.jpg'
               />
             </div>
-            <div className='text-center'>
-              <div className='p-4 md:text-xl text-base'>
-                <p className='md:text-4xl text-3xl uppercase font-bold mb-2'>
+            <div className=''>
+              <div className='p-4'>
+                <p className='md:text-3xl text-2xl font-bold'>
                   Especialidades
                 </p>
-                <p>
+                <p className='leading-tight tracking-tight text-sm sm:text-base'>
                   Revolucionamos la atención médica con un servicio que valora
                   tu tiempo y prioriza tu comodidad. Puedes agendar consultas
                   con todos los especialistas que necesites, en el horario más
                   conveniente para tí.
                 </p>
               </div>
-              <div className='uppercase grid w-full sm:grid-cols-2 grid-cols-1 items-center justify-center font-semibold rounded-lg md:px-2'>
+              <div className='grid w-full sm:grid-cols-2 grid-cols-1 items-center justify-center font-semibold rounded-lg md:px-2'>
                 <div
-                  className='bg-darkBlue shadow-xl cursor-pointer hover:bg-green-600 transition-all ease-in-out duration-500 p-4 md:rounded-lg col-span-1'
+                  className='bg-green-600 p-2 shadow hover:shadow-2xl h-full flex items-center justify-center  cursor-pointer hover:bg-green-500 transition-all ease-in-out duration-500 col-span-1'
                   onClick={() => props.setFormOficiaActive(true)}
                 >
                   <p className='leading-tight text-white '>Agenda una cita</p>
                 </div>
-                <div className='col-span-1 p-2 hover:text-teal-400 transition-all ease-in-out duration-500'>
+                <div className='col-span-1 h-full shadow hover:shadow-2xl flex items-center font-normal justify-center bg-fuchsia-800 text-white p-2 hover:bg-green-500 transition-all ease-in-out duration-500'>
                   <a href='/especialidades'>
                     <p className='px-8 underline'>Ver especialidades</p>
                   </a>

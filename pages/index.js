@@ -48,9 +48,9 @@ export default function Home() {
         {console.log(position)}
         <div>
           <img
-            className={`absolute -z-10 w-1/2 -left-10 transition-all duration-500 opacity-30`}
+            className={`fixed -z-10 w-1/3 -left-10 -bottom-24 transition-all ease-linear duration-[${position * 100}ms] opacity-20`}
             src='/images/patron1.svg'
-            style={{top: `${position}px`}}
+            // style={{bottom: `${position * .5}px`}}
           />
         </div>
         <HeroSlider content={content.hero.heroSlider} />
