@@ -75,7 +75,7 @@ export const content = {
           image: '/images/slider/slider4.png',
         },
         {
-          image: '/images/slider/slider5.png',
+          image: '/images/slider/slider7.png',
         },
         {
           image: '/images/slider/slider6.png',

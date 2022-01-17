@@ -45,7 +45,6 @@ export default function Home() {
         />
       </header>
       <main className='overflow-hidden w-full relative'>
-        {console.log(position)}
         <div>
           <img
             className={`fixed -z-10 w-1/3 -left-10 -bottom-24 transition-all ease-linear duration-[${position * 100}ms] opacity-20`}
