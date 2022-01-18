@@ -37,9 +37,9 @@ const HeroSlider = (props) => {
       <div
         className={`${
           props.display
-        } ${'absolute z-40 top-1/2 transform -translate-y-1/2 md:left-1/4 left-1/2 -translate-x-1/2 md:-translate-x-0 text-white'}`}
+        } ${'absolute z-40 top-1/2 w-full sm:w-fit sm:text-left text-center transform -translate-y-1/2 md:left-1/4 left-1/2 -translate-x-1/2 md:-translate-x-0 text-white'}`}
       >
-        <p className='uppercase font-bold text-4xl text-darkBlue'>Estamos cerca de ti</p>
+        <p className='uppercase font-bold sm:text-4xl text-3xl text-darkBlue'>Estamos cerca de ti</p>
         <a href='/clinicas'>
           <div className='mt-4'>
             <button className='uppercase px-4 p-2 transition-all ease-in-out duration-500 hover:bg-teal-400 bg-darkBlue text-white font-semibold rounded-lg'>
