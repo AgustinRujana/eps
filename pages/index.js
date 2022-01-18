@@ -61,7 +61,7 @@ export default function Home() {
           setFormOficinaActive={setFormOficinaActive}
         />
         <HeroSlider2 content={content.hero.heroSlider} />
-        <HeroLogoCloud content={content.hero.heroMap} />
+        {/* <HeroLogoCloud content={content.hero.heroMap} /> */}
         {/* <HeroMobile content={content.hero.heroMobile} /> */}
         <HeroCard2
           isFormActive={isFormActive}

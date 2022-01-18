@@ -2,7 +2,8 @@ import { MenuIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
 
 import FormularioOficina from './FormularioOficina';
-import MobileMenu from './MobileMenu';
+import MenuPanel from './MenuPanel';
+//import MobileMenu from './MobileMenu';
 import { classNames } from '../../helpers/classNames';
 
 export default function Navbar({
@@ -11,7 +12,7 @@ export default function Navbar({
   isFormOficinaActive,
   setFormOficinaActive,
 }) {
-  const [mobileShow, setMobileShow] = useState(false);
+  const [show, setShow] = useState(false);
 
   return (
     <div className='relative'>
@@ -19,31 +20,32 @@ export default function Navbar({
         isFormOficinaActive={isFormOficinaActive}
         setFormOficinaActive={setFormOficinaActive}
       />
+      <MenuPanel show={show} setShow={setShow}/>
       {/* Top bar */}
-      <div className='flex w-full justify-between pl-4'>
+      <div className='flex w-full justify-between pl-4 shadow-2xl fixed bg-white z-[60] sm:static'>
         <div className='flex justify-between items-center py-2'>
           {/* <BurgerMenu/> */}
-          <MenuIcon className='h-10' />
-          <div>
+          <MenuIcon onClick={() => setShow(true)} className='h-10 text-darkBlue hover:text-sky-500 transition-all duration-500 ease-in-out'/>
+          <div className='ml-4'>
             <a href='/'>
               <img className='h-12' src='/logos/logoGrupoEPSHorizontal.svg' />
             </a>
           </div>
         </div>
-        <div className='flex justify-between items-center mt-4'>
+        <div className='sm:flex text-sm md:text-base justify-between items-center mt-6 md:mt-4 hidden'>
           <div
             onClick={() => setFormOficinaActive(true)}
-            className='cursor-pointer flex justify-between items-center px-6 shadow-inner rounded-t-xl bg-fuchsia-800 h-full'
+            className='cursor-pointer flex justify-between items-center px-2 md:px-6 shadow-inner rounded-t-xl bg-fuchsia-800 h-full'
           >
             <p className='font-bold text-white'>Clínica Virtual</p>
           </div>
           <div
             onClick={() => setFormActive(true)}
-            className='cursor-pointer flex justify-between items-center px-6 shadow-inner rounded-t-xl  bg-teal-400 h-full'
+            className='cursor-pointer flex justify-between items-center px-2 md:px-6 shadow-inner rounded-t-xl  bg-teal-400 h-full'
           >
             <p className='font-bold text-white'>Solicitar Cita</p>
           </div>
-          <div className='cursor-pointer flex justify-between items-center px-6 h-full rounded-tl-xl bg-sky-500'>
+          <div className='cursor-pointer flex justify-between items-center px-2 md:px-6 h-full rounded-tl-xl bg-sky-500'>
             <p className='font-bold text-white'>Iniciar Sesión</p>
           </div>
         </div>
@@ -56,7 +58,7 @@ export default function Navbar({
             : isFormOficinaActive
             ? 'bg-fuchsia-800'
             : 'bg-sky-500',
-          'flex w-full justify-center shadow-2xl items-cente transition-all ease-linear duration-500'
+          'sm:flex hidden md:text-base text-sm w-full justify-center shadow-2xl items-cente transition-all ease-linear duration-500'
         )}
       >
         <div className='font-semibold text-white px-4 py-2'>
@@ -73,7 +75,7 @@ export default function Navbar({
         </div>
       </div>
       {/* Bottom bar */}
-      <div className='flex w-full justify-center shadow-2xl items-center bg-darkBlue'>
+      <div className='sm:flex hidden w-full md:text-base text-sm justify-center shadow-2xl items-center bg-darkBlue'>
         <div className='flex items-center font-semibold text-white px-4 py-2'>
           <img className='h-6 mr-2' src='/images/icons/serviciosWhite.svg' />
           <a href='/#servicios'>Nuestros Servicios</a>

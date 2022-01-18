@@ -89,7 +89,7 @@ export const content = {
         icon: '/images/icons/medicoEspecialista.svg',
       },
       {
-        name: 'Laboratiorios',
+        name: 'Laboratorios',
         href: '/',
         icon: '/images/icons/laboratorio.svg',
       },
