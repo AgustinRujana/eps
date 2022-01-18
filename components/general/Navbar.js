@@ -22,7 +22,7 @@ export default function Navbar({
       />
       <MenuPanel show={show} setShow={setShow}/>
       {/* Top bar */}
-      <div className='flex w-full justify-between pl-4 shadow-2xl fixed bg-white z-[60] sm:static'>
+      <div className='flex w-full justify-between pl-4 shadow-2xl fixed top-0 bg-white z-[60] sm:static'>
         <div className='flex justify-between items-center py-2'>
           {/* <BurgerMenu/> */}
           <MenuIcon onClick={() => setShow(true)} className='h-10 text-darkBlue hover:text-sky-500 transition-all duration-500 ease-in-out'/>
