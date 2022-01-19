@@ -597,6 +597,7 @@ export const content = {
   especialidades: [
     {
       title: 'MEDICINA INTERNA',
+      color: 'text-sky-500',
       text: [
         'Diagnosticamos y tratamos enfermedades que afectan cualquier órgano interno del cuerpo en adultos.',
         'También te apoyamos con el control de tratamientos a largo plazo.',
@@ -605,6 +606,7 @@ export const content = {
     },
     {
       title: 'CIRUGÍA GENERAL ',
+      color: 'text-teal-400',
       text: [
         'Realizamos evaluaciones de hernias, masas, heridas, dolores abdominales, evaluaciones preoperatorias y postoperatorias.',
         'Si necesitas o has tenido un procedimiento quirúrgico, te ayudamos a prevenir y tratar cualquier complicación.',
@@ -613,6 +615,7 @@ export const content = {
     },
     {
       title: 'GINECOLOGÍA Y OBSTETRICIA',
+      color: 'text-fuchsia-800',
       text: [
         'Contamos con especialistas en la salud del sistema reproductivo femenino y cada etapa de la gestación de una nueva vida.',
       ],
@@ -620,6 +623,7 @@ export const content = {
     },
     {
       title: 'PEDIATRÍA',
+      color: 'text-darkBlue',
       text: [
         'Atendemos a los más pequeños de la casa en todas sus etapas de crecimiento, desde recién nacidos hasta la adolescencia.',
       ],
@@ -627,6 +631,7 @@ export const content = {
     },
     {
       title: 'ORTOPEDIA Y TRAUMATOLOGÍA',
+      color: 'text-sky-500',
       text: [
         'Te acompañamos en tu proceso de rehabilitación física para mejorar o restaurar la movilidad de tu cuerpo en caso de lesiones, accidentes, enfermedades o discapacidad.',
       ],
@@ -634,6 +639,7 @@ export const content = {
     },
     {
       title: 'NEUROLOGÍA',
+      color: 'text-teal-400',
       text: [
         'Nos ocupamos de la prevención, diagnóstico, tratamiento y rehabilitación de todas las enfermedades que involucran al sistema nervioso central, sistema nervioso periférico y el sistema nervioso autónomo.',
       ],
@@ -641,6 +647,7 @@ export const content = {
     },
     {
       title: 'PSICOLOGÍA',
+      color: 'text-fuchsia-800',
       text: [
         'Escuchamos, orientamos y acompañamos a nuestros usuarios en la búsqueda del equilibrio consigo mismos y con su entorno para mejorar su calidad de vida.',
       ],
@@ -648,6 +655,7 @@ export const content = {
     },
     {
       title: 'NUTRICIÓN',
+      color: 'text-darkBlue',
       text: [
         'Diseñamos dietas balanceadas según tu estado de salud, condición física o padecimientos.',
       ],
@@ -655,6 +663,7 @@ export const content = {
     },
     {
       title: 'DERMATOLOGÍA',
+      color: 'text-sky-500',
       text: [
         'Diagnosticamos y tratamos enfermedades y padecimientos comunes de la piel, uñas y cabello. Así como procedimientos y tratamientos estéticos de la piel.',
       ],
@@ -662,11 +671,13 @@ export const content = {
     },
     {
       title: 'ODONTOLOGÍA Y ORTODONCIA',
+      color: 'text-teal-400',
       text: ['Te ayudamos a cuidar de tu salud bucal.'],
       image: '/images/icons/especialidades/odon.svg',
     },
     {
       title: 'OTORRINOLARINGOLOGÍA',
+      color: 'text-fuchsia-800',
       text: [
         'Diagnosticamos y tratamos enfermedades del oído, la boca, la nariz y la garganta.',
       ],
@@ -674,6 +685,7 @@ export const content = {
     },
     {
       title: 'CUIDADOS PALIATIVOS',
+      color: 'text-darkBlue',
       text: [
         'Procuramos tu bienestar y el de tu familia en los momentos más dificiles, te acompañamos en el cuidado y atención de las personas con enfermedades crónicas avanzadas, progresivas e incurables.',
       ],
@@ -681,6 +693,7 @@ export const content = {
     },
     {
       title: 'NEUMOLOGÍA',
+      color: 'text-sky-500',
       text: [
         'Tratamos problemas respiratorios y pulmonares como: tos crónica, dificultad para respirar, neumonía, asma, fibrosis quística, apnea, enfermedad crónica de los pulmones en bebés prematuros, respiración ruidosa.',
       ],
@@ -688,6 +701,7 @@ export const content = {
     },
     {
       title: 'GASTROENTEROLOGÍA',
+      color: 'text-teal-400',
       text: [
         'Diagnosticamos, prevenimos y tratamos padecimientos del aparato digestivo e hígado.',
       ],
@@ -695,6 +709,7 @@ export const content = {
     },
     {
       title: 'UROLOGÍA',
+      color: 'text-fuchsia-800',
       text: [
         'Cuidamos la salud de tus riñones, vías urinarias y la salud del sistema reproductivo masculino.',
       ],

@@ -7,7 +7,6 @@ import CallToAction from '../../components/general/CallToAction';
 
 import { content } from '../../content/content';
 import { useState } from 'react';
-import Footer from '../../components/general/Footer';
 
 export default function Home() {
   const [isFormOficinaActive, setFormOficinaActive] = useState(false);
