@@ -24,7 +24,7 @@ export default function CardsPanel(props) {
                   )}
                   <p
                     className={
-                      item.clinica ? 'text-darkBlue font-bold' : 'text-gray-600 font-bold'
+                      item.clinica ? 'text-darkBlue font-bold sm:text-base text-sm leading-tight tracking-tight' : 'text-gray-600 font-bold sm:text-base text-sm leading-tight tracking-tight'
                     }
                   >
                     Clínica en tu hogar
