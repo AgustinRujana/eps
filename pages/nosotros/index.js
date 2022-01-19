@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Navbar from '../../components/general/Navbar';
-import Footer from '../../components/general/Footer';
 import CallToAction from '../../components/general/CallToAction';
 
 import { content } from '../../content/content';
