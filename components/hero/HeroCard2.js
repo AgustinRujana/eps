@@ -20,7 +20,7 @@ export default function HeroCard2(props) {
           </div>
           <div className='grid w-full grid-cols-1 items-center justify-center font-semibold rounded-lg md:px-2'>
             <div
-              className='bg-green-600 w-fit px-4 py-2 shadow hover:shadow-2xl h-full flex items-center justify-center cursor-pointer hover:bg-green-500 transition-all ease-in-out duration-500 col-span-1'
+              className='bg-green-600 mx-auto md:mx-0 w-fit px-4 py-2 shadow hover:shadow-2xl h-full flex items-center justify-center cursor-pointer hover:bg-green-500 transition-all ease-in-out duration-500 col-span-1'
               onClick={() => props.setFormOficinaActive(true)}
             >
               <p className='leading-tight text-white'>

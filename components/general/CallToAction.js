@@ -44,8 +44,8 @@ export default function CallToAction({ isFormActive, setFormActive }) {
       <div
         className={
           isActive
-            ? 'bg-white text-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 shadow-2xl fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50'
-            : 'cursor-pointer hover:bg-sky-500 text-white bg-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 fixed -bottom-[22rem] left-1/2 transform -translate-x-1/2 z-50'
+            ? 'bg-white w-fit text-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 shadow-2xl fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50'
+            : 'cursor-pointer w-fit hover:bg-sky-500 text-white bg-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 fixed -bottom-[22rem] left-1/2 transform -translate-x-1/2 z-50'
         }
         onClick={() => isActive ? setActive(false) : setActive(true)}
       >
@@ -54,7 +54,7 @@ export default function CallToAction({ isFormActive, setFormActive }) {
         >
           <XIcon className='h-6 text-slate-400 hover:text-slate-600'/>
         </div>
-        <div className='md:py-4 py-2 px-8 '>
+        <div className='xl:py-4 py-2 px-8'>
           <p className='uppercase font-semibold text-center'>Aseguradoras</p>
         </div>
         <div className='p-4 grid grid-cols-2 items-center justify-center'>

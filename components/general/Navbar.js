@@ -20,12 +20,15 @@ export default function Navbar({
         isFormOficinaActive={isFormOficinaActive}
         setFormOficinaActive={setFormOficinaActive}
       />
-      <MenuPanel show={show} setShow={setShow}/>
+      <MenuPanel show={show} setShow={setShow} />
       {/* Top bar */}
       <div className='flex w-full justify-between pl-4 shadow-2xl fixed top-0 bg-white z-[60] sm:static'>
         <div className='flex justify-between items-center py-2'>
           {/* <BurgerMenu/> */}
-          <MenuIcon onClick={() => setShow(true)} className='h-10 text-darkBlue hover:text-sky-500 transition-all duration-500 ease-in-out'/>
+          <MenuIcon
+            onClick={() => setShow(true)}
+            className='h-10 text-darkBlue hover:text-sky-500 transition-all duration-500 ease-in-out'
+          />
           <div className='ml-4'>
             <a href='/'>
               <img className='h-12' src='/logos/logoGrupoEPSHorizontal.svg' />
@@ -40,7 +43,7 @@ export default function Navbar({
             <p className='font-bold text-white'>Clínica Virtual</p>
           </div>
           <div
-            onClick={() => setFormActive(true)}
+            // onClick={() => setCitaActive(true)}
             className='cursor-pointer flex justify-between items-center px-2 md:px-6 shadow-inner rounded-t-xl  bg-teal-400 h-full'
           >
             <p className='font-bold text-white'>Solicitar Cita</p>
@@ -53,12 +56,8 @@ export default function Navbar({
       {/* Middle bar */}
       <div
         className={classNames(
-          isFormActive
-            ? 'bg-teal-400'
-            : isFormOficinaActive
-            ? 'bg-fuchsia-800'
-            : 'bg-sky-500',
-          'sm:flex hidden md:text-base text-sm w-full justify-center shadow-2xl items-cente transition-all ease-linear duration-500'
+          isFormOficinaActive ? 'bg-fuchsia-800' : 'bg-sky-500',
+          'sm:flex hidden md:text-base text-sm w-full justify-center shadow-2xl items-cente transition-all ease-in-out duration-[2000ms]'
         )}
       >
         <div className='font-semibold text-white px-4 py-2'>

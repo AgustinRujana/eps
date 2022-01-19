@@ -60,8 +60,8 @@ export default function FormularioOficina({
       <div
         className={
           isFormOficinaActive
-            ? 'text-darkBlue bg-sky-500 rounded-xl opacity-100 transition-all ease-in-out duration-1000 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
-            : 'text-darkBlue bg-fuchsia-800 rounded-xl opacity-0 transition-all ease-in-out duration-1000 fixed top-1/2 -left-1/2 transform -translate-x-0  -translate-y-1/2 z-50'
+            ? 'text-darkBlue bg-fuchsia-800 rounded-xl opacity-100 transition-all ease-in-out duration-[2000ms] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
+            : 'text-darkBlue bg-sky-500 rounded-xl opacity-0 transition-all ease-in-out duration-[2000ms] fixed top-1/2 -left-[32rem] transform -translate-x-0  -translate-y-1/2 z-50'
         }
         onClick={() => setFormOficinaActive(true)}
       >

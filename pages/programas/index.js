@@ -40,6 +40,8 @@ export default function Home() {
             mejorar tu servicio.
           </p>
           <p>Disculpa las molestias ocasionadas.</p>
+          <a className='underlined text-darkBlue' href='/'>Volver al inicio</a>
+
         </div>
         {/* <Programas content={content.programas} /> */}
       </main>

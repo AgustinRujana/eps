@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navbar from '../../components/general/Navbar';
+import Footer from '../../components/general/Footer';
 import CallToAction from '../../components/general/CallToAction';
 
 import { content } from '../../content/content';
@@ -25,6 +26,7 @@ export default function Home() {
             mejorar tu servicio.
           </p>
           <p>Disculpa las molestias ocasionadas.</p>
+          <a className='underlined text-darkBlue' href='/'>Volver al inicio</a>
         </div>
       </main>
       <footer>
