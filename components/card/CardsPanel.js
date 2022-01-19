@@ -30,7 +30,7 @@ export default function CardsPanel(props) {
                     Clínica en tu hogar
                   </p>
                 </div>
-                <div className={item.clinica ? '' : 'text-gray-500'}>
+                <div className={item.clinica ? 'sm:text-base text-sm leading-tight tracking-tight' : 'text-gray-500 sm:text-base text-sm leading-tight tracking-tight'}>
                   <p>Visita a domicilio médico general o especialista. </p>
                   <p>Exámenes de laboratorio.</p>
                   <p>Aplicación de vacunas y medicamentos.</p>
@@ -42,7 +42,7 @@ export default function CardsPanel(props) {
                   </p>
                 </div>
               </div>
-              <div className='pt-2'>
+              <div className='pt-2 sm:text-base text-sm leading-tight tracking-tight'>
                 <div className='flex'>
                   <BadgeCheckIcon className='h-6 mr-1 text-green-600 flex-shrink-0' />
                   <p className='text-darkBlue font-bold'>
@@ -51,14 +51,14 @@ export default function CardsPanel(props) {
                 </div>
                 <p>Hasta 60% de descuento en medicina interna y familiar.</p>
               </div>
-              <div className='pt-2'>
+              <div className='pt-2 sm:text-base text-sm leading-tight tracking-tight'>
                 <div className='flex'>
                   <BadgeCheckIcon className='h-6 mr-1 text-green-600 flex-shrink-0' />
                   <p className='text-darkBlue font-bold'>Laboratorios</p>
                 </div>
                 <p>Hasta 30% de descuento</p>
               </div>
-              <div className='pt-2'>
+              <div className='pt-2 sm:text-base text-sm leading-tight tracking-tight'>
                 <div className='flex'>
                   <BadgeCheckIcon className='h-6 mr-1 text-green-600 flex-shrink-0' />
                   <p className='text-darkBlue font-bold'>
@@ -67,7 +67,7 @@ export default function CardsPanel(props) {
                 </div>
                 <p>Descuento en medicinas y productos de farmacia</p>
               </div>
-              <div className='pt-2'>
+              <div className='pt-2 sm:text-base text-sm leading-tight tracking-tight'>
                 <div className='flex'>
                   <BadgeCheckIcon className='h-6 mr-1 text-green-600 flex-shrink-0' />
                   <p className='text-darkBlue font-bold'>Adicionales</p>
@@ -84,7 +84,7 @@ export default function CardsPanel(props) {
           </div>
         ))}
       </div>
-      <div className='w-fit mx-auto px-4 py-2 bg-darkBlue hover:bg-green-600 transition-all ease-in-out duration-500 cursor-pointer my-6 text-white text-center md:rounded-lg'>
+      <div className='md:w-fit w-full mx-auto px-4 py-2 bg-darkBlue hover:bg-green-600 transition-all ease-in-out duration-500 cursor-pointer my-6 text-white text-center md:rounded-lg sm:text-xl text-base leading-tight tracking-tight'>
         <p className='uppercase font-semibold'>
           Quiero que me contacte un asesor EPS Card
         </p>

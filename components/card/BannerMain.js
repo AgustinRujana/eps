@@ -11,8 +11,8 @@ export default function BannerMain() {
           className='h-fit absolute z-0 md:block hidden'
           src='/images/circle.svg'
         />
-        <div className='bg-darkBlue text-left md:text-center w-full p-4 md:p-0 md:w-fit md:bg-transparent z-10 text-3xl text-white font-bold'>
-          <p className='text-left text-5xl font-extrabold text-teal-400 '>
+        <div className='bg-darkBlue text-left md:text-center w-full p-4 md:p-0 md:w-fit md:bg-transparent z-10 sm:text-3xl text-xl text-white font-bold'>
+          <p className='text-left sm:text-5xl text-3xl font-extrabold text-teal-400 '>
             EPS CARD
           </p>
           <p className=''>
