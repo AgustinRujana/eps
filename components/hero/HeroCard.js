@@ -49,7 +49,7 @@ export default function HeroCard(props) {
             <div className=''>
               <img
                 className='md:rounded-lg h-full shadow-2xl'
-                src='/images/hero/ESPECIALIDADES.jpg'
+                src='/images/especialidades.jpeg'
               />
             </div>
             <div className=''>

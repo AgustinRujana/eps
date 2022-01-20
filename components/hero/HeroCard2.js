@@ -7,7 +7,7 @@ export default function HeroCard2(props) {
         <div className='md:hidden'>
           <img
             className='h-full shadow-2xl'
-            src='/images/hero/SIEMPRE A TU LADO.jpg'
+            src='/images/citaVirtual.jpeg'
           />
         </div>
         <div className=''>
@@ -32,7 +32,7 @@ export default function HeroCard2(props) {
         <div className='hidden md:block'>
           <img
             className='rounded-lg h-full shadow-2xl'
-            src='/images/hero/SIEMPRE A TU LADO.jpg'
+            src='/images/citaVirtual.jpeg'
           />
         </div>
       </section>
@@ -40,7 +40,7 @@ export default function HeroCard2(props) {
         <div className=''>
           <img
             className='md:rounded-lg h-full shadow-2xl'
-            src='/images/hero/NUESTRO CALL CENTER.jpg'
+            src='/images/callCenter.jpeg'
           />
         </div>
         <div className=''>
