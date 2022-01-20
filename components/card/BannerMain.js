@@ -2,7 +2,7 @@ export default function BannerMain() {
   return (
     <section
       style={{
-        backgroundImage: `url('/images/hero/EPS CARD.png')`,
+        backgroundImage: `url('/images/epsCard.jpeg')`,
       }}
       className='overflow-hidden w-full flex items-end justify-end h-[90vh] bg-fixed bg-center bg-cover'
     >
