@@ -33,11 +33,14 @@ export default function Home() {
       </header>
       <main className='overflow-hidden'>
         {/* Mapa y texto principal */}
-        <ScrollSlideUp>
-          {/* <div className=''>
-          
-          </div> */}
-        </ScrollSlideUp>
+        <div className='relative'>
+          <p className='font-semibold md:text-xl text-base text-darkBlue uppercase w-fit mr-auto rounded-r-full pl-1/8 pr-8'>
+            Solicitar Cita
+          </p>
+          <p className='font-bold md:text-3xl text-xl text-teal-400 w-fit mr-auto rounded-r-full pl-1/8 mb-4'>
+            Siempre cerca de ti
+          </p>
+        </div>
         {/* Nuestras Clinicas */}
         <ScrollSlideUp>
           <div className='sm:mt-8 mt-24'>
@@ -90,11 +93,11 @@ export default function Home() {
         {/* Otros Servicios */}
         <ScrollSlideUp>
           <div className=''>
-          <p className='font-semibold tracking-tighter md:text-xl text-base text-darkBlue uppercase w-fit mr-auto rounded-r-full pl-1/8 pr-8'>
+            <p className='font-semibold tracking-tighter md:text-xl text-base text-darkBlue uppercase w-fit mr-auto rounded-r-full pl-1/8 pr-8'>
               !Aún hay más!
             </p>
             <p className='font-bold tracking-tighter md:text-3xl text-xl text-teal-400 w-fit mr-auto rounded-r-full pl-1/8 mb-4'>
-              Descubre todos los <br/> servicios que tenemos para tí
+              Descubre todos los <br /> servicios que tenemos para tí
             </p>
             <p className='bg-darkBlue font-bold tracking-tighter uppercase md:text-4xl text-2xl  text-white text-right w-fit mr-auto rounded-r-full py-4 pl-1/8 pr-1/8'>
               Otros Servicios
