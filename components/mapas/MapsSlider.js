@@ -26,22 +26,22 @@ const MapsSlider = (props) => {
 
   return (
     <section className='relative justify-center items-center md:h-full h-[50vh] w-full'>
-      <div className='z-20 absolute flex bottom-4 hover:text-white text-darkBlue left-1/2 transform -translate-x-1/2'>
-        <div className='px-2 py-1 bg-slate-100 rounded-l-full text-darkBlue hover:text-slate-100 hover:bg-darkBlue transition-all ease-in-out duration-500'>
-          <ChevronLeftIcon className='h-8' onClick={prevSlide} />
+      <div className='z-20 absolute flex bottom-2 hover:text-white text-darkBlue left-1/2 transform -translate-x-1/2'>
+        <div className='px-1 py-0.5 bg-slate-100 rounded-l-full text-darkBlue hover:text-slate-100 hover:bg-darkBlue transition-all ease-in-out duration-500'>
+          <ChevronLeftIcon className='h-4' onClick={prevSlide} />
         </div>
-        <div className='px-2 py-1 bg-slate-100 rounded-r-full text-darkBlue hover:text-slate-100 hover:bg-darkBlue active:text-darkBlue transition-all ease-in-out duration-500'>
-          <ChevronRightIcon className='h-8' onClick={nextSlide} />
+        <div className='px-1 py-0.5 bg-slate-100 rounded-r-full text-darkBlue hover:text-slate-100 hover:bg-darkBlue active:text-darkBlue transition-all ease-in-out duration-500'>
+          <ChevronRightIcon className='h-4' onClick={nextSlide} />
         </div>
       </div>
-      <div className='absolute bg-darkBlue opacity-70 h-full w-full'></div>
+      <div className='absolute bg-darkBlue opacity-20 h-full w-full'></div>
       {props.content.data.map((slide, index) => {
         return (
           <div
             className={
               index === current
-                ? 'absolute h-full w-full opacity-100 transition-all ease-in-out duration-1000'
-                : 'absolute opacity-0 h-full w-full object-cover transition-all ease-in-out duration-1000'
+                ? 'absolute h-full w-full opacity-100 transition-all duration-1000'
+                : 'absolute opacity-0 h-full w-full object-cover transition-all duration-1000'
             }
             key={index}
           >

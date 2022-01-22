@@ -191,7 +191,7 @@ export const content = {
         name: '',
         href: '/',
         icon: '/images/logoCloud/aseguradoras_10.png',
-      }
+      },
     ],
   },
   programas: {
@@ -347,207 +347,217 @@ export const content = {
       ],
     },
   },
-  maps: [
-    {
-      logo: '/logos/epsLosAngeles.svg', //Los Angeles
-      map: '/images/maps/hospitalLosAngeles.svg',
-      color: 'text-sky-500',
-      content: [
-        [
+  maps: {
+    clinics: [
+      {
+        logo: '/logos/epsLosAngeles.svg', //Los Angeles
+        // map: '/images/maps/hospitalLosAngeles.svg',
+        color: 'sky-500',
+        content: [
           'Sta. Rosa de Copán barrio Mercedes, 7ma Avenida entre la 1ra y 2da calle, frente a la carretera internacional y triple a autopartes.',
         ],
-      ],
-      data: [
-        {
-          image: '/images/mapSliders/angeles/1.jpg',
-        },
-        {
-          image: '/images/mapSliders/angeles/2.jpg',
-        },
-        {
-          image: '/images/mapSliders/angeles/3.jpg',
-        },
-        {
-          image: '/images/mapSliders/angeles/4.jpg',
-        },
-        {
-          image: '/images/mapSliders/angeles/5.jpg',
-        },
-        {
-          image: '/images/mapSliders/angeles/6.jpg',
-        },
-        {
-          image: '/images/mapSliders/angeles/7.jpg',
-        },
-        {
-          image: '/images/mapSliders/angeles/8.jpg',
-        },
-        {
-          image: '/images/mapSliders/angeles/9.jpg',
-        },
-      ],
-      list: [
-        'Medicina Interna',
-        'Urología',
-        'Dermatología',
-        'Ginecología y Obstetricia',
-        'Neurología',
-        'Pediatría',
-        'Otorrinolaringología',
-        'Cuidados Paleativos',
-        'Psiquiatría',
-        'Nutricionista',
-      ],
-    },
-    {
-      logo: '/logos/epsPlus.svg', //EPS Plus
-      map: '/images/maps/epsPlus.svg',
-      color: 'text-orange-700',
-      content: [
-        ['Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall'],
-        ['San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines'],
-        [
+        data: [
+          {
+            image: '/images/mapSliders/angeles/1.jpg',
+          },
+          {
+            image: '/images/mapSliders/angeles/2.jpg',
+          },
+          {
+            image: '/images/mapSliders/angeles/3.jpg',
+          },
+          {
+            image: '/images/mapSliders/angeles/4.jpg',
+          },
+          {
+            image: '/images/mapSliders/angeles/5.jpg',
+          },
+          {
+            image: '/images/mapSliders/angeles/6.jpg',
+          },
+          {
+            image: '/images/mapSliders/angeles/7.jpg',
+          },
+          {
+            image: '/images/mapSliders/angeles/8.jpg',
+          },
+          {
+            image: '/images/mapSliders/angeles/9.jpg',
+          },
+        ],
+        list: [
+          'Servicio de cirugía',
+          'Hospitalización',
+          'Medicina Interna',
+          'Dermatología',
+          'Neurología',
+          'Psiquiatría',
+          'Urología',
+          'Pediatría',
+          'Nutricionista',
+          'Ginecología y Obstetricia',
+          'Cuidados Paleativos',
+          'Otorrinolaringología',
+        ],
+      },
+      {
+        logo: '/logos/epsPlus.svg', //EPS Plus
+        // map: '/images/maps/epsPlus.svg',
+        color: 'orange-700',
+        content: [
+          'Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall',
+          // 'San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines',
+          // 'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenida entre 1ra y 2da Calle, frente a carretera Internacional y triple a autopartes.',
+          // ,
+          // 'Choluteca, Barrio Libertad Antiguo, Local de agua azul.',
+          // 'Olancho, Juticalpa Mall Premier, Zona Colonial.',
+        ],
+        data: [
+          {
+            image: '/images/mapSliders/plus/1.PNG',
+          },
+          {
+            image: '/images/mapSliders/plus/2.PNG',
+          },
+        ],
+        list: [
+          'Medicina Interna',
+          'Psiquiatría',
+          'Neurología',
+          'Pediatría',
+          'Cuidados Paleativos',
+          'Nutricionista',
+          'Urología',
+          'Dermatología',
+          'Ortopedia y traumatología',
+          'Ginecología y Obstetricia',
+          'Otorrinolaringología',
+        ],
+      },
+      {
+        logo: '/logos/epsMaterno.svg', //Materno Divina Conceptacion
+        // map: '/images/maps/hospitalMaterno.svg',
+        color: 'sky-500',
+        data: [
+          {
+            image: '/images/mapSliders/materno/1.png',
+          },
+          {
+            image: '/images/mapSliders/materno/2.JPG',
+          },
+          {
+            image: '/images/mapSliders/materno/3.JPG',
+          },
+          {
+            image: '/images/mapSliders/materno/4.JPG',
+          },
+          {
+            image: '/images/mapSliders/materno/5.JPG',
+          },
+          {
+            image: '/images/mapSliders/materno/6.JPG',
+          },
+          {
+            image: '/images/mapSliders/materno/7.JPG',
+          },
+        ],
+        content: [
+          'Juticalpa Olancho Mall Premier, Colonia Rivas - Catamarcas km 169, área colonial, segundo nivel.',
+        ],
+        list: [
+          'Hospitalizacíon',
+          'Servicio de Cirugía',
+          'Cirugía laroscópica',
+          'Rayos X',
+          'Spa Médico',
+          'Cirugía Laparoscópica',
+        ],
+      },
+    ],
+    other: [
+      {
+        logo: '/logos/epsSmile.svg', //EPS Smile
+        // map: '/images/maps/epsSmile.svg',
+        color: 'sky-500',
+        content: [
+          'Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall',
+          'San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines',
           'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenida entre 1ra y 2da Calle, frente a carretera Internacional y triple a autopartes.',
         ],
-
-        ['Choluteca, Barrio Libertad Antiguo, Local de agua azul.'],
-        ['Olancho, Juticalpa Mall Premier, Zona Colonial.'],
-      ],
-      data: [
-        {
-          image: '/images/mapSliders/plus/1.PNG',
-        },
-        {
-          image: '/images/mapSliders/plus/2.PNG',
-        },
-      ],
-      list: [
-        'Medicina Interna',
-        'Pediatría',
-        'Otorrinolaringología',
-        'Cuidados Paleativos',
-        'Psiquiatría',
-        'Nutricionista',
-        'Neurología',
-        'Urología',
-        'Ortopedia y traumatología',
-        'Dermatología',
-        'Ginecología y Obstetricia',
-      ],
-    },
-    {
-      logo: '/logos/epsMaterno.svg', //Materno Divina Conceptacion
-      map: '/images/maps/hospitalMaterno.svg',
-      color: 'text-sky-500',
-      data: [
-        {
-          image: '/images/mapSliders/materno/1.png',
-        },
-        {
-          image: '/images/mapSliders/materno/2.JPG',
-        },
-        {
-          image: '/images/mapSliders/materno/3.JPG',
-        },
-        {
-          image: '/images/mapSliders/materno/4.JPG',
-        },
-        {
-          image: '/images/mapSliders/materno/5.JPG',
-        },
-        {
-          image: '/images/mapSliders/materno/6.JPG',
-        },
-        {
-          image: '/images/mapSliders/materno/7.JPG',
-        },
-      ],
-      content: [
-        [
-          'Juticalpa Olancho Mall Premier, Colonia Rivas',
-          'Catamarcas km169, área colonial, segundo nivel.',
+        data: [
+          {
+            image: '/images/mapSliders/smile/1.jpg',
+          },
+          {
+            image: '/images/mapSliders/smile/2.jpg',
+          },
+          {
+            image: '/images/mapSliders/smile/3.jpg',
+          },
+          {
+            image: '/images/mapSliders/smile/4.jpg',
+          },
         ],
-      ],
-      list: [
-        'Hospitalizacíon',
-        'Cirugía',
-        'Emergencia',
-        'Rayos X',
-        'Spa Médico',
-        'Consulta Especialista',
-        'Cirugía Laparoscópica',
-        'Laboratorio',
-      ],
-    },
-    {
-      logo: '/logos/epsSmile.svg', //EPS Smile
-      map: '/images/maps/epsSmile.svg',
-      color: 'text-sky-500',
-      content: [
-        ['Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall'],
-        ['San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines'],
-        [
-          'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenida entre 1ra y 2da Calle, frente a carretera Internacional y triple a autopartes.',
+        list: [
+          'Odontología General',
+          'Odontología Especializada',
+          'Periodoncia',
+          'Endodoncia',
+          'Ortodoncia',
+          'Odontopediatría',
+          'Cirujano Dentista',
         ],
-      ],
-      data: [
-        {
-          image: '/images/mapSliders/smile/1.jpg',
-        },
-        {
-          image: '/images/mapSliders/smile/2.jpg',
-        },
-        {
-          image: '/images/mapSliders/smile/3.jpg',
-        },
-        {
-          image: '/images/mapSliders/smile/4.jpg',
-        },
-      ],
-      list: [
-        'Odontología Especializada',
-        'Endodoncia',
-        'Periodoncia',
-        'Ortodoncia',
-        'Odontopediatría',
-        'Odontología General',
-        'Cirujano Dentista',
-      ],
-    },
-    {
-      logo: '/logos/epsFarma.svg', //EPS Farma
-      map: '/images/maps/epsFarma.svg',
-      color: 'text-fuchsia-700',
-      data: [
-        {
-          image: '/images/mapSliders/farma/1.jpg',
-        },
-        {
-          image: '/images/mapSliders/farma/2.jpg',
-        },
-        {
-          image: '/images/mapSliders/farma/3.jpg',
-        },
-      ],
-      list: [
-        'Promociones Especiales',
-        'Horarios Factibles',
-        'Atención Personalizada',
-        'Puntos Estratégicos',
-        'Personal Calificado',
-        'Entregas a Domicilio',
-        // 'Toda la línea de medicamentos de Honduras',
-      ],
-      content: [
-        ['Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall'],
-        ['San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines.'],
-        [
+      },
+      {
+        logo: '/logos/epsFarma.svg', //EPS Farma
+        map: '/images/maps/epsFarma.svg',
+        color: 'fuchsia-700',
+        data: [
+          {
+            image: '/images/mapSliders/farma/1.jpg',
+          },
+          {
+            image: '/images/mapSliders/farma/2.jpg',
+          },
+          {
+            image: '/images/mapSliders/farma/3.jpg',
+          },
+        ],
+        list: ['Promociones Especiales', 'Entregas a Domicilio'],
+        content: [
+          'Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall',
+          // 'San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines.',
           'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenidam entre 1ra y 2da Calle frente a carretera Internacional y triple a autopartes.',
+          // 'Choluteca, Barrio Libertad, Local de Agua Azul.'
         ],
-        ['Choluteca, Barrio Libertad, Local de Agua Azul.'],
-      ],
-    },
-  ],
+      },
+      {
+        logo: '/logos/epsLaboral.svg', //EPS Lavoral
+        // map: '/images/maps/epsFarma.svg',
+        color: 'fuchsia-700',
+        data: [
+          // {
+          //   image: '/images/mapSliders/farma/1.jpg',
+          // },
+          // {
+          //   image: '/images/mapSliders/farma/2.jpg',
+          // },
+          // {
+          //   image: '/images/mapSliders/farma/3.jpg',
+          // },
+        ],
+        list: ['Exámenes médicos de rutina.', 'Exámenes médicos en profundidad.'],
+        content: [
+          'Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall',
+          // 'San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines.',
+          'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenidam entre 1ra y 2da Calle frente a carretera Internacional y triple a autopartes.',
+          'Juticalpa Olancho Mall Premier, Colonia Rivas - Catamarcas km 169, área colonial, segundo nivel.',
+          // 'Choluteca, Barrio Libertad, Local de Agua Azul.'
+          
+        ],
+      }
+    ],
+  },
   epsCard: {
     numPanel: [
       {
