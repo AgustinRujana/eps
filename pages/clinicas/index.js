@@ -40,14 +40,14 @@ export default function Home() {
         </ScrollSlideUp>
         {/* Nuestras Clinicas */}
         <ScrollSlideUp>
-          <div className='mt-8'>
-            <p className='bg-darkBlue font-bold tracking-tighter uppercase text-4xl text-white text-right w-fit ml-auto rounded-l-full py-4 pl-8 pr-1/8'>
+          <div className='sm:mt-8 mt-24'>
+            <p className='bg-darkBlue font-bold tracking-tighter uppercase md:text-4xl text-2xl text-white text-right w-fit ml-auto rounded-l-full py-4 pl-8 pr-1/8'>
               Nuestras Clínicas
             </p>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto sm:gap-6 my-24'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto sm:gap-6 sm:my-24 my-6'>
               {content.maps.clinics.map((clinic) => (
                 <div className='col-span-1 shadow-2xl h-fit'>
-                  <div className='h-56'>
+                  <div className='md:h-56'>
                     <MapsSlider content={clinic} />
                   </div>
                   <div className='px-6'>
@@ -62,7 +62,7 @@ export default function Home() {
                         </p>
                       </div>
                     ))}
-                    <ul>
+                    <ul className='my-6'>
                       {clinic.list.map((item) => (
                         <li className='flex flex-shrink-0 items-center py-1'>
                           <CheckCircleIcon
@@ -89,14 +89,15 @@ export default function Home() {
         </ScrollSlideUp>
         {/* Otros Servicios */}
         <ScrollSlideUp>
-          <div className='mt-8'>
-            <p className='bg-darkBlue font-bold tracking-tighter uppercase text-4xl text-white text-right w-fit mr-auto rounded-r-full py-4 pl-1/8 pr-8'>
+          <div className=''>
+            <p className='bg-darkBlue font-bold tracking-tighter uppercase md:text-4xl text-2xl  text-white text-right w-fit mr-auto rounded-r-full py-4 pl-1/8 pr-8 '>
               Otros Servicios
             </p>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto sm:gap-6 my-24'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto sm:gap-6 sm:my-24 my-6'>
               {content.maps.other.map((service) => (
                 <div className='col-span-1 shadow-2xl h-fit'>
-                  <div className='h-56'>
+                  <div className='md:h-56'>
+                    {' '}
                     <MapsSlider content={service} />
                   </div>
                   <div className='px-6'>
