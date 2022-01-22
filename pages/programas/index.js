@@ -30,7 +30,7 @@ export default function Home() {
         />
       </header>
       <main className='overflow-hidden max-w-7xl w-full mx-auto'>
-        <div className='mx-auto text-center my-32'>
+        {/* <div className='mx-auto text-center my-32'>
           <div className='grid p-6 grid-cols-2 items-center divide-x-2 justify-center w-fit mx-auto'>
             <img className='h-28' src='/logos/logoGrupoEPS.svg' />
             <img className='p-4' src='/logos/sloganEPS.svg' />
@@ -42,8 +42,8 @@ export default function Home() {
           <p>Disculpa las molestias ocasionadas.</p>
           <a className='underlined text-darkBlue' href='/'>Volver al inicio</a>
 
-        </div>
-        {/* <Programas content={content.programas} /> */}
+        </div> */}
+        <Programas content={content.programas} />
       </main>
       <footer>
         <Footer />
