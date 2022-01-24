@@ -3,6 +3,7 @@ export default function BannerMain() {
     <section
       style={{
         backgroundImage: `url('/images/epsCard.jpeg')`,
+        backgroundSize: "cover"
       }}
       className='overflow-hidden w-full flex items-end justify-end h-[90vh] bg-fixed bg-center bg-cover'
     >

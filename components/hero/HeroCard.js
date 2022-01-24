@@ -7,7 +7,7 @@ export default function HeroCard(props) {
         <ScrollSlideUp>
           <div className='mx-auto max-w-7xl md:py-16 font-montserrat text-darkBlue grid md:grid-cols-2 items-center gap-x-4'>
             <div className='md:hidden shadow-2xl'>
-              <img className='h-full' src='/images/epsCard.jpeg' />
+              <img className='flex' src='/images/epsCard.jpeg' />
             </div>
             <div className='font-bold'>
               <div className='p-4 md:text-3xl text-2xl'>
@@ -36,7 +36,7 @@ export default function HeroCard(props) {
             </div>
             <div className='hidden md:block shadow-2xl'>
               <img
-                className='rounded-lg h-full'
+                className='rounded-lg flex'
                 src='/images/epsCard.jpeg'
               />
             </div>
@@ -48,7 +48,7 @@ export default function HeroCard(props) {
           <div className='mx-auto max-w-7xl md:py-16 py-8 font-montserrat text-darkBlue grid md:grid-cols-2 items-center gap-x-4'>
             <div className=''>
               <img
-                className='md:rounded-lg h-full shadow-2xl'
+                className='md:rounded-lg flex shadow-2xl'
                 src='/images/especialidades.jpeg'
               />
             </div>

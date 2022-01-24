@@ -1,16 +1,13 @@
 import Head from 'next/head';
-import Navbar from '../../../components/general/Navbar';
-import Footer from '../../../components/general/Footer';
+import Navbar from '../../components/general/Navbar';
+import Footer from '../../components/general/Footer';
 
-import CallToAction from '../../../components/general/CallToAction';
+import CallToAction from '../../components/general/CallToAction';
 
-import { content } from '../../../content/content';
-import { programas } from '../../../content/programas';
+import { content } from '../../content/content';
 import { useState } from 'react';
 
-import Individual from '../../../components/programas/Individual';
-
-export default function IndividualProgram() {
+export default function Home() {
   const [isFormOficinaActive, setFormOficinaActive] = useState(false);
   const [isFormActive, setFormActive] = useState(false);
   return (
@@ -31,9 +28,7 @@ export default function IndividualProgram() {
           setFormActive={setFormActive}
         />
       </header>
-      <main className='overflow-hidden max-w-7xl w-full mx-auto'>
-        <Individual content={programas[0]} />
-      </main>
+      <main className='overflow-hidden max-w-7xl w-full mx-auto'></main>
       <footer>
         <Footer />
       </footer>
