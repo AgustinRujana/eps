@@ -98,7 +98,7 @@
 	.st92{clip-path:url(#SVGID_69_);}
 	.st93{fill:#002654;}
 	.st94{display:inline;clip-path:url(#SVGID_73_);fill:#FFFFFF;}
-	.st95{display:inline;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st95{display:inline;fillRule:evenodd;clipRule:evenodd;fill:#FFFFFF;}
 	.st96{clip-path:url(#SVGID_75_);}
 	.st97{clip-path:url(#SVGID_79_);}
 	.st98{fill:#002D52;}

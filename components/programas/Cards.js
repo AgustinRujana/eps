@@ -10,7 +10,7 @@ export default function Cards({ item }) {
         <img className='rounded-t-xl' src={element.image}/>
         <p className='p-2 font-bold tracking-tight'>{element.title}</p>
         <p className='px-2 text-left'>{element.content}</p>
-        <a className="cursor-default" href={`#${element.id}`}>
+        <a className="cursor-default" href={`programas/${element.id}`}>
           <div className={classBtn}>Ver Más</div>
         </a>
       </div>
