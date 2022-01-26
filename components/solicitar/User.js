@@ -1,12 +1,15 @@
 export default function User(props) {
   return (
     <section className={props.show ? '' : 'hidden'}>
-      <form onSubmit={props.sendUser} className='bg-white shadow rounded-lg p-6'>
+      <form
+        onSubmit={props.sendUser}
+        className='bg-white shadow rounded-lg p-6'
+      >
         <div className='grid lg:grid-cols-2 gap-6'>
           <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
             <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
               <p>
-                <label for='name' className='bg-white text-gray-600 px-1'>
+                <label htmlFor='name' className='bg-white text-gray-600 px-1'>
                   DIM *
                 </label>
               </p>
@@ -14,8 +17,8 @@ export default function User(props) {
             <p>
               <input
                 id='name'
-                autocomplete='false'
-                tabindex='0'
+                autoComplete='false'
+                tabIndex='0'
                 type='text'
                 className='py-1 px-1 text-gray-900 outline-none block h-full w-full'
               />
@@ -24,7 +27,10 @@ export default function User(props) {
           <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
             <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
               <p>
-                <label for='lastname' className='bg-white text-gray-600 px-1'>
+                <label
+                  htmlFor='lastname'
+                  className='bg-white text-gray-600 px-1'
+                >
                   Last name *
                 </label>
               </p>
@@ -32,8 +38,8 @@ export default function User(props) {
             <p>
               <input
                 id='lastname'
-                autocomplete='false'
-                tabindex='0'
+                autoComplete='false'
+                tabIndex='0'
                 type='text'
                 className='py-1 px-1 outline-none block h-full w-full'
               />
@@ -42,7 +48,10 @@ export default function User(props) {
           <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
             <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
               <p>
-                <label for='username' className='bg-white text-gray-600 px-1'>
+                <label
+                  htmlFor='username'
+                  className='bg-white text-gray-600 px-1'
+                >
                   Username *
                 </label>
               </p>
@@ -50,8 +59,8 @@ export default function User(props) {
             <p>
               <input
                 id='username'
-                autocomplete='false'
-                tabindex='0'
+                autoComplete='false'
+                tabIndex='0'
                 type='text'
                 className='py-1 px-1 outline-none block h-full w-full'
               />
@@ -60,7 +69,10 @@ export default function User(props) {
           <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
             <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
               <p>
-                <label for='password' className='bg-white text-gray-600 px-1'>
+                <label
+                  htmlFor='password'
+                  className='bg-white text-gray-600 px-1'
+                >
                   Password *
                 </label>
               </p>
@@ -68,8 +80,8 @@ export default function User(props) {
             <p>
               <input
                 id='password'
-                autocomplete='false'
-                tabindex='0'
+                autoComplete='false'
+                tabIndex='0'
                 type='password'
                 className='py-1 px-1 outline-none block h-full w-full'
               />

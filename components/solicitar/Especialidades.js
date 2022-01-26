@@ -14,7 +14,7 @@ export default function Especialidades(props) {
     //     url: `https://epsplus.hospinet.app/api/especialidad/`,
     //     data: '',
     //   })
-    //     .then((res) => {
+    //     .then((res) => { 
     //       setloading(false);
     //       setEspecialidades(res.data);
     // 			console.log(res.data)
@@ -38,8 +38,12 @@ export default function Especialidades(props) {
   return (
     <section className={props.show ? '' : 'hidden'}>
       <div className='grid grid-cols-5 gap-4'>
-        {especialidades.map((especialidad) => (
-          <div onClick={() => console.log(especialidad.url)} className='col-span-1 border-2 h-12 rounded-full flex items-center px-4 border-darkBlue text-darkBlue hover:bg-darkBlue hover:text-white transition-all duration-500 cursor-pointer'>
+        {especialidades.map((especialidad, i) => (
+          <div
+            key={i}
+            onClick={() => console.log(especialidad.url)}
+            className='col-span-1 border-2 h-12 rounded-full flex items-center px-4 border-darkBlue text-darkBlue hover:bg-darkBlue hover:text-white transition-all duration-500 cursor-pointer'
+          >
             <p className='uppercase tracking-tighter leading-none text-sm'>
               {especialidad.nombre}
             </p>
