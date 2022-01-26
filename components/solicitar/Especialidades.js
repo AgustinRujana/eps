@@ -36,15 +36,15 @@ export default function Especialidades(props) {
   }, []);
 
   return (
-    <section className={props.show ? '' : 'hidden'}>
-      <div className='grid grid-cols-5 gap-4'>
+    <section className={props.show ? 'max-w-7xl mx-auto' : 'hidden'}>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:w-7/12 mx-3 md:mx-auto'>
         {especialidades.map((especialidad, i) => (
           <div
             key={i}
             onClick={() => console.log(especialidad.url)}
-            className='col-span-1 border-2 h-12 rounded-full flex items-center px-4 border-darkBlue text-darkBlue hover:bg-darkBlue hover:text-white transition-all duration-500 cursor-pointer'
+            className='col-span-1 justify-center border-2 h-12 rounded-full flex items-center px-4 border-darkBlue text-darkBlue hover:bg-darkBlue hover:text-white transition-all duration-500 cursor-pointer'
           >
-            <p className='uppercase tracking-tighter leading-none text-sm'>
+            <p className='uppercase tracking-tighter leading-none text-sm '>
               {especialidad.nombre}
             </p>
           </div>

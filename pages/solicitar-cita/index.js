@@ -44,7 +44,7 @@ export default function Home() {
             </div>
           </a>
         </header>
-        <main className='overflow-hidden w-full mx-auto md:px-6 h-[80vh]'>
+        <main className='w-full mx-auto md:px-6 h-[80vh]'>
           <Main />
         </main>
       </section>

@@ -1,30 +1,32 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import Especialidades from "./Especialidades";
-import User from "./User";
-
+import Especialidades from './Especialidades';
+import User from './User';
 
 export default function Main() {
-	//Info
+  //Info
 
-	//Paneles
-	const [showUser, setShowUser] = useState(true) //False later
-	const [showEspecialidades, setShowEspecialidades] = useState(false) //False later
+  //Paneles
+  const [showUser, setShowUser] = useState(true); //False later
+  const [showEspecialidades, setShowEspecialidades] = useState(false); //False later
 
-	const sendUser = () => {
-		//La funcion de verdad
-		//--------------//
+  const sendUser = (e) => {
+    e.preventDefault();
+    //La funcion de verdad
+    //--------------//
 
-		//Aca solo simulo
-		setShowUser(false)
-		setShowEspecialidades(true)
-		//--------------//
-	}
+    //Aca solo simulo
+    setShowUser(false);
+    setShowEspecialidades(true);
 
-	return (
-		<section className="py-16">
-			<User show={showUser} sendUser={sendUser}/>
-			<Especialidades show={showEspecialidades}/>
-		</section>
-	)
+    //usamos sessionStorage para ir guardando la data
+    //--------------//
+  };
+
+  return (
+    <section className='py-16'>
+      <User show={showUser} sendUser={sendUser} />
+      <Especialidades show={showEspecialidades} />
+    </section>
+  );
 }
