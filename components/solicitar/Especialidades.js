@@ -8,19 +8,19 @@ export default function Especialidades(props) {
 
   useEffect(() => {
     // if (!loading) {
-    //   setloading(true);
+    //   setLoading(true);
     //   axios({
     //     method: 'get',
     //     url: `https://epsplus.hospinet.app/api/especialidad/`,
     //     data: '',
     //   })
-    //     .then((res) => { 
-    //       setloading(false);
+    //     .then((res) => {
+    //       setLoading(false);
     //       setEspecialidades(res.data);
-    // 			console.log(res.data)
+    //       console.log(res.data);
     //     })
     //     .catch((err) => {
-    //       setloading(false);
+    //       setLoading(false);
     //       alert(err);
     //     });
     // }
