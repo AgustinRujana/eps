@@ -1,12 +1,18 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-export default function Especialidades(props) {
+export default function Especialidades({ show, showSpec, showUser }) {
   const [loading, setLoading] = useState(false);
 
   const [especialidades, setEspecialidades] = useState([]);
+  const [choosed, setChoosed] = useState(-1);
 
   useEffect(() => {
+    const cite = JSON.parse(sessionStorage.getItem('cite'));
+    if (!cite || !cite.user) {
+      showSpec(false);
+      return showUser(true);
+    }
     // if (!loading) {
     //   setLoading(true);
     //   axios({
@@ -35,22 +41,66 @@ export default function Especialidades(props) {
     //-----------------------------------------//
   }, []);
 
+  const handleSelectSpeciality = (name, url, pos) => {
+    if (!name || !url) return;
+
+    let cite = JSON.parse(sessionStorage.getItem('cite'));
+    if (!cite || !cite.user) {
+      showSpec(false);
+      return showUser(true);
+    }
+    console.log(cite);
+    cite.speciality = { name, url };
+    sessionStorage.setItem('cite', JSON.stringify(cite));
+    if (pos == choosed) {
+      setChoosed(-1);
+      delete cite.speciality;
+      return sessionStorage.setItem('cite', JSON.stringify(cite));
+    }
+    return setChoosed(pos);
+  };
+
   return (
-    <section className={props.show ? 'max-w-7xl mx-auto' : 'hidden'}>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:w-7/12 mx-3 md:mx-auto'>
-        {especialidades.map((especialidad, i) => (
-          <div
-            key={i}
-            onClick={() => console.log(especialidad.url)}
-            className='col-span-1 justify-center border-2 h-12 rounded-full flex items-center px-4 border-darkBlue text-darkBlue hover:bg-darkBlue hover:text-white transition-all duration-500 cursor-pointer'
-          >
-            <p className='uppercase tracking-tighter leading-none text-sm '>
-              {especialidad.nombre}
-            </p>
+    <>
+      <section className={show ? 'max-w-7xl mx-auto' : 'hidden'}>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:w-7/12 mx-3 md:mx-auto'>
+          {especialidades.map(
+            (especialidad, i) =>
+              especialidad.habilitado == true && (
+                <div
+                  key={i}
+                  onClick={() =>
+                    handleSelectSpeciality(
+                      especialidad.nombre,
+                      especialidad.url,
+                      i
+                    )
+                  }
+                  className={`col-span-1 justify-center border-2 h-12 rounded-full flex items-center px-4 transition-all duration-500 cursor-pointer  ${
+                    i != choosed
+                      ? 'border-darkBlue text-darkBlue hover:bg-darkBlue hover:text-white'
+                      : 'text-gray-400'
+                  }`}
+                >
+                  <p className='uppercase tracking-tighter leading-none text-sm'>
+                    {especialidad.nombre}
+                  </p>
+                </div>
+              )
+          )}
+        </div>
+        {choosed > -1 && (
+          <div className='border-t mt-6 pt-3 text-right w-4/6 mx-auto'>
+            <button
+              type='submit'
+              className='py-1 tracking-wider px-4 uppercase text-xs rounded-full bg-darkBlue hover:bg-sky-400 text-white hover:text-darkBlue transition-all duration-500 hover:scale-105'
+            >
+              Siguiente
+            </button>
           </div>
-        ))}
-      </div>
-    </section>
+        )}
+      </section>
+    </>
   );
 }
 
