@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-export default function Especialidades({ show, showSpec, showUser }) {
+export default function Especialidades({ showSpec, showUser, sendSpeciality }) {
   const [loading, setLoading] = useState(false);
 
-  const [especialidades, setEspecialidades] = useState([]);
+  const [especialidades, setEspecialidades] = useState();
   const [choosed, setChoosed] = useState(-1);
 
   useEffect(() => {
@@ -32,12 +32,9 @@ export default function Especialidades({ show, showSpec, showUser }) {
     // }
 
     //---------SIMULANDO LLAMADO API-----------//
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    setTimeout(()=>{
       setEspecialidades(especialidadesHardCoded);
-      console.log(especialidades);
-    }, 1000);
+    },1000)
     //-----------------------------------------//
   }, []);
 
@@ -61,44 +58,47 @@ export default function Especialidades({ show, showSpec, showUser }) {
 
   return (
     <>
-      <section className={show ? 'max-w-7xl mx-auto' : 'hidden'}>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:w-7/12 mx-3 md:mx-auto'>
-          {especialidades.map(
-            (especialidad, i) =>
-              especialidad.habilitado == true && (
-                <div
-                  key={i}
-                  onClick={() =>
-                    handleSelectSpeciality(
-                      especialidad.nombre,
-                      especialidad.url,
-                      i
-                    )
-                  }
-                  className={`col-span-1 justify-center border-2 h-12 rounded-full flex items-center px-4 transition-all duration-500 cursor-pointer  ${
-                    i != choosed
-                      ? 'border-darkBlue text-darkBlue hover:bg-darkBlue hover:text-white'
-                      : 'text-gray-400'
-                  }`}
-                >
-                  <p className='uppercase tracking-tighter leading-none text-sm'>
-                    {especialidad.nombre}
-                  </p>
-                </div>
-              )
-          )}
-        </div>
-        {choosed > -1 && (
-          <div className='border-t mt-6 pt-3 text-right w-4/6 mx-auto'>
-            <button
-              type='submit'
-              className='py-1 tracking-wider px-4 uppercase text-xs rounded-full bg-darkBlue hover:bg-sky-400 text-white hover:text-darkBlue transition-all duration-500 hover:scale-105'
-            >
-              Siguiente
-            </button>
+      {especialidades && (
+        <section className='max-w-7xl mx-auto'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:w-7/12 mx-3 md:mx-auto'>
+            {especialidades?.map(
+              (especialidad, i) =>
+                especialidad.habilitado == true && (
+                  <div
+                    key={i}
+                    onClick={() =>
+                      handleSelectSpeciality(
+                        especialidad.nombre,
+                        especialidad.url,
+                        i
+                      )
+                    }
+                    className={`col-span-1 justify-center border-2 h-12 rounded-full flex items-center px-4 transition-all duration-500 cursor-pointer  ${
+                      i != choosed
+                        ? 'border-darkBlue text-darkBlue hover:bg-darkBlue hover:text-white'
+                        : 'text-gray-400'
+                    }`}
+                  >
+                    <p className='uppercase tracking-tighter leading-none text-sm'>
+                      {especialidad.nombre}
+                    </p>
+                  </div>
+                )
+            )}
           </div>
-        )}
-      </section>
+          {choosed > -1 && (
+            <div className='border-t mt-6 pt-3 text-right w-4/6 mx-auto'>
+              <button
+                type='submit'
+                className='py-1 tracking-wider px-4 uppercase text-xs rounded-full bg-darkBlue hover:bg-sky-400 text-white hover:text-darkBlue transition-all duration-500 hover:scale-105'
+                onClick={sendSpeciality}
+              >
+                Siguiente
+              </button>
+            </div>
+          )}
+        </section>
+      )}
     </>
   );
 }

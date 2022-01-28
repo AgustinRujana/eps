@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function User({ show, sendUser }) {
   const [dim, setDim] = useState('');
@@ -15,6 +15,10 @@ export default function User({ show, sendUser }) {
     sessionStorage.setItem('cite', JSON.stringify(data));
     sendUser();
   };
+
+  useEffect(() => {
+    show && sessionStorage.removeItem('cite');
+  }, []);
 
   return (
     <section className={show ? '' : 'hidden'}>
