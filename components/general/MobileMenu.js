@@ -1,10 +1,16 @@
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 export default function MobileMenu(props) {
-  const { content, setFormActive, setFormOficinaActive, mobileShow, setMobileShow } = props;
+  const {
+    content,
+    setFormActive,
+    setFormOficinaActive,
+    mobileShow,
+    setMobileShow,
+  } = props;
 
   return (
-    <section className='relative md:hidden z-40'>
+    <section className='relative md:hidden z-40 overflow-hidden'>
       <div className='divide-y'>
         {/* grupoEPS Boton y menu */}
         <div className='bg-darkBlue grid grid-cols-3 items-center justify-center'>
@@ -53,7 +59,9 @@ export default function MobileMenu(props) {
       {/* Desplegable */}
       <div
         className={
-          mobileShow ? 'absolute w-full top-0 divide-y transform transition-all ease-out duration-1000' : 'absolute w-full -top-96 transform transition-all ease-out duration-1000'
+          mobileShow
+            ? 'absolute w-full top-0 divide-y transform transition-all ease-out duration-1000'
+            : 'absolute w-full -top-96 transform transition-all ease-out duration-1000'
         }
       >
         {/* grupoEPS Boton y close */}
@@ -99,7 +107,7 @@ export default function MobileMenu(props) {
             </div>
           </a>
         </div>
-        <div className='grid grid-cols-2 bg-slate-100 items-center justify-center py-2'>
+        <div className='grid grid-cols-2 bg-slate-100 items-center justify-center py-2 over'>
           {content.topBar.map((item) => (
             <a href={item.href}>
               <div className='flex items-center text-darkBlue px-1 py-1'>

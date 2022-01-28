@@ -1,6 +1,7 @@
 export const content = {
   menu: {
     topBar: [
+      
       {
         name: 'Servicio para Empresas',
         href: '/servicios',
@@ -546,16 +547,18 @@ export const content = {
           //   image: '/images/mapSliders/farma/3.jpg',
           // },
         ],
-        list: ['Exámenes médicos de rutina.', 'Exámenes médicos en profundidad.'],
+        list: [
+          'Exámenes médicos de rutina.',
+          'Exámenes médicos en profundidad.',
+        ],
         content: [
           'Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall',
           // 'San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines.',
           'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenidam entre 1ra y 2da Calle frente a carretera Internacional y triple a autopartes.',
           'Juticalpa Olancho Mall Premier, Colonia Rivas - Catamarcas km 169, área colonial, segundo nivel.',
           // 'Choluteca, Barrio Libertad, Local de Agua Azul.'
-          
         ],
-      }
+      },
     ],
   },
   epsCard: {

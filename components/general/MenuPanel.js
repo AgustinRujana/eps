@@ -22,28 +22,49 @@ export default function MenuPanel(props) {
           className='h-12 text-white hover:text-darkBlue transition-all duration-500 ease-in-out absolute right-6 top-2'
         />
         <div className='hover:text-fuchsia-800 w-fit transition-all duration-500 ease-in-out'>
-          <a href='/nosotros'>Nosotros</a>
+          <a href='/nosotros' className='whitespace-nowrap'>
+            Nosotros
+          </a>
         </div>
         <div className='hover:text-teal-400 w-fit transition-all duration-500 ease-in-out'>
-          <a href='/aseguradoras'>Aseguradoras</a>
+          <a href='/aseguradoras' className='whitespace-nowrap'>
+            Aseguradoras
+          </a>
         </div>
         <div className='hover:text-darkBlue w-fit transition-all duration-500 ease-in-out'>
-          <a href='/clinicas'>Nuestras clínicas </a>
+          <a href='/clinicas' className='whitespace-nowrap'>
+            Nuestras clínicas{' '}
+          </a>
         </div>
         <div className='hover:text-fuchsia-800 w-fit transition-all duration-500 ease-in-out'>
-          <a href='/eps-card'>Nuestros servicios</a>
+          <a href='/eps-card' className='whitespace-nowrap'>
+            Nuestros servicios
+          </a>
         </div>
         <div className='hover:text-teal-400 w-fit transition-all duration-500 ease-in-out'>
-          <a href='/especialidades'>Especialidades</a>
+          <a href='/especialidades' className='whitespace-nowrap'>
+            Especialidades
+          </a>
         </div>
         <div className='hover:text-darkBlue w-fit transition-all duration-500 ease-in-out'>
-          <a href='/eps-card'>EPS Card</a>
+          <a href='/eps-card' className='whitespace-nowrap'>
+            EPS Card
+          </a>
         </div>
         <div className='hover:text-fuchsia-800 w-fit transition-all duration-500 ease-in-out'>
-          <a href='/programas'>Programas de salud</a>
+          <a href='/programas' className='whitespace-nowrap'>
+            Programas de salud
+          </a>
         </div>
         <div className='hover:text-teal-400 w-fit transition-all duration-500 ease-in-out'>
-          <a href='/servicios'>Servicio para empresas</a>
+          <a href='/servicios' className='whitespace-nowrap'>
+            Servicio para empresas
+          </a>
+        </div>
+        <div className='hover:text-darkBlue w-fit transition-all duration-500 ease-in-out'>
+          <a href='/solicitar-cita' className='whitespace-nowrap'>
+            Solicitar cita
+          </a>
         </div>
       </div>
     </div>
