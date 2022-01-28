@@ -44,13 +44,13 @@ export default function Navbar({
           </div>
           <a
             href='/solicitar-cita'
-            className='cursor-pointer flex justify-between items-center px-2 md:px-6 shadow-inner rounded-t-xl  bg-teal-400 h-full'
+            className='cursor-pointer flex justify-between items-center px-2 md:px-6 shadow-inner rounded-tl-xl  bg-sky-500 h-full'
           >
             <p className='font-bold text-white'>Solicitar Cita</p>
           </a>
-          <div className='cursor-pointer flex justify-between items-center px-2 md:px-6 h-full rounded-tl-xl bg-sky-500'>
+          {/* <div className='cursor-pointer flex justify-between items-center px-2 md:px-6 h-full rounded-tl-xl bg-sky-500'>
             <p className='font-bold text-white'>Iniciar Sesión</p>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Middle bar */}

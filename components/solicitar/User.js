@@ -88,7 +88,7 @@ export default function User({ show, sendUser }) {
                 tabIndex='0'
                 type='text'
                 className='py-1 px-1 outline-none block h-full w-full'
-                value={password}
+                value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
               />
             </p>
