@@ -31,14 +31,14 @@ export default function Home() {
         />
       </header> */}
       <section className='bg-gray-50'>
-        <header className='p-4 flex items-center justify-between bg-white shadow h-[20vh]'>
-          <div className='grid grid-cols-2 items-center divide-x-2 justify-center'>
-            <img className='h-28' src='/logos/logoGrupoEPS.svg' />
-            <img className='p-4' src='/logos/sloganEPS.svg' />
+        <header className='p-4 flex items-center justify-between bg-white shadow sm:h-[20vh]'>
+          <div className='grid sm:grid-cols-2 items-center divide-x-2 justify-center'>
+            <img className='sm:h-28 h-20' src='/logos/logoGrupoEPS.svg' />
+            <img className='p-4 hidden sm:block' src='/logos/sloganEPS.svg' />
           </div>
           <a href='/'>
-            <div className='px-6 py-2 rounded-full bg-darkBlue hover:bg-sky-400 text-white hover:text-darkBlue transition-all duration-500 hover:scale-105'>
-              <p className='tracking-wider px-2 uppercase text-sm'>
+            <div className='sm:px-6 px-2 sm:py-2 py-1 rounded-full bg-darkBlue hover:bg-sky-400 text-white hover:text-darkBlue transition-all duration-500 hover:scale-105'>
+              <p className='sm:tracking-wider px-2 uppercase sm:text-sm text-xs'>
                 Volver al Inicio
               </p>
             </div>
