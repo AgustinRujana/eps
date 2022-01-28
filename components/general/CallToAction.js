@@ -47,19 +47,23 @@ export default function CallToAction({ isFormActive, setFormActive }) {
             ? 'bg-white w-fit text-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 shadow-2xl fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50'
             : 'cursor-pointer w-fit hover:bg-sky-500 text-white bg-darkBlue rounded-t-lg transition-all ease-in-out duration-1000 fixed -bottom-[22rem] left-1/2 transform -translate-x-1/2 z-50'
         }
-        onClick={() => isActive ? setActive(false) : setActive(true)}
+        onClick={() => (isActive ? setActive(false) : setActive(true))}
       >
         <div
-          className={isActive ? 'z-[60] opacity-100 absolute top-4 right-4' : 'opacity-0 hidden'}
+          className={
+            isActive
+              ? 'z-[60] opacity-100 absolute top-4 right-4'
+              : 'opacity-0 hidden'
+          }
         >
-          <XIcon className='h-6 text-slate-400 hover:text-slate-600'/>
+          <XIcon className='h-6 text-slate-400 hover:text-slate-600' />
         </div>
         <div className='xl:py-4 py-2 px-8'>
           <p className='uppercase font-semibold text-center'>Aseguradoras</p>
         </div>
         <div className='p-4 grid grid-cols-2 items-center justify-center'>
-          {logos.map((item) => (
-            <img className='h-16 mx-auto' src={item.icon} />
+          {logos.map((item, i) => (
+            <img className='h-16 mx-auto' src={item.icon} key={i} />
           ))}
         </div>
       </div>
