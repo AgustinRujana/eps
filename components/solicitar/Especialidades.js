@@ -49,14 +49,13 @@ export default function Especialidades({ show, showSpec, showUser }) {
       showSpec(false);
       return showUser(true);
     }
-    console.log(cite);
-    cite.speciality = { name, url };
-    sessionStorage.setItem('cite', JSON.stringify(cite));
     if (pos == choosed) {
       setChoosed(-1);
-      delete cite.speciality;
-      return sessionStorage.setItem('cite', JSON.stringify(cite));
+      return;
     }
+    cite.speciality = { name, url };
+    sessionStorage.setItem('cite', JSON.stringify(cite));
+
     return setChoosed(pos);
   };
 
