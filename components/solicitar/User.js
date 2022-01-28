@@ -2,15 +2,15 @@ import { useState } from 'react';
 
 export default function User({ show, sendUser }) {
   const [dim, setDim] = useState('');
-  const [lastname, setLastname] = useState('');
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [telephone, setTelephone] = useState('');
+  const [name, setName] = useState('');
+  const [lastName, setLastName] = useState('');
 
   const handleUser = (e) => {
     e.preventDefault();
-    if (!dim || !lastname || !username || !password) return;
+    if (!dim || !telephone || !name || !lastName) return;
 
-    const data = { user: { dim, lastname, username, password } };
+    const data = { user: { dim, telephone, name, lastName } };
 
     sessionStorage.setItem('cite', JSON.stringify(data));
     sendUser();
@@ -40,58 +40,61 @@ export default function User({ show, sendUser }) {
           </div>
           <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
             <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
-              <label htmlFor='lastname' className='bg-white text-gray-600 px-1'>
-                Last name *
+              <label
+                htmlFor='telephone'
+                className='bg-white text-gray-600 px-1'
+              >
+                Telefono *
               </label>
             </div>
             <p>
               <input
-                id='lastname'
+                id='telephone'
                 autoComplete='false'
                 tabIndex='0'
                 type='text'
                 className='py-1 px-1 outline-none block h-full w-full'
-                value={lastname}
-                onChange={(e) => setLastname(e.target.value)}
+                value={telephone}
+                onChange={(e) => setTelephone(e.target.value)}
               />
             </p>
           </div>
           <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
             <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
-              <label htmlFor='username' className='bg-white text-gray-600 px-1'>
-                Username *
+              <label htmlFor='name' className='bg-white text-gray-600 px-1'>
+                Nombre *
               </label>
             </div>
             <input
-              id='username'
+              id='name'
               autoComplete='false'
               tabIndex='0'
               type='text'
               className='py-1 px-1 outline-none block h-full w-full'
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
             <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
-              <label htmlFor='password' className='bg-white text-gray-600 px-1'>
-                Password *
+              <label htmlFor='lastName' className='bg-white text-gray-600 px-1'>
+                Apellido *
               </label>
             </div>
             <p>
               <input
-                id='password'
+                id='lastName'
                 autoComplete='false'
                 tabIndex='0'
-                type='password'
+                type='text'
                 className='py-1 px-1 outline-none block h-full w-full'
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={(e) => setLastName(e.target.value)}
               />
             </p>
           </div>
         </div>
-        {dim && lastname && username && password && (
+        {dim && telephone && name && lastName && (
           <div className='border-t mt-6 pt-3 text-right'>
             <button
               type='submit'
