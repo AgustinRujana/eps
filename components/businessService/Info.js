@@ -1,6 +1,6 @@
 export default function Info({ content }) {
   return (
-    <section className='mb-20'>
+    <section className='mb-20' id='info'>
       <div className='mb-8'>
         <article>
           <div className='flex items-center relative mb-8'>

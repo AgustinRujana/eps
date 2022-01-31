@@ -12,28 +12,28 @@ export const serviciosEmpresas = {
         text: 'Tamizajes, exámenes de laboratorio, chequeos médicos, vacunación, optometría, certificados de salud y pruebas COVID-19. Implementación del <span class="font-bold">Diario Anual de Salud</span> en su empresa.',
         style: '', //Otros estilos
         class: 'bg-gray-200 text-neutral-600', //className={`bg-${color}-500`} Por ejemplo
-        href: '', //Referencia boton
+        href: '#info', //Referencia boton
       },
       {
         title: 'Salud para su Empresa',
         text: 'Planes de salud individuales o familiares <span class="font-bold">accesibles</span>, que se adaptan a las necesidades de sus colaboradores brindando un servicio médico integral y de calidad, atendido por los mejores profesionales del país.',
         style: '', //Otros estilos
         class: 'bg-neutral-600 text-gray-200', //className={`bg-${color}-500`} Por ejemplo
-        href: '', //Referencia boton
+        href: '#plans', //Referencia boton
       },
       {
         title: 'Riesgo Laboral',
         text: 'Toda actividad económica genera riesgos laborales que requieren ser identificados y controlados para optimizar el funcionamiento de la empresa, mejorando las condiciones laborales de cada miembro de la compañía y evitando cualquier tipo de siniestralidad.',
         style: '', //Otros estilos
         class: 'bg-gray-200 text-neutral-600', //className={`bg-${color}-500`} Por ejemplo
-        href: '', //Referencia boton
+        href: '#info', //Referencia boton
       },
       {
         title: 'Farmacia Empresarial',
         text: 'Programa de paciente crónico, farmacia empresarial, envío de medicamentos a domicilio.',
         style: '', //Otros estilos
         class: 'bg-neutral-600 text-gray-200', //className={`bg-${color}-500`} Por ejemplo
-        href: '', //Referencia boton
+        href: '#info', //Referencia boton
       },
     ],
   },
@@ -45,20 +45,17 @@ export const serviciosEmpresas = {
         Estas jornadas tienen lugar una vez al año, en donde se realiza una evaluación física de sus colaboradores, así como la toma de exámenes de laboratorio y posterior evaluación de sus resultados. 
         Una vez obtenidos los mismos, pasamos a la etapa denominada <span class="font-bold">DAS (Diario Anual de Salud)</span> donde nuestros especialistas, hacen uso de su conocimiento médico para ayudar a los pacientes que presenten afecciones, alteraciones o riesgo de enfermedad, creando un programa especializado junto a su empresa y disminuyendo así, la siniestralidad.`,
       style: '', //Otros estilos
-      href: '', //Referencia boton
     },
     {
       title: 'Riesgo Laboral',
       text: `Brindamos un servicio de asesoría para identificar y controlar de forma prioritaria los posibles riesgos laborales dentro de su empresa y/o sector económico. 
         Brindamos orientación sobre los beneficios de implementar medidas de salud ocupacional en su empresa. `,
       style: '', //Otros estilos
-      href: '', //Referencia boton
     },
     {
       title: 'Farmacia Empresarial',
       text: `Luego de consulta con el médico internista, se coordina el envío mensual de los medicamentos que cada paciente crónico requiera, a su domicilio o lugar de trabajo. Esto permitirá tener un control sobre la entrega de medicamentos y por lo tanto, una baja significativa en los costos de farmacia para su empresa.`,
       style: '', //Otros estilos
-      href: '', //Referencia boton
     },
   ],
   plans: [
@@ -97,7 +94,6 @@ export const serviciosEmpresas = {
       ],
       style: '', //Otros estilos
       color: '-blue-', //className={`bg-${color}-500`} Por ejemplo
-      href: '', //Referencia boton
     },
     {
       title: 'Plan Vida Plus- Individual o familiar', //Escribir Descuentos en el componente
@@ -134,7 +130,6 @@ export const serviciosEmpresas = {
       ],
       style: '', //Otros estilos
       color: '-blue-', //className={`bg-${color}-500`} Por ejemplo
-      href: '', //Referencia boton
     },
   ],
 };

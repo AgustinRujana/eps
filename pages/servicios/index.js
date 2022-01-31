@@ -40,7 +40,7 @@ export default function Home() {
           setFormActive={setFormActive}
         />
       </header>
-      <main className='overflow-hidden w-full my-10 md:my-2'>
+      <main className='overflow-hidden w-full my-10 md:my-2 scroll-smooth'>
         <div>
           <img
             className={`fixed -z-10 w-1/3 -right-10 -bottom-24 transition-all ease-linear duration-[${

@@ -1,28 +1,8 @@
+import { CheckCircleIcon } from '@heroicons/react/outline';
+
 export default function Plans({ content }) {
-  const iconCheck = (props) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      className='h-6 w-6'
-      fill='none'
-      viewBox='0 0 24 24'
-      stroke='currentColor'
-      {...props}
-    >
-      <path
-        strokeLinecap='round'
-        strokeLinejoin='round'
-        strokeWidth={2}
-        d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
-      />
-    </svg>
-  );
-
-  const icon = {
-    check: iconCheck,
-  };
-
   return (
-    <section>
+    <section id='plans'>
       <div className='flex items-center relative mb-8'>
         <div className='w-full h-0.5 bg-neutral-500 absolute'></div>
         <h2 className='min-w-min text-neutral-600 bg-white z-10 px-6 ml-12 md:ml-36 text-3xl mb-2 font-semibold mx-8'>
@@ -43,7 +23,7 @@ export default function Plans({ content }) {
               <ul>
                 {plan.content.map((item, j) => (
                   <li key={j} className='grid grid-cols-12 items-center'>
-                    <icon.check
+                    <CheckCircleIcon
                       class={`h-7 w-7 ${plan.iconColor} whitespace-nowrap`}
                     />
                     <div className='col-span-10 flex items-center'>
