@@ -149,7 +149,7 @@ export default function Home() {
                   {/* <MapsSlider content={service} /> */}
                 </div>
                 <div className='px-6'>
-                  <img className='h-16 mx-auto my-6' src={''} />
+                  <img className='h-16 mx-auto my-6' src='logos/epsAmbulancia.svg' />
                   <p className=' font-bold text-xl text-center text-darkBlue leading-tight tracking-tighter my-6'>
                     Urgencias 24hs y <br /> servicio de ambulancia.
                   </p>

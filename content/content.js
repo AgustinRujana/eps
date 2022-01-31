@@ -532,33 +532,33 @@ export const content = {
           // 'Choluteca, Barrio Libertad, Local de Agua Azul.'
         ],
       },
-      {
-        logo: '/logos/epsLaboral.svg', //EPS Lavoral
-        // map: '/images/maps/epsFarma.svg',
-        color: 'fuchsia-700',
-        data: [
-          // {
-          //   image: '/images/mapSliders/farma/1.jpg',
-          // },
-          // {
-          //   image: '/images/mapSliders/farma/2.jpg',
-          // },
-          // {
-          //   image: '/images/mapSliders/farma/3.jpg',
-          // },
-        ],
-        list: [
-          'Exámenes médicos de rutina.',
-          'Exámenes médicos en profundidad.',
-        ],
-        content: [
-          'Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall',
-          // 'San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines.',
-          'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenidam entre 1ra y 2da Calle frente a carretera Internacional y triple a autopartes.',
-          'Juticalpa Olancho Mall Premier, Colonia Rivas - Catamarcas km 169, área colonial, segundo nivel.',
-          // 'Choluteca, Barrio Libertad, Local de Agua Azul.'
-        ],
-      },
+      // {
+      //   logo: '/logos/epsLaboral.svg', //EPS Lavoral
+      //   // map: '/images/maps/epsFarma.svg',
+      //   color: 'fuchsia-700',
+      //   data: [
+      //     // {
+      //     //   image: '/images/mapSliders/farma/1.jpg',
+      //     // },
+      //     // {
+      //     //   image: '/images/mapSliders/farma/2.jpg',
+      //     // },
+      //     // {
+      //     //   image: '/images/mapSliders/farma/3.jpg',
+      //     // },
+      //   ],
+      //   list: [
+      //     'Exámenes médicos de rutina.',
+      //     'Exámenes médicos en profundidad.',
+      //   ],
+      //   content: [
+      //     'Tegucigalpa, 3er Nivel de Estacionamiento en Cascadas Mall',
+      //     // 'San Pedro Sula, 1ra Calle 15Av Blvd. Morazan Contiguo a Cebollines.',
+      //     'Sta. Rosa de Copán, Barrio Mercedes 7ma Avenidam entre 1ra y 2da Calle frente a carretera Internacional y triple a autopartes.',
+      //     'Juticalpa Olancho Mall Premier, Colonia Rivas - Catamarcas km 169, área colonial, segundo nivel.',
+      //     // 'Choluteca, Barrio Libertad, Local de Agua Azul.'
+      //   ],
+      // },
     ],
   },
   epsCard: {
