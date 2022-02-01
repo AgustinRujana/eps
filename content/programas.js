@@ -118,7 +118,7 @@ export const programas = {
         {
           title: 'Hombres - Programa génesis 18 a 40 años',
           id: '4',
-          image: '/images/programas/21',
+          image: '/images/programas/22',
           text: `Estamos junto a ti. 
           Pensado para hombres de 18 a 40 años, el programa génesis, brinda descuentos para los más completos servicios de salud física y mental, médicos especialistas, gimnasios ¡Y mucho más!
           Vive una vida saludable junto a Grupo EPS.
@@ -1135,7 +1135,7 @@ export const programas = {
       items: [
         {
           title: 'Hombres 18 a 40 años',
-          image: '/images/programas/21',
+          image: '/images/programas/22',
           id: 16,
           table: [
             {
@@ -1267,7 +1267,7 @@ export const programas = {
         },
         {
           title: 'Hombres 40 a 60 años',
-          image: '/images/programas/16',
+          image: '/images/programas/21',
           id: 17,
           table: [
             {
