@@ -2,7 +2,7 @@ export const serviciosEmpresas = {
   hero: {
     title: 'Bienvenido al servicio para empresas de Grupo EPS',
     href: '/images/empresas/mainEmpresas.jpg',
-    icon: '/logos/epsFarma.svg',
+    icon: '/logos/epsLaboral.svg',
   },
   cards: {
     title: 'Cuidamos la salud de sus colaboradores',

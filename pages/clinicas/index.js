@@ -36,9 +36,11 @@ export default function Home() {
         <div className='relative mt-8 mb-28'>
           <img className='h-96 mx-auto' src={'images/maps/mapaHonduras.svg'} />
           <div className='absolute right-1/8 top-80'>
-            <p className='font-semibold md:text-2xl text-xl text-darkBlue uppercase w-fit'>
-              Solicitar Cita
-            </p>
+            <a href='/solicitar-cita'>
+              <p className='font-semibold md:text-2xl text-xl text-darkBlue hover:text-green-500 hover:scale-110 transition-all uppercase w-fit'>
+                Solicitar Cita
+              </p>
+            </a>
             <p className='font-bold md:text-4xl text-2xl text-teal-400 w-fit rounded-r-full'>
               Siempre cerca de ti
             </p>
@@ -97,7 +99,7 @@ export default function Home() {
         <ScrollSlideUp>
           <div className=''>
             <p className='font-semibold tracking-tighter md:text-xl text-base text-darkBlue uppercase w-fit mr-auto rounded-r-full pl-1/8 pr-8'>
-              !Aún hay más!
+              ¡Aún hay más!
             </p>
             <p className='font-bold tracking-tighter md:text-3xl text-xl text-teal-400 w-fit mr-auto rounded-r-full pl-1/8 mb-4'>
               Descubre todos los <br /> servicios que tenemos para tí

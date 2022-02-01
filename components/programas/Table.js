@@ -3,12 +3,12 @@ import { CheckCircleIcon } from '@heroicons/react/outline';
 export default function Table({ item, color }) {
   return (
     <div className='w-full px-8 text-darkBlue mt-4'>
-      <header className='w-full grid grid-cols-12 font-semibold divide-x divide-darkBlue border-darkBlue border'>
+      <header className='w-full grid items-center grid-cols-12 font-semibold divide-x divide-darkBlue border-darkBlue border'>
         <div className='col-span-8 pl-5'>PRESTACIONES</div>
         <div className='col-span-2 text-center tracking-tighter leading-none'>
           Quiero Salud
         </div>
-        <div className='col-span-2 text-center tracking-tighter leading-none'>Vida Plus</div>
+        <div className='col-span-2 text-center tracking-tighter leading-none'>Vida <br/> Plus</div>
       </header>
       <main className='border-darkBlue border-r border-l border-b divide-y divide-darkBlue divide-dotted'>
         {item.map((row, i) => (

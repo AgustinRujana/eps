@@ -1,4 +1,4 @@
-export default function Info({ content }) {
+export default function Info({ content, setFormOficinaActive}) {
   return (
     <section className='mb-20' id='info'>
       <div className='mb-8'>
@@ -49,7 +49,7 @@ export default function Info({ content }) {
       </div>
       <div className='w-8/12 h-0.5 bg-neutral-500 absolute'></div>
       <div className='w-full text-center mt-16'>
-        <a href='' className='text-white font-semibold text-xl'>
+        <a onClick={() => setFormOficinaActive(true)} className='text-white font-semibold text-xl'>
           <span className='bg-green-400 flex w-3/5 lg:max-w-max mx-auto rounded-3xl px-3 lg:px-8 py-1'>
             QUIERO QUE ME CONTACTE UN ASESOR
           </span>

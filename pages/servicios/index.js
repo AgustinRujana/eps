@@ -53,8 +53,14 @@ export default function Home() {
         <div className='mt-10'>
           <Hero content={serviciosEmpresas.hero} />
           <Cards content={serviciosEmpresas.cards} />
-          <Info content={serviciosEmpresas.info} />
-          <Plans content={serviciosEmpresas.plans} />
+          <Info
+            content={serviciosEmpresas.info}
+            setFormOficinaActive={setFormOficinaActive}
+          />
+          <Plans
+            content={serviciosEmpresas.plans}
+            setFormOficinaActive={setFormOficinaActive}
+          />
         </div>
       </main>
       <footer>

@@ -12,7 +12,7 @@ export default function HeroCard(props) {
             <div className='font-bold'>
               <div className='p-4 md:text-3xl text-2xl'>
                 <p>
-                  Descubre {' '}
+                  Descubre{' '}
                   <span className='uppercase md:text-4xl text-3xl font-extrabold tracking-tighter'>
                     EPS Card
                   </span>
@@ -25,20 +25,21 @@ export default function HeroCard(props) {
                   className='bg-green-600 p-2 shadow hover:shadow-2xl h-full flex items-center justify-center  cursor-pointer hover:bg-green-500 transition-all ease-in-out duration-500 col-span-1'
                   onClick={() => props.setFormActive(true)}
                 >
-                  <p className='leading-tight text-white tracking-tighter'>Contratar EPS CARD</p>
+                  <p className='leading-tight text-white tracking-tighter'>
+                    Contratar EPS CARD
+                  </p>
                 </div>
-                <div className='col-span-1 h-full shadow hover:shadow-2xl flex items-center justify-center bg-fuchsia-800 text-white p-2 hover:bg-green-500 transition-all ease-in-out duration-500'>
+                <div className='col-span-1 h-full shadow hover:shadow-2xl flex items-center justify-center bg-sky-500 text-white p-2 hover:bg-green-500 transition-all ease-in-out duration-500'>
                   <a href='/eps-card'>
-                    <p className='px-8 underline font-normal'>Más información</p>
+                    <p className='px-8 underline font-normal'>
+                      Más información
+                    </p>
                   </a>
                 </div>
               </div>
             </div>
             <div className='hidden md:block shadow-2xl'>
-              <img
-                className='rounded-lg flex'
-                src='/images/epsCard.jpeg'
-              />
+              <img className='rounded-lg flex' src='/images/epsCard.jpeg' />
             </div>
           </div>
         </ScrollSlideUp>
@@ -54,9 +55,7 @@ export default function HeroCard(props) {
             </div>
             <div className=''>
               <div className='p-4'>
-                <p className='md:text-3xl text-2xl font-bold'>
-                  Especialidades
-                </p>
+                <p className='md:text-3xl text-2xl font-bold'>Especialidades</p>
                 <p className='leading-tight tracking-tight text-sm sm:text-base'>
                   Revolucionamos la atención médica con un servicio que valora
                   tu tiempo y prioriza tu comodidad. Puedes agendar consultas
@@ -65,13 +64,15 @@ export default function HeroCard(props) {
                 </p>
               </div>
               <div className='grid w-full sm:grid-cols-2 grid-cols-1 items-center justify-center font-semibold rounded-lg md:px-2'>
-                <div
-                  className='bg-green-600 p-2 shadow hover:shadow-2xl h-full flex items-center justify-center  cursor-pointer hover:bg-green-500 transition-all ease-in-out duration-500 col-span-1'
-                  onClick={() => props.setFormOficiaActive(true)}
-                >
-                  <p className='leading-tight text-white '>Agenda una cita</p>
-                </div>
-                <div className='col-span-1 h-full shadow hover:shadow-2xl flex items-center font-normal justify-center bg-fuchsia-800 text-white p-2 hover:bg-green-500 transition-all ease-in-out duration-500'>
+                <a href='/solicitar-cita'>
+                  <div
+                    className='bg-green-600 p-2 shadow hover:shadow-2xl h-full flex items-center justify-center  cursor-pointer hover:bg-green-500 transition-all ease-in-out duration-500 col-span-1'
+                    // onClick={() => props.setFormOficiaActive(true)}
+                  >
+                    <p className='leading-tight text-white '>Agenda una cita</p>
+                  </div>
+                </a>
+                <div className='col-span-1 h-full shadow hover:shadow-2xl flex items-center font-normal justify-center bg-sky-500 text-white p-2 hover:bg-green-500 transition-all ease-in-out duration-500'>
                   <a href='/especialidades'>
                     <p className='px-8 underline'>Ver especialidades</p>
                   </a>

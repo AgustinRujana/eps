@@ -81,7 +81,7 @@ export default function Navbar({
         </div>
         <div className='flex items-center font-semibold text-white px-4 py-2'>
           <img className='h-6 mr-2' src='/images/icons/clinicasWhite.svg' />
-          <a href='/#clinicas'>Nuestras Clínicas</a>
+          <a href='/clinicas'>Nuestras Clínicas</a>
         </div>
         <div className='flex items-center font-semibold text-white px-4 py-2'>
           <img

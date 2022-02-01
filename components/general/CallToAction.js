@@ -18,20 +18,23 @@ export default function CallToAction({ isFormActive, setFormActive }) {
         >
           <div className='hidden md:flex shadow hover:shadow-2xl hover:bg-teal-400 transition-all ease-in-out duration-500 bg-sky-500 p-2 rounded-l-lg items-center'>
             <img className='h-8 mr-2' src='/images/icons/whatsapp.svg' />
-            <p className='text-white uppercase '>
+            <p className='text-white uppercase leading-none'>
               Habla con <br /> Nosotros
             </p>
           </div>
         </a>
-        <div
-          className='hidden cursor-pointer md:flex mt-2 shadow hover:shadow-2xl hover:bg-teal-400 bg-fuchsia-800 transition-all ease-in-out duration-500 p-2 rounded-l-lg items-center'
-          onClick={() => setFormActive(true)}
-        >
-          <img className='h-8 mr-2' src='/images/icons/cardWhite.svg' />
-          <p className='text-white uppercase font-semibold'>
-            Contrata <br /> EPS Card
-          </p>
-        </div>
+        <a href='/programas/informacion'>
+          <div
+            className='hidden cursor-pointer md:flex mt-2 shadow hover:shadow-2xl hover:bg-green-600 bg-green-500 transition-all ease-in-out duration-500 p-2 rounded-l-lg items-center'
+            // onClick={() => setFormActive(true)}
+          >
+            <img className='h-8 mr-2' src='/images/icons/cardWhite.svg' />
+            <p className='text-white uppercase leading-none'>
+              Contrata
+              <br /> Programa <br /> de Salud
+            </p>
+          </div>
+        </a>
       </div>
       <FormularioCard
         isFormActive={isFormActive}

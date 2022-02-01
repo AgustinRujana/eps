@@ -1,6 +1,6 @@
 import { CheckCircleIcon } from '@heroicons/react/outline';
 
-export default function Plans({ content }) {
+export default function Plans({ content, setFormOficinaActive }) {
   return (
     <section id='plans'>
       <div className='flex items-center relative mb-8'>
@@ -42,8 +42,8 @@ export default function Plans({ content }) {
           </article>
         ))}
       </div>
-      <div className='w-full text-center mt-16'>
-        <a href='' className='text-white font-semibold text-xl'>
+      <div className='w-full text-center my-16'>
+        <a onClick={() => setFormOficinaActive(true)} className='text-white font-semibold text-xl'>
           <span className='bg-green-400 flex w-3/5 lg:max-w-max mx-auto rounded-3xl px-3 lg:px-8 py-1'>
             QUIERO QUE ME CONTACTE UN ASESOR
           </span>
