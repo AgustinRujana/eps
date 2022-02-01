@@ -187,6 +187,7 @@ export const programas = {
         {
           title: 'Control Prenatal - Primer trimestre',
           image: '/images/programas/0',
+          id: 1,
           table: [
             { name: 'Medicina general ', basic: '100%', pro: '100%' },
             {
@@ -239,6 +240,7 @@ export const programas = {
         {
           title: 'Control Prenatal - Segundo trimestre',
           image: '/images/programas/1',
+          id: 2,
           table: [
             { name: 'Medicina general ', basic: '100%', pro: '100%' },
             {
@@ -285,6 +287,7 @@ export const programas = {
         {
           title: 'Control Prenatal - Tercer trimestre',
           image: '/images/programas/20',
+          id: 3,
           table: [
             { name: 'Medicina general ', basic: '100%', pro: '100%' },
             {
@@ -338,6 +341,7 @@ export const programas = {
         {
           title: 'Post  parto saludable',
           image: '/images/programas/2',
+          id: 4,
           table: [
             {
               name: 'Ginecología y obstetricia',
@@ -409,6 +413,7 @@ export const programas = {
         {
           title: 'Primeros pasos',
           image: '/images/programas/3',
+          id: 5,
           table: [
             {
               name: 'Pediatría',
@@ -450,6 +455,7 @@ export const programas = {
         {
           title: 'Kinder',
           image: '/images/programas/4',
+          id: 6,
           table: [
             {
               name: 'Pediatría',
@@ -512,6 +518,7 @@ export const programas = {
         {
           title: 'NIÑOS',
           image: '/images/programas/5',
+          id: 7,
           table: [
             {
               name: 'Medicina general',
@@ -573,6 +580,7 @@ export const programas = {
         {
           title: 'PREADOLESCENTES',
           image: '/images/programas/6',
+          id: 8,
           table: [
             {
               name: 'Medicina general',
@@ -619,6 +627,7 @@ export const programas = {
         {
           title: 'ADOLESCENTES',
           image: '/images/programas/7',
+          id: 9,
           table: [
             {
               name: 'Medicina general',
@@ -677,6 +686,7 @@ export const programas = {
         {
           title: 'DIABETES',
           image: '/images/programas/8',
+          id: 10,
           table: [
             {
               name: 'Medicina general',
@@ -753,6 +763,7 @@ export const programas = {
         {
           title: 'HIPERTENSIÓN',
           image: '/images/programas/9',
+          id: 11,
           table: [
             {
               name: 'Medicina general',
@@ -824,6 +835,7 @@ export const programas = {
         {
           title: 'DISLIPEMIA',
           image: '/images/programas/10',
+          id: 12,
           table: [
             {
               name: 'Medicina general',
@@ -890,6 +902,7 @@ export const programas = {
         {
           title: 'CARDIOPATÍAS',
           image: '/images/programas/11',
+          id: 13,
           table: [
             {
               name: 'Medicina general',
@@ -961,6 +974,7 @@ export const programas = {
         {
           title: 'ASMA',
           image: '/images/programas/12',
+          id: 14,
           table: [
             {
               name: 'Medicina general',
@@ -1027,6 +1041,7 @@ export const programas = {
         {
           title: '"CONTIGO" CUIDADOS PALIATIVOS',
           image: '/images/programas/13',
+          id: 15,
           table: [
             {
               name: 'Medicina general',
@@ -1121,6 +1136,7 @@ export const programas = {
         {
           title: 'Hombres 18 a 40 años',
           image: '/images/programas/21',
+          id: 16,
           table: [
             {
               name: 'Medicina general',
@@ -1252,6 +1268,7 @@ export const programas = {
         {
           title: 'Hombres 40 a 60 años',
           image: '/images/programas/16',
+          id: 17,
           table: [
             {
               name: 'Medicina general',
@@ -1408,6 +1425,7 @@ export const programas = {
         {
           title: 'Hombres 60 años en adelante',
           image: '/images/programas/16',
+          id: 18,
           table: [
             {
               name: 'Medicina general',
@@ -1582,6 +1600,7 @@ export const programas = {
         {
           title: 'Mujeres 18 a 40 años',
           image: '/images/programas/17',
+          id: 19,
           table: [
             {
               name: 'Medicina general',
@@ -1718,6 +1737,7 @@ export const programas = {
         {
           title: 'Mujeres 40 a 60 años',
           image: '/images/programas/18',
+          id: 20,
           table: [
             {
               name: 'Medicina general',
@@ -1879,6 +1899,7 @@ export const programas = {
         {
           title: 'Mujeres 60 años en adelante',
           image: '/images/programas/19',
+          id: 21,
           table: [
             {
               name: 'Medicina general',
