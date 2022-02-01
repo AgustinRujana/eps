@@ -10,7 +10,7 @@ export default function Table({ item, color }) {
         </div>
         <div className='col-span-2 text-center tracking-tighter leading-none'>Vida Plus</div>
       </header>
-      <main className='border-darkBlue border-r border-l border-b'>
+      <main className='border-darkBlue border-r border-l border-b divide-y divide-darkBlue divide-dotted'>
         {item.map((row, i) => (
           <div
             key={i}
