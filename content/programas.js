@@ -337,7 +337,7 @@ export const programas = {
         },
         {
           title: 'Post  parto saludable',
-          image: '/images/programas/1',
+          image: '/images/programas/2',
           table: [
             {
               name: 'Ginecología y obstetricia',
@@ -408,7 +408,7 @@ export const programas = {
         },
         {
           title: 'Primeros pasos',
-          image: '/images/programas/1',
+          image: '/images/programas/3',
           table: [
             {
               name: 'Pediatría',
@@ -449,7 +449,7 @@ export const programas = {
         },
         {
           title: 'Kinder',
-          image: '/images/programas/1',
+          image: '/images/programas/4',
           table: [
             {
               name: 'Pediatría',
@@ -511,7 +511,7 @@ export const programas = {
       items: [
         {
           title: 'NIÑOS',
-          image: '/images/programas/1',
+          image: '/images/programas/5',
           table: [
             {
               name: 'Medicina general',
@@ -572,7 +572,7 @@ export const programas = {
         },
         {
           title: 'PREADOLESCENTES',
-          image: '/images/programas/1',
+          image: '/images/programas/6',
           table: [
             {
               name: 'Medicina general',
@@ -618,7 +618,7 @@ export const programas = {
         },
         {
           title: 'ADOLESCENTES',
-          image: '/images/programas/1',
+          image: '/images/programas/7',
           table: [
             {
               name: 'Medicina general',
@@ -676,7 +676,7 @@ export const programas = {
       items: [
         {
           title: 'DIABETES',
-          image: '/images/programas/1',
+          image: '/images/programas/8',
           table: [
             {
               name: 'Medicina general',
@@ -752,7 +752,7 @@ export const programas = {
         },
         {
           title: 'HIPERTENSIÓN',
-          image: '/images/programas/1',
+          image: '/images/programas/9',
           table: [
             {
               name: 'Medicina general',
@@ -823,7 +823,7 @@ export const programas = {
         },
         {
           title: 'DISLIPEMIA',
-          image: '/images/programas/1',
+          image: '/images/programas/10',
           table: [
             {
               name: 'Medicina general',
@@ -889,7 +889,7 @@ export const programas = {
         },
         {
           title: 'CARDIOPATÍAS',
-          image: '/images/programas/1',
+          image: '/images/programas/11',
           table: [
             {
               name: 'Medicina general',
@@ -960,7 +960,7 @@ export const programas = {
         },
         {
           title: 'ASMA',
-          image: '/images/programas/1',
+          image: '/images/programas/12',
           table: [
             {
               name: 'ASMA',
@@ -1031,7 +1031,7 @@ export const programas = {
         },
         {
           title: '"CONTIGO" CUIDADOS PALIATIVOS',
-          image: '/images/programas/1',
+          image: '/images/programas/13',
           table: [
             {
               name: 'Medicina general',
@@ -1125,7 +1125,7 @@ export const programas = {
       items: [
         {
           title: 'Hombres 18 a 40 años',
-          image: '/images/programas/1',
+          image: '/images/programas/16',
           table: [
             {
               name: 'Medicina general',
@@ -1256,7 +1256,7 @@ export const programas = {
         },
         {
           title: 'Hombres 40 a 60 años',
-          image: '/images/programas/1',
+          image: '/images/programas/16',
           table: [
             {
               name: 'Medicina general',
@@ -1412,7 +1412,7 @@ export const programas = {
         },
         {
           title: 'Hombres 60 años en adelante',
-          image: '/images/programas/1',
+          image: '/images/programas/16',
           table: [
             {
               name: 'Medicina general',
@@ -1586,7 +1586,7 @@ export const programas = {
       items: [
         {
           title: 'Mujeres 18 a 40 años',
-          image: '/images/programas/1',
+          image: '/images/programas/17',
           table: [
             {
               name: 'Medicina general',
@@ -1722,7 +1722,7 @@ export const programas = {
         },
         {
           title: 'Mujeres 40 a 60 años',
-          image: '/images/programas/1',
+          image: '/images/programas/18',
           table: [
             {
               name: 'Medicina general',
@@ -1883,7 +1883,7 @@ export const programas = {
         },
         {
           title: 'Mujeres 60 años en adelante',
-          image: '/images/programas/1',
+          image: '/images/programas/19',
           table: [
             {
               name: 'Medicina general',
