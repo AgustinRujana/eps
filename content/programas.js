@@ -963,11 +963,6 @@ export const programas = {
           image: '/images/programas/12',
           table: [
             {
-              name: 'ASMA',
-              basic: 'PLAN QUIERO SALUD',
-              pro: 'PLAN VIDA PLUS',
-            },
-            {
               name: 'Medicina general',
               basic: '100%',
               pro: '100%',
