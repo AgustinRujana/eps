@@ -1,16 +1,25 @@
-import Cards from "./Cards";
+import Cards from './Cards';
 
-export default function Section({ item }) {
-  const classTitle =
-    'w-2/3 p-2 rounded-r-full text-white font-extrabold tracking-wide uppercase ' +
-    item.color;
-
+export default function Section({ section }) {
   return (
-    <div>
-      <div className='flex items-center'>
-        <p className={classTitle}>{item.title}</p>
-      </div>
-      <Cards item={item}/>
-    </div>
+    <section>
+      <header
+        className='w-11/12 lg:w-8/12 rounded-r-full mb-4'
+        style={{ backgroundColor: section.mainColor }}
+      >
+        <h2 className='text-white font-bold py-2 px-3'>{section.title}</h2>
+      </header>
+      <main
+        className={`grid ${
+          section.items.length >= 4
+            ? 'lg:grid-cols-4'
+            : `lg:grid-cols-${section.items.length}`
+        } gap-x-4 mb-20`}
+      >
+        {section.items.map((article, i) => (
+          <Cards article={article} key={i} color={section.mainColor} />
+        ))}
+      </main>
+    </section>
   );
 }

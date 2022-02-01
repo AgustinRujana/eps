@@ -1,27 +1,28 @@
-export default function Cards({ item }) {
-  function Card({ element, color }) {
-    const classBtn =
-      'transition-all ease-in-out duration-500 cursor-pointer mx-1/8 my-4 py-1 uppercase text-white font-semibold rounded-full hover:drop-shadow-xl hover:shadow-lg' +
-      ' ' +
-      color;
+export default function Cards({ article, color }) {
+  return (
+    <article
+      className='text-center mb-4 shadow-md rounded-t-xl overflow-hidden grid'
+      style={{ gridTemplateRows: 'auto 1fr auto' }}
+    >
+      <div className='max-h-52 overflow-hidden'>
+        <img src={`${article.image}.png`} alt={article.title} />
+      </div>
+      <div className='bg-gray-50 text-darkBlue mt-3 mb-4'>
+        <div className='mb-3'>
+          <h4 className='font-bold'>{article.title}</h4>
+        </div>
 
-    return (
-      <div className='col-span-1 grid text-center text-darkBlue leading-tight shadow-xl rounded-xl'>
-        <img className='rounded-t-xl' src={element.image}/>
-        <p className='p-2 font-bold tracking-tight'>{element.title}</p>
-        <p className='px-2 text-left'>{element.content}</p>
-        <a className="cursor-default" href={`programas/${element.id}`}>
-          <div className={classBtn}>Ver Más</div>
+        <div className='mx-3 text-blue-900'>{article.text}</div>
+      </div>
+      <div className='mb-12'>
+        <a
+          href={`/programas/informacion#${article.id}`}
+          className='py-1 text-white font-semibold block mx-8 rounded-full hover:opacity-80 transition-opacity'
+          style={{ backgroundColor: color }}
+        >
+          VER MÁS
         </a>
       </div>
-    );
-  }
-
-  return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4'>
-      {item.cards.map((element) => (
-        <Card element={element} color={item.color} />
-      ))}
-    </div>
+    </article>
   );
 }

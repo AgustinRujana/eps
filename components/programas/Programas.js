@@ -13,7 +13,7 @@ export default function Programas({ content }) {
           src='/images/pattern2.svg'
         />
       </div>
-      <Section item={content.maternidad} />
+      {/* <Section item={content.maternidad} />
       <ScrollSlideUp>
         <Section item={content.infancia} />
       </ScrollSlideUp>
@@ -25,7 +25,10 @@ export default function Programas({ content }) {
       </ScrollSlideUp>
       <ScrollSlideUp>
         <Section item={content.otros} />
-      </ScrollSlideUp>
+      </ScrollSlideUp> */}
+      {content.map((category, i) => (
+        <Section section={category} key={i} />
+      ))}
     </section>
   );
 }
