@@ -4,8 +4,7 @@ export default function Section({ section }) {
   return (
     <section>
       <header
-        className='w-11/12 lg:w-8/12 rounded-r-full mb-4'
-        style={{ backgroundColor: section.mainColor }}
+        className={`w-11/12 lg:w-8/12 rounded-r-full mb-4 bg-${section.mainColor}`}
       >
         <h2 className='text-white font-bold py-2 px-3'>{section.title}</h2>
       </header>

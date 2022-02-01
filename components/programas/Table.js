@@ -1,6 +1,6 @@
 import { CheckCircleIcon } from '@heroicons/react/outline';
 
-export default function Table({ item }) {
+export default function Table({ item, color }) {
   return (
     <div className='w-full px-8 text-darkBlue mt-4'>
       <header className='w-full grid grid-cols-12 font-semibold border-t border-b border-r border-darkBlue'>
@@ -18,7 +18,7 @@ export default function Table({ item }) {
             className='grid grid-cols-12 border-r border-darkBlue text-sm'
           >
             <div>
-              <CheckCircleIcon className='text-green-500 h-6' />
+              <CheckCircleIcon className={`text-${color} h-6`} />
             </div>
             <div className='col-span-7 flex items-center'>
               <p className='font-medium text-sm '>{row.name}</p>

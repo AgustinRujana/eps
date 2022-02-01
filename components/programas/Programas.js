@@ -13,19 +13,6 @@ export default function Programas({ content }) {
           src='/images/pattern2.svg'
         />
       </div>
-      {/* <Section item={content.maternidad} />
-      <ScrollSlideUp>
-        <Section item={content.infancia} />
-      </ScrollSlideUp>
-      <ScrollSlideUp>
-        <Section item={content.adultos} />
-      </ScrollSlideUp>
-      <ScrollSlideUp>
-        <Section item={content.acompanamiento} />
-      </ScrollSlideUp>
-      <ScrollSlideUp>
-        <Section item={content.otros} />
-      </ScrollSlideUp> */}
       {content.map((category, i) => (
         <Section section={category} key={i} />
       ))}

@@ -17,8 +17,7 @@ export default function Cards({ article, color }) {
       <div className='mb-12'>
         <a
           href={`/programas/informacion#${article.id}`}
-          className='py-1 text-white font-semibold block mx-8 rounded-full hover:opacity-80 transition-opacity'
-          style={{ backgroundColor: color }}
+          className={`py-1 text-white font-semibold block mx-8 rounded-full hover:opacity-80 transition-opacity bg-${color}`}
         >
           VER MÁS
         </a>
