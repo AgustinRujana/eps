@@ -186,7 +186,7 @@ export const programas = {
       items: [
         {
           title: 'Control Prenatal - Primer trimestre',
-          image: '/images/programas/1',
+          image: '/images/programas/0',
           table: [
             { name: 'Medicina general ', basic: '100%', pro: '100%' },
             {
@@ -284,7 +284,7 @@ export const programas = {
         },
         {
           title: 'Control Prenatal - Tercer trimestre',
-          image: '/images/programas/1',
+          image: '/images/programas/20',
           table: [
             { name: 'Medicina general ', basic: '100%', pro: '100%' },
             {
@@ -1125,7 +1125,7 @@ export const programas = {
       items: [
         {
           title: 'Hombres 18 a 40 años',
-          image: '/images/programas/16',
+          image: '/images/programas/21',
           table: [
             {
               name: 'Medicina general',

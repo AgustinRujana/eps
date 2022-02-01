@@ -33,18 +33,24 @@ export default function Home() {
       </header>
       <main className='overflow-hidden'>
         {/* Mapa y texto principal */}
-        <div className='relative'>
-          <p className='font-semibold md:text-xl text-base text-darkBlue uppercase w-fit mr-auto rounded-r-full pl-1/8 pr-8'>
-            Solicitar Cita
-          </p>
-          <p className='font-bold md:text-3xl text-xl text-teal-400 w-fit mr-auto rounded-r-full pl-1/8 mb-4'>
-            Siempre cerca de ti
-          </p>
+        <div className='relative mt-8 mb-28'>
+          <img
+            className='h-96 mx-auto'
+            src={'images/maps/mapaHonduras.svg'}
+          />
+          <div className='absolute right-1/8 top-80'>
+            <p className='font-semibold md:text-2xl text-xl text-darkBlue uppercase w-fit'>
+              Solicitar Cita
+            </p>
+            <p className='font-bold md:text-4xl text-2xl text-teal-400 w-fit rounded-r-full'>
+              Siempre cerca de ti
+            </p>
+          </div>
         </div>
         {/* Nuestras Clinicas */}
         <ScrollSlideUp>
           <div className='sm:mt-8 mt-24'>
-            <p className='bg-darkBlue font-bold tracking-tighter uppercase md:text-4xl text-2xl text-white text-right w-fit ml-auto rounded-l-full py-4 pl-8 pr-1/8'>
+          <p className='bg-darkBlue font-bold tracking-tighter uppercase md:text-4xl text-2xl  text-white text-right w-fit mr-auto rounded-r-full py-4 pl-1/8 pr-1/8'>
               Nuestras Clínicas
             </p>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto sm:gap-6 sm:my-24 my-6'>
@@ -145,11 +151,16 @@ export default function Home() {
               ))}
               <div className='col-span-1 shadow-2xl h-fit'>
                 <div className='h-56'>
-                  imagen ambulancia
-                  {/* <MapsSlider content={service} /> */}
+                  <img
+                    className='h-full w-full object-cover'
+                    src='images/mapSliders/ambulancia/2.jpeg'
+                  />
                 </div>
                 <div className='px-6'>
-                  <img className='h-16 mx-auto my-6' src='logos/epsAmbulancia.svg' />
+                  <img
+                    className='h-16 mx-auto my-6'
+                    src='logos/epsAmbulancia.svg'
+                  />
                   <p className=' font-bold text-xl text-center text-darkBlue leading-tight tracking-tighter my-6'>
                     Urgencias 24hs y <br /> servicio de ambulancia.
                   </p>

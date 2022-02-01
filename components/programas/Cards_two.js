@@ -9,7 +9,7 @@ export default function Cards_two({ article, color }) {
         <h3 className='py-1 text-lg'>{article.title}</h3>
       </header>
       <div>
-        <img src={`${article.image}.png`} alt={article.title} />
+        <img className=' max-h-48 w-full object-cover' src={`${article.image}.png`} alt={article.title} />
       </div>
       <div>
         <Table item={article.table} color={color} />
