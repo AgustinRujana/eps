@@ -9,15 +9,15 @@ export default function Cards({ article, color }) {
       </div>
       <div className='bg-gray-50 text-darkBlue mt-3 mb-4'>
         <div className='mb-3'>
-          <h4 className='font-bold'>{article.title}</h4>
+          <h4 className='font-bold tracking-tighter leading-snug'>{article.title}</h4>
         </div>
 
-        <div className='mx-3 text-blue-900'>{article.text}</div>
+        <div className='px-3 text-darkBlue tracking-tighter leading-snug'>{article.text}</div>
       </div>
       <div className='mb-12'>
         <a
           href={`/programas/informacion#${article.id}`}
-          className={`py-1 text-white font-semibold block mx-8 rounded-full hover:opacity-80 transition-opacity bg-${color}`}
+          className={`py-1 text-white tracking-wider block mx-8 rounded-full hover:opacity-80 transition-opacity bg-${color}`}
         >
           VER MÁS
         </a>

@@ -112,7 +112,8 @@ export const programas = {
     },
     {
       title: 'HOMBRES',
-      mainColor: 'amber-500',
+      //mainColor: 'amber-500',
+      mainColor: 'teal-400',
       items: [
         {
           title: 'Hombres - Programa génesis 18 a 40 años',
@@ -145,7 +146,8 @@ export const programas = {
     },
     {
       title: 'MUJERES',
-      mainColor: 'lime-600',
+      // mainColor: 'lime-600',
+      mainColor: 'green-500',
       items: [
         {
           title: 'Mujeres - Programa young 18 a 40 años',
@@ -1117,7 +1119,8 @@ export const programas = {
     },
     {
       title: 'HOMBRES',
-      mainColor: 'yellow-500',
+      //mainColor: 'amber-500',
+      mainColor: 'teal-400',
       id: '4',
       items: [
         {
@@ -1577,7 +1580,8 @@ export const programas = {
     },
     {
       title: 'MUJERES',
-      mainColor: 'lime-600',
+      // mainColor: 'lime-600',
+      mainColor: 'green-500',
       id: '5',
       items: [
         {
@@ -1713,7 +1717,7 @@ export const programas = {
               name: 'Gimnasios',
               basic: '10%',
               pro: '20%',
-            }
+            },
           ],
         },
         {
