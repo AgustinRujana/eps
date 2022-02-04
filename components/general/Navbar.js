@@ -75,34 +75,34 @@ export default function Navbar({
       </div> */}
       {/* Bottom bar */}
       <div className='sm:flex hidden w-full text-sm justify-center shadow-2xl items-center leading-none bg-darkBlue'>
-        <div className='flex items-center tracking-wide uppercase text-white text-center px-4 py-2'>
+        <div className='flex items-center tracking-wide uppercase text-white hover:scale-105 transition-all text-center px-4 py-2'>
           <img className='h-5 mr-2' src='/images/icons/serviciosWhite.svg' />
           <a href='/programas'>Programas <br/> de salud</a>
         </div>
-        <div className='flex items-center tracking-wide uppercase text-white px-4 py-2'>
+        <div className='flex items-center tracking-wide uppercase text-white hover:scale-105 transition-all px-4 py-2'>
           <img className='h-5 mr-2' src='/images/icons/serviciosWhite.svg' />
           <a href='/nosotros'>Nosotros</a>
         </div>
-        <div className='flex items-center tracking-wide uppercase text-white text-center px-4 py-2'>
+        <div className='flex items-center tracking-wide uppercase text-white hover:scale-105 transition-all text-center px-4 py-2'>
           <img className='h-5 mr-2' src='/images/icons/serviciosWhite.svg' />
           <a href='/servicios'>Servicios para <br/> Empresas</a>
         </div>
-        <div className='flex items-center tracking-wide uppercase text-white px-4 py-2'>
+        <div className='flex items-center tracking-wide uppercase text-white hover:scale-105 transition-all px-4 py-2'>
           <img className='h-5 mr-2' src='/images/icons/clinicasWhite.svg' />
           <a href='/clinicas'>Clínicas</a>
         </div>
-        <div className='flex items-center tracking-wide uppercase text-white px-4 py-2'>
+        <div className='flex items-center tracking-wide uppercase text-white hover:scale-105 transition-all px-4 py-2'>
           <img className='h-5 mr-2' src='/images/icons/cardWhite.svg' />
           <a href='/eps-card'>EPS Card</a>
         </div>
-        <div className='flex items-center tracking-wide uppercase text-white px-4 py-2'>
+        <div className='flex items-center tracking-wide uppercase text-white hover:scale-105 transition-all px-4 py-2'>
           <img
             className='h-5 mr-2'
             src='/images/icons/especialidadesWhite.svg'
           />
           <a href='/especialidades'>Especialidades</a>
         </div>
-        <div className='flex items-center tracking-wide uppercase text-white px-4 py-2'>
+        <div className='flex items-center tracking-wide uppercase text-white hover:scale-105 transition-all px-4 py-2'>
           <img className='h-5 mr-2' src='/images/icons/aseguradorasWhite.svg' />
           <a href='/aseguradoras'>Aseguradoras</a>
         </div>
