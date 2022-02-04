@@ -38,7 +38,7 @@ const HeroSlider2 = ({ content }) => {
             </div>
           </div>
           <div className='absolute shadow-inner sm:text-base text-sm z-20 md:left-0 lg:bottom-0 md:bottom-1/2 md:translate-x-0 lg:translate-y-0 left-1/2 bottom-3/4 transform translate-y-1/2 -translate-x-1/2 bg-white md:bg-opacity-100 bg-opacity-80 py-4 px-12 md:rounded-r-lg lg:rounded-tr-lg lg:rounded-r-none w-full md:w-[26rem] text-darkBlue text-center'>
-            <p className='uppercase font-bold sm:text-3xl text-2xl'>
+            <p className='uppercase font-semibold tracking-wide sm:text-3xl text-2xl text-darkBlue'>
               Nuestras Clínicas
             </p>
             <p className='tracking-tighter leading-tight mb-2'>
@@ -46,7 +46,7 @@ const HeroSlider2 = ({ content }) => {
               solo un paso de ti.
             </p>
             <a href='/clinicas'>
-              <button className='uppercase shadow hover:shadow-xl cursor-pointer hover:bg-teal-400 transition-all ease-in-out duration-500 mt-2 py-2 px-12 bg-sky-400 text-white font-semibold sm:text-sm text-xs leading-tight rounded-lg'>
+              <button className='uppercase shadow hover:shadow-xl cursor-pointer hover:bg-teal-400 transition-all ease-in-out duration-500 mt-2 py-2 px-4 bg-sky-400 text-white font-semibold sm:text-sm text-xs leading-tight rounded-full'>
                 Ver todas Nuestras Clinicas
               </button>
             </a>

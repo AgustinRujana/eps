@@ -35,63 +35,75 @@ export default function Navbar({
             </a>
           </div>
         </div>
-        <div className='sm:flex text-sm md:text-base justify-between items-center mt-6 md:mt-4 hidden'>
+        <div className='sm:flex text-sm uppercase tracking-wide md:text-base justify-between items-center hidden gap-2 mr-2'>
           <div
             onClick={() => setFormOficinaActive(true)}
-            className='cursor-pointer flex justify-between items-center px-2 md:px-6 shadow-inner rounded-t-xl bg-fuchsia-800 h-full'
+            className='cursor-pointer flex justify-between items-center px-4 py-2 rounded-full hover:bg-teal-400 bg-sky-500 shadow hover:shadow-xl transition-all hover:scale-105'
           >
-            <p className='font-bold text-white'>Clínica Virtual</p>
+            <p className=' text-white'>Clínica Virtual</p>
           </div>
           <a
             href='/solicitar-cita'
-            className='cursor-pointer flex justify-between items-center px-2 md:px-6 shadow-inner rounded-tl-xl  bg-sky-500 h-full'
+            className='cursor-pointer flex justify-between items-center px-4 py-2 rounded-full hover:bg-teal-400 bg-sky-500 shadow hover:shadow-xl transition-all hover:scale-105'
           >
-            <p className='font-bold text-white'>Solicitar Cita</p>
+            <p className='text-white'>Solicitar Cita</p>
           </a>
           {/* <div className='cursor-pointer flex justify-between items-center px-2 md:px-6 h-full rounded-tl-xl bg-sky-500'>
             <p className='font-bold text-white'>Iniciar Sesión</p>
           </div> */}
         </div>
       </div>
-      {/* Middle bar */}
+      {/* Middle bar
       <div
         className={classNames(
           isFormOficinaActive ? 'bg-fuchsia-800' : 'bg-sky-500',
-          'sm:flex hidden md:text-base text-sm w-full justify-center shadow-2xl items-cente transition-all ease-in-out duration-[2000ms]'
+          'sm:flex hidden text-sm w-full justify-center shadow-2xl items-cente transition-all ease-in-out duration-[2000ms]'
         )}
       >
-        <div className='font-semibold text-white px-4 py-2'>
+        <div className='uppercase tracking-wide border-b border-sky-500 hover:border-white hover:shadow-inner text-white px-4 py-2'>
           <a href='/nosotros'>Nosotros</a>
         </div>
-        <div className='font-semibold text-white px-4 py-2'>
+        <div className='uppercase tracking-wide text-white px-4 py-2'>
           <a href='/programas'>Programas de salud</a>
         </div>
-        <div className='font-semibold text-white px-4 py-2'>
+        <div className='uppercase tracking-wide text-white px-4 py-2'>
           <a href='/servicios'>Servicios para Empresas</a>
         </div>
-        <div className='font-semibold text-white px-4 py-2'>
+        <div className='uppercase tracking-wide text-white px-4 py-2'>
           <a href='/eps-card'>EPS Card</a>
         </div>
-      </div>
+      </div> */}
       {/* Bottom bar */}
-      <div className='sm:flex hidden w-full md:text-base text-sm justify-center shadow-2xl items-center bg-darkBlue'>
-        <div className='flex items-center font-semibold text-white px-4 py-2'>
-          <img className='h-6 mr-2' src='/images/icons/serviciosWhite.svg' />
-          <a href='/#servicios'>Nuestros Servicios</a>
+      <div className='sm:flex hidden w-full text-sm justify-center shadow-2xl items-center leading-none bg-darkBlue'>
+        <div className='flex items-center tracking-wide uppercase text-white text-center px-4 py-2'>
+          <img className='h-5 mr-2' src='/images/icons/serviciosWhite.svg' />
+          <a href='/programas'>Programas <br/> de salud</a>
         </div>
-        <div className='flex items-center font-semibold text-white px-4 py-2'>
-          <img className='h-6 mr-2' src='/images/icons/clinicasWhite.svg' />
-          <a href='/clinicas'>Nuestras Clínicas</a>
+        <div className='flex items-center tracking-wide uppercase text-white px-4 py-2'>
+          <img className='h-5 mr-2' src='/images/icons/serviciosWhite.svg' />
+          <a href='/nosotros'>Nosotros</a>
         </div>
-        <div className='flex items-center font-semibold text-white px-4 py-2'>
+        <div className='flex items-center tracking-wide uppercase text-white text-center px-4 py-2'>
+          <img className='h-5 mr-2' src='/images/icons/serviciosWhite.svg' />
+          <a href='/servicios'>Servicios para <br/> Empresas</a>
+        </div>
+        <div className='flex items-center tracking-wide uppercase text-white px-4 py-2'>
+          <img className='h-5 mr-2' src='/images/icons/clinicasWhite.svg' />
+          <a href='/clinicas'>Clínicas</a>
+        </div>
+        <div className='flex items-center tracking-wide uppercase text-white px-4 py-2'>
+          <img className='h-5 mr-2' src='/images/icons/cardWhite.svg' />
+          <a href='/eps-card'>EPS Card</a>
+        </div>
+        <div className='flex items-center tracking-wide uppercase text-white px-4 py-2'>
           <img
-            className='h-6 mr-2'
+            className='h-5 mr-2'
             src='/images/icons/especialidadesWhite.svg'
           />
           <a href='/especialidades'>Especialidades</a>
         </div>
-        <div className='flex items-center font-semibold text-white px-4 py-2'>
-          <img className='h-6 mr-2' src='/images/icons/aseguradorasWhite.svg' />
+        <div className='flex items-center tracking-wide uppercase text-white px-4 py-2'>
+          <img className='h-5 mr-2' src='/images/icons/aseguradorasWhite.svg' />
           <a href='/aseguradoras'>Aseguradoras</a>
         </div>
       </div>
