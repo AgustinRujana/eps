@@ -9,13 +9,6 @@ npm run dev
 Open the page with your browser to see the result.
 You can start editing the pages. The pages auto-updates as you edit the file.
 
-We use SemVer for versioning. For the versions available, see the tags on this repository.
-
-## Authors
-
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
-
 ## Deployment
 
 If the hosting does not accept Next Dynamic features you will need to follow this guide for [Static Deployment](https://nextjs.org/docs/advanced-features/static-html-export)
