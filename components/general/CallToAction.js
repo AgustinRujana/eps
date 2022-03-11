@@ -2,7 +2,6 @@ import { XIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
 import { content } from '../../content/content';
 import FormularioCard from './FormularioCard';
-import { classNames } from '../../helpers/classNames';
 
 const logos = content.hero.heroMap;
 

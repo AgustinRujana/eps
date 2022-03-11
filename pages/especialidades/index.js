@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>EPS | Card</title>
+        <title>EPS | especialidades</title>
       </Head>
       <header className='mx-auto'>
         <Navbar

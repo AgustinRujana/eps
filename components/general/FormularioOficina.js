@@ -1,16 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-import {
-  UserCircleIcon,
-  MailIcon,
-  PhoneIcon,
-  SupportIcon,
-  DeviceMobileIcon,
-  HeartIcon,
-  BadgeCheckIcon,
-} from '@heroicons/react/outline';
-
 export default function FormularioOficina({
   isFormOficinaActive,
   setFormOficinaActive,
@@ -60,8 +50,8 @@ export default function FormularioOficina({
       <div
         className={
           isFormOficinaActive
-            ? 'text-darkBlue bg-fuchsia-800 rounded-xl opacity-100 transition-all ease-in-out duration-[2000ms] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
-            : 'text-darkBlue bg-sky-500 rounded-xl opacity-0 transition-all ease-in-out duration-[2000ms] fixed top-1/2 -left-[32rem] transform -translate-x-0  -translate-y-1/2 z-50'
+            ? 'text-darkBlue bg-white shadow-2xl lg:rounded-xl w-full lg:w-3/4 opacity-100 transition-all ease-in-out duration-[2000ms] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'
+            : 'text-darkBlue bg-sky-500 shadow-2xl lg:rounded-xl w-0 whitespace-nowrap opacity-0 transition-all ease-in-out duration-[2000ms] fixed top-1/2 -left-[32rem] transform -translate-x-0  -translate-y-1/2 z-50'
         }
         onClick={() => setFormOficinaActive(true)}
       >
@@ -77,19 +67,24 @@ export default function FormularioOficina({
           </div>
         ) : (
           <form
-            className='p-4 grid gap-2 items-center justify-center'
+            className='p-4 grid sm:grid-cols-2 gap-4 items-center justify-center'
             onSubmit={handleSubmit}
           >
-            <p className='font-bold text-white text-xl uppercase py-2 text-center'>
-              ¡Bienvenido a nuestra <br /> Clínica virtual!
+            <p className='sm:col-span-2 text-darkBlue sm:text-2xl text-xl tracking-wide uppercase py-2 text-center'>
+              ¡Bienvenido a nuestra Clínica virtual!
             </p>
-            <div className='relative'>
-              <SupportIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+
+            <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
+              <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
+                <label htmlFor='name' className='bg-white text-gray-600 px-1'>
+                  Servicio *
+                </label>
+              </div>
               <select
                 id='topic'
                 name='topic'
                 type='text'
-                className='rounded-full pl-10 w-72 py-1'
+                className='py-1 px-1 outline-none block h-full w-full'
                 value={topic}
                 onChange={(e) => setTopic(e.target.value)}
                 required
@@ -104,13 +99,17 @@ export default function FormularioOficina({
                 </option>
               </select>
             </div>
-            <div className='relative'>
-              <UserCircleIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+            <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
+              <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
+                <label htmlFor='name' className='bg-white text-gray-600 px-1'>
+                  Usuario *
+                </label>
+              </div>
               <select
                 id='contact'
                 name='contact'
                 type='text'
-                className='rounded-full pl-10 w-72 py-1'
+                className='py-1 px-1 outline-none block h-full w-full'
                 value={contact}
                 onChange={(e) => setContact(e.target.value)}
                 required
@@ -120,13 +119,17 @@ export default function FormularioOficina({
                 <option value='company'>Es para una empresa</option>
               </select>
             </div>
-            <div className='relative'>
-              <DeviceMobileIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+            <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
+              <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
+                <label htmlFor='name' className='bg-white text-gray-600 px-1'>
+                  Contacto *
+                </label>
+              </div>
               <select
                 id='call'
                 name='call'
                 type='text'
-                className='rounded-full pl-10 w-72 py-1'
+                className='py-1 px-1 outline-none block h-full w-full'
                 value={call}
                 onChange={(e) => setCall(e.target.value)}
                 required
@@ -135,72 +138,101 @@ export default function FormularioOficina({
                 <option value='whatsapp'>Quiero que me envíen WhatsApp</option>
               </select>
             </div>
-            <div className='relative'>
-              <UserCircleIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+            <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
+              <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
+                <label htmlFor='name' className='bg-white text-gray-600 px-1'>
+                  Nombre *
+                </label>
+              </div>
               <input
                 id='fullName'
                 name='fullName'
+                autoComplete='false'
+                tabIndex='0'
                 type='text'
-                className='rounded-full pl-10 w-72 py-1'
                 placeholder='Nombre y Apellido'
+                className='py-1 px-1 outline-none block h-full w-full'
                 value={fullName}
                 onChange={(e) => setfullName(e.target.value)}
                 required
               />
             </div>
-            <div className='relative'>
-              <PhoneIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+            <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
+              <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
+                <label htmlFor='name' className='bg-white text-gray-600 px-1'>
+                  Teléfono *
+                </label>
+              </div>
               <input
                 id='phone'
                 name='phone'
                 type='text'
-                className='rounded-full pl-10 w-72 py-1'
+                autoComplete='false'
+                tabIndex='0'
                 placeholder='Teléfono'
+                className='py-1 px-1 outline-none block h-full w-full'
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 required
               />
             </div>
-            <div className='relative'>
-              <MailIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+            <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
+              <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
+                <label htmlFor='name' className='bg-white text-gray-600 px-1'>
+                  Correo Electrónico *
+                </label>
+              </div>
               <input
                 id='email'
                 name='email'
                 type='text'
-                className='rounded-full pl-10 w-72 py-1'
+                autoComplete='false'
+                tabIndex='0'
                 placeholder='Correo Electrónico'
+                className='py-1 px-1 outline-none block h-full w-full'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
-            <div className='relative'>
-              <HeartIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+            <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
+              <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
+                <label htmlFor='name' className='bg-white text-gray-600 px-1'>
+                  Aseguradora *
+                </label>
+              </div>
               <input
                 id='aseguradora'
                 name='aseguradora'
                 type='text'
-                className='rounded-full pl-10 w-72 py-1'
+                autoComplete='false'
+                tabIndex='0'
                 placeholder='Aseguradora'
                 value={aseguradora}
                 onChange={(e) => setAseguradora(e.target.value)}
                 required
+                className='py-1 px-1 outline-none block h-full w-full'
               />
             </div>
-            <div className='relative'>
-              <BadgeCheckIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' />
+            <div className='border focus-within:border-darkBlue focus-within:text-darkBlue transition-all duration-500 relative rounded p-1'>
+              <div className='-mt-4 absolute tracking-wider px-1 uppercase text-xs'>
+                <label htmlFor='name' className='bg-white text-gray-600 px-1'>
+                  N° de póliza*
+                </label>
+              </div>
+              {/* <BadgeCheckIcon className='absolute h-6 top-1/2 -translate-y-1/2 left-2' /> */}
               <input
                 id='poliza'
                 name='poliza'
                 type='text'
-                className='rounded-full pl-10 w-72 py-1'
+                className='py-1 px-1 outline-none block h-full w-full'
                 placeholder='N° de poliza'
                 value={poliza}
                 onChange={(e) => setPoliza(e.target.value)}
                 required
               />
             </div>
-            <div className='my-2'>
+            <div className='my-2 sm:col-span-2'>
               {uploading ? (
                 <svg
                   width='135'
