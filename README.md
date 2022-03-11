@@ -9,12 +9,12 @@ npm run dev
 Open the page with your browser to see the result.
 You can start editing the pages. The pages auto-updates as you edit the file.
 
-## Learn More
+We use SemVer for versioning. For the versions available, see the tags on this repository.
 
-To learn more about Next.js, take a look at the following resources:
+## Authors
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Billie Thompson - Initial work - PurpleBooth
+See also the list of contributors who participated in this project.
 
 ## Deployment
 
